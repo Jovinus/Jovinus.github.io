@@ -67,7 +67,7 @@ profiles:
       <p>Seongnam, South Korea</p>
 
   - align: right
-    image: sungsoo_placeholder.jpg
+    image: hong_sungsoo.png
     content: about_sungsoo.md
     image_circular: false
     more_info: >
