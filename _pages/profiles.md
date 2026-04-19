@@ -28,7 +28,7 @@ profiles:
       <p>Seoul, South Korea</p>
 
   - align: right
-    image: sangwon_placeholder.jpg
+    image: byun_sangwon.jpg
     content: about_sangwon.md
     image_circular: false
     more_info: >
