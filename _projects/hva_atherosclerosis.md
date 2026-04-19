@@ -19,4 +19,4 @@ Analyzed the impact of healthy vascular aging (HVA) and cardiorespiratory fitnes
 - Large-scale clinical data cleaning and derived variable generation (Physical Activity, HVA from lab, questionnaire, and exercise stress test data)
 - Logistic regression analysis of the relationship between CRF, HVA status, and subclinical atherosclerosis
 
-**Outcome:** 1 SCI publication (featured in BRIC 한빛사 / *People Who Brightened Korea* — a curation of Korean first/corresponding-author papers in journals with IF ≥ 10 and JCR top 10%)
+**Outcome:** 1 SCI publication (featured in BRIC's *People Who Brightened Korea* — a curation of Korean first/corresponding-author papers in journals with IF ≥ 10 and JCR top 10%)

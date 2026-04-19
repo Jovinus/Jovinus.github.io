@@ -22,7 +22,7 @@ profiles:
     content: about_nam.md
     image_circular: true
     more_info: >
-      <p>Young Woo Nam (남영우)</p>
+      <p>Young Woo Nam</p>
       <p>Deep Learning Researcher &middot; IBricks</p>
       <p>Seongnam, South Korea</p>
 
@@ -31,7 +31,7 @@ profiles:
     content: about_dayoon.md
     image_circular: true
     more_info: >
-      <p>Dayoon Lee (이다윤)</p>
+      <p>Dayoon Lee</p>
       <p>Co-founder &middot; Quality Management Officer &middot; BreathYou</p>
 
   - align: left
@@ -39,7 +39,7 @@ profiles:
     content: about_donghwee.md
     image_circular: true
     more_info: >
-      <p>Donghwee Yoon (윤동휘)</p>
+      <p>Donghwee Yoon</p>
       <p>AI Researcher &middot; AITRICS</p>
       <p>Seoul, South Korea</p>
 
@@ -48,7 +48,7 @@ profiles:
     content: about_jinho.md
     image_circular: true
     more_info: >
-      <p>Jinho Kim (김진호)</p>
+      <p>Jinho Kim</p>
       <p>TRIZN</p>
       <p>Suwon, South Korea</p>
 
@@ -58,7 +58,7 @@ profiles:
     content: about_wonjun.md
     image_circular: true
     more_info: >
-      <p>Wonjun Jang (장원준)</p>
+      <p>Wonjun Jang</p>
       <p>Student &middot; Seoul Robotics High School</p>
       <p>App Developer (side) &middot; BreathYou</p>
 ---

@@ -35,7 +35,7 @@ cv:
         start_date: 2019
         end_date: 2021
         highlights:
-          - "Advisor: Prof. Mira Kang (강미라)"
+          - "Advisor: Prof. Mira Kang"
           - "M Lab. — Statistical analysis and predictive model development using medical big data"
 
       - institution: Incheon National University
@@ -45,7 +45,7 @@ cv:
         start_date: 2014
         end_date: 2019
         highlights:
-          - "Advisor: Prof. Sangwon Byun (변상원)"
+          - "Advisor: Prof. Sangwon Byun"
           - "Bioelectronics Lab. — Biosignal (ECG, EMG) data collection, signal analysis, and real-time prediction model development"
 
     Experience:
@@ -57,7 +57,7 @@ cv:
         end_date: present
         summary: Digital health startup focused on allergy and respiratory AI, developing DeepBreath CDSS and MediPipe.
         highlights:
-          - "Selected for 2025 Pre-startup Package (예비창업패키지)"
+          - "Selected for 2025 Pre-startup Package"
           - "DeepBreath CDSS: Clinical decision support for predicting pulmonary function decline trajectories"
           - "MediPipe: OCR/NLP pipeline for medical record processing"
 
@@ -182,18 +182,18 @@ cv:
         summary: "Professional working proficiency"
 
     References:
-      - name: Prof. Sangwon Byun (변상원)
+      - name: Prof. Sangwon Byun
         icon: fa-solid fa-user
         reference: "Incheon National University, Department of Electronic Engineering; BS Advisor"
 
-      - name: Prof. Mira Kang (강미라)
+      - name: Prof. Mira Kang
         icon: fa-solid fa-user
         reference: "Samsung Medical Center; MS Advisor at SAIHST, Sungkyunkwan University"
 
-      - name: Prof. Jin-Young Lee (이진영)
+      - name: Prof. Jin-Young Lee
         icon: fa-solid fa-user
         reference: "Samsung Medical Center, Health Promotion Center"
 
-      - name: Prof. Byung-Jae Lee (이병재)
+      - name: Prof. Byung-Jae Lee
         icon: fa-solid fa-user
         reference: "Samsung Medical Center, Department of Allergy and Clinical Immunology; PhD Advisor at SAIHST, Sungkyunkwan University"
