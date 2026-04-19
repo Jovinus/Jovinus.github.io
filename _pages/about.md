@@ -13,7 +13,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Suwon, Gyeonggi-do</p>
+    <p>Seoul &amp; Suwon</p>
     <p>Republic of Korea</p>
     <p>lkh256 [at] gmail [dot] com</p>
 
