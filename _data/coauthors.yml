@@ -1,3 +1,11 @@
 # Co-authors' first-name variants for jekyll-scholar.
 # Keys are lowercase surnames. Add entries here when you want a co-author's
 # name rendered as a link, or to collapse multiple forms (e.g. "J. S." / "Johann Sebastian") to one person.
+
+byun:
+  - firstname: Sangwon
+    url: https://scholar.google.com/citations?user=QTU4AM4AAAAJ
+
+yoon:
+  - firstname: Donghwee
+    url: https://scholar.google.com/citations?user=mD_TsvwAAAAJ
