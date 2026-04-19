@@ -15,7 +15,7 @@ profile:
   more_info: >
     <p>Suwon, Gyeonggi-do</p>
     <p>Republic of Korea</p>
-    <p>lkh256 [at] breathyou [dot] care</p>
+    <p>lkh256 [at] gmail [dot] com</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -31,12 +31,12 @@ latest_posts:
   limit: 3
 ---
 
-I build clinical AI systems that have to work in the real hospital — not just on held-out test sets.
+I am a PhD candidate in Digital Health at [SAIHST, Sungkyunkwan University](https://saihst.skku.edu/), advised by Professor Byung-Jae Lee, and an AI researcher at [AITRICS](https://www.aitrics.com). My research interests lie in **clinical time-series deep learning**, **medical device regulation**, and **respiratory digital health**.
 
-My research sits at the intersection of **clinical time-series deep learning**, **medical device regulation**, and **respiratory digital health**. Over the past eight years I have co-developed two AI medical devices that received regulatory approval from Korea's MFDS (and, in one case, the U.S. FDA) while at AITRICS: a cardiac arrest early-warning system for general wards, and a sepsis prediction system deployed on-premise in Korean tertiary hospitals. This work has produced 14 SCI(E) publications (h-index 8, 355+ citations), including first-author papers in *Hypertension* and *Allergy, Asthma & Immunology Research*, and co-first authorship in *npj Digital Medicine*.
+During my time at AITRICS, I have had the opportunity to contribute to the development of two AI-based medical devices that received regulatory approval from Korea's MFDS: a cardiac arrest early-warning system for general wards and a sepsis prediction system for tertiary hospitals. One of these systems also received U.S. FDA clearance. These experiences have shaped my understanding of the challenges involved in translating machine learning models into clinically deployable solutions.
 
-I am currently a PhD candidate in Digital Health at [SAIHST, Sungkyunkwan University](https://saihst.skku.edu/), advised by Professor Byung-Jae Lee. My doctoral research uses a 30-year, one-million-record longitudinal pulmonary function test cohort from Samsung Medical Center to build **Transformer-based trajectory models of respiratory health**, Korean-specific reference equations, and a multimodal respiratory foundation model.
+My doctoral research focuses on longitudinal pulmonary function test data from Samsung Medical Center, where I am working on **Transformer-based trajectory models of respiratory health**, Korean-specific reference equations, and a multimodal respiratory foundation model.
 
-In 2025 I founded [**BreathYou**](https://breathyou.care), a respiratory digital health startup commercializing two of these research directions: **DeepBreath CDSS**, a regulated clinical decision support SaMD that predicts pulmonary function decline trajectories, and **MediPipe**, a multi-agent OCR/NLP pipeline for medical record cleansing.
+In 2025, I co-founded [**BreathYou**](https://breathyou.care), a respiratory digital health startup that aims to bring some of these research directions closer to clinical practice, including **DeepBreath CDSS**, a clinical decision support system for predicting pulmonary function decline trajectories, and **MediPipe**, an OCR/NLP pipeline for medical record processing.
 
-If any of this overlaps with what you are working on — clinical time-series modeling, SaMD regulatory pathways, respiratory AI, or deploying ML inside real hospital systems — feel free to reach out.
+I am always happy to connect with researchers and practitioners interested in clinical time-series modeling, SaMD regulatory pathways, respiratory AI, or the deployment of machine learning in healthcare settings. Please feel free to reach out.
