@@ -35,6 +35,7 @@ cv:
         start_date: 2019
         end_date: 2021
         highlights:
+          - "Advisor: Prof. Mira Kang (강미라)"
           - "M Lab. — Statistical analysis and predictive model development using medical big data"
 
       - institution: Incheon National University
@@ -44,6 +45,7 @@ cv:
         start_date: 2014
         end_date: 2019
         highlights:
+          - "Advisor: Prof. Sangwon Byun (변상원)"
           - "Bioelectronics Lab. — Biosignal (ECG, EMG) data collection, signal analysis, and real-time prediction model development"
 
     Experience:
@@ -192,7 +194,11 @@ cv:
     References:
       - name: Prof. Sangwon Byun (변상원)
         icon: fa-solid fa-user
-        reference: "Incheon National University, Department of Electronic Engineering"
+        reference: "Incheon National University, Department of Electronic Engineering; BS Advisor"
+
+      - name: Prof. Mira Kang (강미라)
+        icon: fa-solid fa-user
+        reference: "Samsung Medical Center; MS Advisor at SAIHST, Sungkyunkwan University"
 
       - name: Prof. Jin-Young Lee (이진영)
         icon: fa-solid fa-user
