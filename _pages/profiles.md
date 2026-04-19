@@ -33,7 +33,8 @@ profiles:
     image_circular: false
     more_info: >
       <p>Mira Kang</p>
-      <p>Clinical Associate Professor &middot; Sungkyunkwan University School of Medicine</p>
+      <p>Clinical Associate Professor &middot; SKKU School of Medicine</p>
+      <p>Participating Faculty &middot; SAIHST, Sungkyunkwan University</p>
       <p>Endocrinology &middot; Health Promotion Center &middot; Samsung Medical Center</p>
       <p>Seoul, South Korea</p>
 
@@ -54,7 +55,8 @@ profiles:
     image_circular: false
     more_info: >
       <p>Jin-Young Lee</p>
-      <p>Clinical Associate Professor &middot; Sungkyunkwan University School of Medicine</p>
+      <p>Clinical Associate Professor &middot; SKKU School of Medicine</p>
+      <p>Participating Faculty &middot; SAIHST, Sungkyunkwan University</p>
       <p>Allergy & Clinical Immunology &middot; Health Promotion Center &middot; Samsung Medical Center</p>
       <p>Seoul, South Korea</p>
 
