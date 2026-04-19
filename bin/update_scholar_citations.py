@@ -41,6 +41,7 @@ def get_scholar_citations() -> None:
     print(f"Fetching citations for Google Scholar ID: {SCHOLAR_USER_ID}")
     today = datetime.now().strftime("%Y-%m-%d")
 
+    existing_data = None
     # Check if the output file was already updated today
     if os.path.exists(OUTPUT_FILE):
         try:
@@ -78,6 +79,15 @@ def get_scholar_citations() -> None:
             f"Could not fetch author data for user ID '{SCHOLAR_USER_ID}'. Please verify the Scholar user ID and try again."
         )
         sys.exit(1)
+
+    citation_data["metadata"]["total_citations"] = author_data.get("citedby", 0)
+    citation_data["metadata"]["h_index"] = author_data.get("hindex", 0)
+    citation_data["metadata"]["i10_index"] = author_data.get("i10index", 0)
+    print(
+        f"Author stats — citations: {citation_data['metadata']['total_citations']}, "
+        f"h-index: {citation_data['metadata']['h_index']}, "
+        f"i10-index: {citation_data['metadata']['i10_index']}"
+    )
 
     if "publications" not in author_data:
         print(f"No publications found in author data for user ID '{SCHOLAR_USER_ID}'.")

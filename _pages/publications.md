@@ -13,6 +13,22 @@ nav_order: 2
 
 {% include bib_search.liquid %}
 
+{% if site.data.citations.metadata %}
+  {% assign stats = site.data.citations.metadata %}
+  <div class="scholar-stats d-flex flex-wrap align-items-center" style="gap: 0.5rem 1rem; margin: 1rem 0; font-size: 0.9rem;">
+    <a href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}" target="_blank" rel="noopener" aria-label="Google Scholar profile">
+      <img src="https://img.shields.io/badge/citations-{{ stats.total_citations }}-4285F4?logo=googlescholar&labelColor=beige" alt="Total citations: {{ stats.total_citations }}">
+    </a>
+    <a href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}" target="_blank" rel="noopener" aria-label="Google Scholar profile">
+      <img src="https://img.shields.io/badge/h--index-{{ stats.h_index }}-4285F4?logo=googlescholar&labelColor=beige" alt="h-index: {{ stats.h_index }}">
+    </a>
+    <a href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}" target="_blank" rel="noopener" aria-label="Google Scholar profile">
+      <img src="https://img.shields.io/badge/i10--index-{{ stats.i10_index }}-4285F4?logo=googlescholar&labelColor=beige" alt="i10-index: {{ stats.i10_index }}">
+    </a>
+    {% if stats.last_updated %}<span class="text-muted">Updated {{ stats.last_updated }}</span>{% endif %}
+  </div>
+{% endif %}
+
 <p class="text-muted" style="font-size: 0.9rem;"><sup>†</sup> First (or co-first) author &nbsp;·&nbsp; <sup>*</sup> Corresponding author</p>
 
 <div class="publications">
