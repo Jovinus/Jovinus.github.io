@@ -39,7 +39,7 @@ profiles:
 
   - section: Collaborators
     align: left
-    image: jinyoung_placeholder.jpg
+    image: lee_jinyoung.jpg
     content: about_jinyoung.md
     image_circular: false
     more_info: >
@@ -85,7 +85,7 @@ profiles:
       <p>Seoul, South Korea</p>
 
   - align: right
-    image: seungmin_placeholder.jpg
+    image: baik_seungmin.jpg
     content: about_seungmin.md
     image_circular: false
     more_info: >
