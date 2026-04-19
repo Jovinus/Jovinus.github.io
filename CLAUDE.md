@@ -39,9 +39,26 @@ AGENTS.md (imported below) covers the theme's generic build/test/format workflow
 - **`code={URL}`** on an entry renders a "Code" button on the publications page. Use this to link GitHub repos from the paper they belong to.
 - Author first-name variants accepted by jekyll-scholar are declared in `_config.yml` under `scholar.first_name` — both `Kyung Hyun` and `KyungHyun` map to the same person. Prefer `Kyung Hyun` (with space) for new entries.
 
-### People page (`_pages/profiles.md`)
+### People page (`_pages/profiles.md` + `_pages/about_*.md`)
 
-- The `_layouts/profiles.liquid` layout has a small customization: if a profile entry has a `section:` field, it renders as an `<h2 class="people-section">` before that entry. This is how the page is split into **Collaborators** and **Mentees**. Put `section: Collaborators` on the first collaborator and `section: Mentees` on the first mentee.
+- The `_layouts/profiles.liquid` layout has a small customization: if a profile entry has a `section:` field, it renders as an `<h2 class="people-section">` before that entry. Currently three sections: **Advisors**, **Collaborators**, **Mentees**. Put `section: <name>` on the first entry of each group.
+- Each profile needs both a `more_info` block (in `profiles.md`) and a content file (`_pages/about_*.md`) with the prose description. Keep the two in sync when editing.
+- **Image filenames** follow `surname_firstname.{jpg,png}` (e.g., `lee_byungjae.jpg`, `byun_sangwon.jpg`, `kang_mira.jpg`). Save photos in `assets/img/` square-cropped (1:1). For portrait-orientation headshots, use a top-anchored crop (via PIL) to keep the face in frame rather than `sips -c` center-crop.
+- `align: left` / `align: right` alternates down the page; when inserting a new entry, flip subsequent entries so the alternation continues cleanly.
+- **Advisors section** is ordered reverse-chronological (most recent first): PhD → master's → undergraduate.
+- Under-review manuscripts live in `_bibliography/papers_inreview.bib`. Reference them in an `about_*.md` entry when relevant, even if the person isn't on the bib author list yet (some in-review entries intentionally omit authors).
+
+### People page tone (`_pages/about_*.md`)
+
+Academic register with quiet warmth — the user is INFJ. No editorial flourishes ("the clinician whose reality checks push the modeling work..."), no startup slang ("ships real models"), no Kyung Hyun-centric framing ("project that grew out of Kyung Hyun's earlier study"). Prefer mutual phrasing: "collaborating with Kyung Hyun on X" over "Kyung Hyun mentored him on X." Paper citations use italicized journal + year: `*Journal of Clinical Medicine*, 2026`.
+
+**Korean clinical-track title mapping** (distinct from academic-track Professor/Associate/Assistant — verify the track before writing):
+
+- 임상교수 → Clinical Professor
+- 임상 부교수 → Clinical Associate Professor
+- 임상 조교수 → Clinical Assistant Professor
+
+**SKKU + SMC appointments**: many SMC physicians hold SKKU clinical titles but their primary affiliation is Samsung Medical Center. For SAIHST advising roles, they're 참여 교원 → "participating faculty" (not School of Medicine faculty). Check `_data/cv.yml` References section for the authoritative affiliation/title of each advisor. SMC's English name for 건강검진센터 / 건강의학본부 is **"Health Promotion Center."**
 
 ### Hidden-but-reachable pages
 
@@ -71,7 +88,7 @@ Do not hand-edit `_data/citations.yml` — it will be overwritten by the next sc
 ## Identity facts (keep consistent across pages)
 
 - **Role**: PhD Student in Digital Health at SAIHST · Researcher at AITRICS · Co-founder & CEO of BreathYou
-- **Advisor (PhD)**: Prof. Byung-Jae Lee
+- **Advisors**: **PhD** — Prof. Byung-Jae Lee · **Master's** — Prof. Mira Kang · **Undergraduate** — Prof. Sangwon Byun
 - **SAIHST URL**: `https://www.saihst.kr/` (not `saihst.skku.edu`)
 - **Public email**: `lkh256@gmail.com` (used in `_config.yml`, `_data/cv.yml`, `_data/socials.yml`, and the obfuscated `about.md` address line)
 - **BreathYou role**: Co-founder (not sole founder) — Dayoon Lee is the other co-founder.
