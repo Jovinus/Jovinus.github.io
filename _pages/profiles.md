@@ -18,7 +18,7 @@ profiles:
 
   - section: Advisors
     align: left
-    image: byungjae_placeholder.jpg
+    image: lee_byungjae.jpg
     content: about_byungjae.md
     image_circular: false
     more_info: >
