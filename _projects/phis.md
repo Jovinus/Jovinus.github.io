@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Precision Medicine Hospital Information System (P-HIS)
-description: "[MSIT] Development of SNOMED CT code mapping assistance algorithms for hospital-to-international standard code mapping."
+title: Public Health Information System (PHIS)
+description: "[MSIT] Building a standards-based Public Health Information System through SNOMED CT code mapping and Common Data Model (CDM) construction."
 importance: 7
 category: research
 ---
@@ -11,10 +11,11 @@ category: research
 **Funding:** Ministry of Science and ICT (MSIT)
 
 **Summary:**
-Developed algorithms to assist mapping between hospital internal codes and international standard SNOMED CT codes, contributing to the construction of Samsung Medical Center's Common Data Model.
+Contributed to the construction of a Public Health Information System (PHIS) by standardizing hospital medical records to international terminologies and a Common Data Model (CDM). Developed SNOMED CT mapping assistance algorithms to bridge hospital internal codes with international standard codes, which served as a foundation for interoperable public health data.
 
 **Key Responsibilities:**
 - Developed SNOMED CT code search algorithm utilizing code relationship data to retrieve ascendant and descendant codes by condition
-- Developed SNOMED CT code recommendation algorithm
+- Developed SNOMED CT code recommendation algorithm to accelerate terminology mapping
+- Supported CDM construction at Samsung Medical Center as part of the PHIS standardization effort
 
-**Outcome:** Efficient mapping tool for Samsung Medical Center's medical records team for CDM construction
+**Outcome:** Mapping tooling and standardized terminology/CDM pipeline that fed into the broader PHIS construction

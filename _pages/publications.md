@@ -13,6 +13,8 @@ nav_order: 2
 
 {% include bib_search.liquid %}
 
+<p class="text-muted" style="font-size: 0.9rem;"><sup>†</sup> First (or co-first) author &nbsp;·&nbsp; <sup>*</sup> Corresponding author</p>
+
 <div class="publications">
 
 {% bibliography %}
