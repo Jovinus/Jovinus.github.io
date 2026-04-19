@@ -23,13 +23,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "nav-repositories",
-          title: "repositories",
-          description: "Code accompanying my publications.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/repositories/";
-          },
         },{id: "nav-cv",
           title: "CV",
           description: "Curriculum Vitae of Kyung Hyun Lee — AI Researcher, PhD Student in Digital Health, Co-founder &amp; CEO of BreathYou.",
