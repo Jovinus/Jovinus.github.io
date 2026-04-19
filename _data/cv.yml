@@ -46,7 +46,7 @@ cv:
         end_date: 2019
         highlights:
           - "Advisor: Prof. Sangwon Byun"
-          - "Bioelectronics Lab. — Biosignal (ECG, EMG) data collection, signal analysis, and real-time prediction model development"
+          - "[Bioelectronics Lab.](https://sites.google.com/view/bioelectronics-lab/home) — Biosignal (ECG, EMG) data collection, signal analysis, and real-time prediction model development"
 
     Experience:
       - company: BreathYou
@@ -184,7 +184,7 @@ cv:
     References:
       - name: Prof. Sangwon Byun
         icon: fa-solid fa-user
-        reference: "Incheon National University, Department of Electronic Engineering; BS Advisor"
+        reference: "Incheon National University, Department of Electronic Engineering; BS Advisor ([Bioelectronics Lab.](https://sites.google.com/view/bioelectronics-lab/home))"
 
       - name: Prof. Mira Kang
         icon: fa-solid fa-user
