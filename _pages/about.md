@@ -4,9 +4,9 @@ title: about
 permalink: /
 subtitle: >
   AI Researcher at <a href='https://www.aitrics.com'>AITRICS</a>
-  &middot; PhD Candidate in Digital Health at
+  &middot; PhD Student in Digital Health at
   <a href='https://saihst.skku.edu/'>SAIHST</a>, Sungkyunkwan University
-  &middot; Founder &amp; CEO of <a href='https://breathyou.care'>BreathYou</a>
+  &middot; Co-founder &amp; CEO of <a href='https://breathyou.care'>BreathYou</a>
 
 profile:
   align: right
@@ -31,11 +31,11 @@ latest_posts:
   limit: 3
 ---
 
-I'm a PhD candidate in Digital Health at [SAIHST, Sungkyunkwan University](https://saihst.skku.edu/), advised by Professor Byung-Jae Lee, and an AI researcher at [AITRICS](https://www.aitrics.com).
+I'm a PhD student in Digital Health at [SAIHST, Sungkyunkwan University](https://saihst.skku.edu/), advised by Professor Byung-Jae Lee, and an AI researcher at [AITRICS](https://www.aitrics.com).
 
 My work sits between machine learning research and clinical deployment. I like thinking about how a model becomes a medical device — how it's trained, how it's validated, and how it earns regulatory trust.
 
-At AITRICS, I contributed to a cardiac arrest early-warning system that was approved by Korea's MFDS as an AI medical device. I'm now leading the product development of an AKI prediction model I built, with the same goal of MFDS approval.
+At AITRICS, I contributed to a cardiac arrest early-warning system that was approved by Korea's MFDS as an AI medical device. I'm now leading the product development of an AKI prediction model I developed, with the same goal of MFDS approval.
 
 For my doctoral research, I work with longitudinal pulmonary function data from Samsung Medical Center, building time-series models to better capture how respiratory health changes over time.
 

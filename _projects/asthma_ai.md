@@ -19,4 +19,4 @@ Developed an AI model for asthma diagnosis using clinical data from Samsung Medi
 - Data cleaning, EDA, and predictive variable generation from multiple data sources (lab data, questionnaire data, sputum test data, bronchial challenge test results)
 - Developed ML-based asthma diagnosis model; verified model reliability with clinicians via Shapley value analysis
 
-**Outcome:** 2 conference presentations, 1 SCI publication (selected as Editorial)
+**Outcome:** 2 conference presentations, 1 SCI publication (featured in the journal's Editorial)

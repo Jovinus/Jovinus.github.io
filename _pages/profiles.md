@@ -13,7 +13,7 @@ profiles:
     image_circular: false
     more_info: >
       <p>Kyung Hyun Lee</p>
-      <p>PhD Candidate &middot; AI Researcher &middot; Founder & CEO</p>
+      <p>PhD Student &middot; AI Researcher &middot; Co-founder & CEO</p>
       <p>Suwon, Gyeonggi-do, Republic of Korea</p>
 
   - align: left
