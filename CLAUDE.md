@@ -28,13 +28,14 @@ AGENTS.md (imported below) covers the theme's generic build/test/format workflow
 
 ### Publications (`_bibliography/papers.bib`)
 
-- **First/corresponding-author markers are embedded in the surname**: `author={Lee†, Kyung Hyun ...}` for first/co-first, `author={... and Lee*, Kyung Hyun}` for corresponding. The theme's `_layouts/bib.liquid` (lines 62–64) strips `†*‡§¶‖&^` from surnames before self-matching and wraps them in `<sup>` tags for rendering — do not "clean up" the author field or self-name bolding will break. The `publications.md` page has a bottom legend explaining the symbols.
-- **`annotation` field text** is standardized. Allowed values:
-  - `† First author` — Lee is listed first
-  - `† Co-first author` — Lee has `†` but is not the first-listed author
+- **First/corresponding-author markers are embedded in the surname** on *any* author, not just Lee: e.g., `Kang†, Danbee` (co-first), `Shin*, Soo-Yong` (corresponding), `Jae†*, Sae Young` (first + corresponding — combine markers consecutively). The theme's `_layouts/bib.liquid` (lines 62–64) strips `†*‡§¶‖&^` from surnames before self-matching and wraps them in `<sup>` tags for rendering — do not "clean up" the author field or self-name bolding will break. The `publications.md` page has a bottom legend explaining the symbols.
+- **`annotation` field text** is standardized and describes the markers used in that entry. Allowed values:
+  - `† First author` — a single first author
+  - `† Co-first author` — multiple first authors sharing credit
   - `* Corresponding author`
   - Combinations, e.g., `† Co-first author · * Corresponding author`
 - `annotation` is in `filtered_bibtex_keywords` (`_config.yml`), so it renders only as a popover on the ⓘ icon next to the authors — not inline.
+- **Author names use bibtex `Lastname, Firstname` order** (e.g., `Lee, Kyung Hyun` — not the reversed `Kyung Hyun, LEE`). When the full author list is known, expand `and others` to the complete list rather than truncating — several papers list 15+ explicit authors to keep corresponding-author `*` markers visible.
 - **`code={URL}`** on an entry renders a "Code" button on the publications page. Use this to link GitHub repos from the paper they belong to.
 - Author first-name variants accepted by jekyll-scholar are declared in `_config.yml` under `scholar.first_name` — both `Kyung Hyun` and `KyungHyun` map to the same person. Prefer `Kyung Hyun` (with space) for new entries.
 
