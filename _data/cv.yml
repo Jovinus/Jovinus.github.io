@@ -31,7 +31,7 @@ cv:
         location: Seoul, South Korea
         url: https://www.saihst.kr/
         area: "Digital Health (Medical Big Data, Clinical Statistics)"
-        studyType: MS
+        studyType: Master of Science
         start_date: 2019
         end_date: 2021
         highlights:
@@ -41,7 +41,7 @@ cv:
       - institution: Incheon National University
         location: Incheon, South Korea
         area: "Electronic Engineering & Computational Neuroscience"
-        studyType: BS
+        studyType: Bachelor of Science
         start_date: 2014
         end_date: 2019
         highlights:
@@ -184,11 +184,11 @@ cv:
     References:
       - name: Prof. Sangwon Byun
         icon: fa-solid fa-user
-        reference: "Incheon National University, Department of Electronic Engineering; BS Advisor ([Bioelectronics Lab.](https://sites.google.com/view/bioelectronics-lab/home))"
+        reference: "Incheon National University, Department of Electronic Engineering; Bachelor's advisor ([Bioelectronics Lab.](https://sites.google.com/view/bioelectronics-lab/home))"
 
       - name: Prof. Mira Kang
         icon: fa-solid fa-user
-        reference: "Samsung Medical Center; MS Advisor at SAIHST, Sungkyunkwan University"
+        reference: "Samsung Medical Center; Master's advisor at SAIHST, Sungkyunkwan University"
 
       - name: Prof. Jin-Young Lee
         icon: fa-solid fa-user
@@ -196,4 +196,4 @@ cv:
 
       - name: Prof. Byung-Jae Lee
         icon: fa-solid fa-user
-        reference: "Samsung Medical Center, Department of Allergy and Clinical Immunology; PhD Advisor at SAIHST, Sungkyunkwan University"
+        reference: "Samsung Medical Center, Department of Allergy and Clinical Immunology; Doctoral advisor at SAIHST, Sungkyunkwan University"
