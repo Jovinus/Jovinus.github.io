@@ -71,33 +71,6 @@ profiles:
       <p>Chuncheon, South Korea</p>
 
   - align: left
-    image: nam_youngwoo.jpg
-    content: about_nam.md
-    image_circular: false
-    more_info: >
-      <p>Young Woo Nam</p>
-      <p>Deep Learning Researcher &middot; IBricks</p>
-      <p>Seongnam, South Korea</p>
-
-  - align: right
-    image: hong_sungsoo.png
-    content: about_sungsoo.md
-    image_circular: false
-    more_info: >
-      <p>Sungsoo Hong</p>
-      <p>AI Researcher &middot; AITRICS</p>
-      <p>Seoul, South Korea</p>
-
-  - align: left
-    image: yoon_donghwee.jpg
-    content: about_donghwee.md
-    image_circular: false
-    more_info: >
-      <p>Donghwee Yoon</p>
-      <p>AI Researcher &middot; AITRICS</p>
-      <p>Seoul, South Korea</p>
-
-  - align: right
     image: baik_seungmin.jpg
     content: about_seungmin.md
     image_circular: false
@@ -107,13 +80,40 @@ profiles:
       <p>Division of Critical Care Medicine, Dept. of Surgery</p>
       <p>Seoul, South Korea</p>
 
-  - align: left
+  - align: right
     image: dayoon_placeholder.jpg
     content: about_dayoon.md
     image_circular: false
     more_info: >
       <p>Dayoon Lee</p>
       <p>Co-founder &middot; Quality Management Officer &middot; BreathYou</p>
+
+  - align: left
+    image: hong_sungsoo.png
+    content: about_sungsoo.md
+    image_circular: false
+    more_info: >
+      <p>Sungsoo Hong</p>
+      <p>AI Researcher &middot; AITRICS</p>
+      <p>Seoul, South Korea</p>
+
+  - align: right
+    image: yoon_donghwee.jpg
+    content: about_donghwee.md
+    image_circular: false
+    more_info: >
+      <p>Donghwee Yoon</p>
+      <p>AI Researcher &middot; AITRICS</p>
+      <p>Seoul, South Korea</p>
+
+  - align: left
+    image: nam_youngwoo.jpg
+    content: about_nam.md
+    image_circular: false
+    more_info: >
+      <p>Young Woo Nam</p>
+      <p>Deep Learning Researcher &middot; IBricks</p>
+      <p>Seongnam, South Korea</p>
 
   - align: right
     image: kim_jinho.jpg
