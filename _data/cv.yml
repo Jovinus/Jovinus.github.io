@@ -138,11 +138,6 @@ cv:
         summary: "EMG-based real-time hand gesture prediction model development"
 
     Certificates:
-      - name: TensorFlow Developer Certification
-        date: 2021-01
-        issuer: Google
-        icon: fa-brands fa-google
-
       - name: "Medical Information Analysis Expert Advanced Course"
         date: 2021-08
         issuer: "Korea Human Resource Development Institute for Health & Welfare, Asan Medical Center"
