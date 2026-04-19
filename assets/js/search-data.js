@@ -32,7 +32,7 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
+          description: "Curriculum Vitae of Kyung Hyun Lee — AI Researcher, PhD Candidate in Digital Health, Co-founder &amp; CEO of BreathYou.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
@@ -390,54 +390,64 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-our-multicenter-study-on-deep-learning-models-for-acute-kidney-injury-prediction-including-development-and-external-validation-has-been-published-in-npj-digital-medicine",
+            },},{id: "news-our-multicenter-study-on-deep-learning-models-for-acute-kidney-injury-prediction-including-development-and-external-validation-has-been-submitted-to-npj-digital-medicine-and-is-currently-under-review",
           title: 'Our multicenter study on deep learning models for acute kidney injury prediction, including...',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "News",},{id: "projects-asthma-diagnosis-ai-model-development",
+          title: 'Asthma Diagnosis AI Model Development',
+          description: "AI model for asthma diagnosis using methacholine challenge test data from Samsung Medical Center, achieving comparable performance with a single test.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+              window.location.href = "/projects/asthma_ai/";
+            },},{id: "projects-balllab-unmanned-indoor-tennis-court-system",
+          title: 'BallLab — Unmanned Indoor Tennis Court System',
+          description: "Full-stack development of IoT door lock, reservation/payment system, and management dashboard for an unmanned indoor tennis court.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+              window.location.href = "/projects/balllab/";
+            },},{id: "projects-cardiorespiratory-fitness-prediction-in-korean-population",
+          title: 'Cardiorespiratory Fitness Prediction in Korean Population',
+          description: "Development of a CRF prediction model for healthy Korean adults using health screening and exercise stress test data from Samsung Medical Center.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
+              window.location.href = "/projects/crf_prediction/";
+            },},{id: "projects-deep-learning-based-ecg-modeling-for-ans-monitoring",
+          title: 'Deep Learning-based ECG Modeling for ANS Monitoring',
+          description: "[NRF] Autonomic nervous system pathological change monitoring via deep learning-based ECG modeling for stress detection and depression prediction.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
+              window.location.href = "/projects/ecg_ans_monitoring/";
+            },},{id: "projects-emg-based-real-time-hand-gesture-prediction",
+          title: 'EMG-based Real-time Hand Gesture Prediction',
+          description: "Development of a data-driven model for real-time complex hand gesture recognition using EMG signals collected from subjects.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
+              window.location.href = "/projects/emg_hand_gesture/";
+            },},{id: "projects-healthcare-ai-strategy-research",
+          title: 'Healthcare AI Strategy Research',
+          description: "[MOHW] Research on domestic and international trends in healthcare AI for strategic planning and roadmap development.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
+              window.location.href = "/projects/healthcare_ai_strategy/";
+            },},{id: "projects-healthy-vascular-aging-amp-fitness-with-subclinical-atherosclerosis",
+          title: 'Healthy Vascular Aging &amp;amp; Fitness with Subclinical Atherosclerosis',
+          description: "Analysis of the impact of HVA and cardiorespiratory fitness on subclinical atherosclerosis using Samsung Medical Center health screening data.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
+              window.location.href = "/projects/hva_atherosclerosis/";
+            },},{id: "projects-intelligent-sw-for-medical-data-analysis",
+          title: 'Intelligent SW for Medical Data Analysis',
+          description: "[NIPA] AI-based intelligent medical solution for breast cancer risk prediction and recurrence risk prediction by survival period.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
+              window.location.href = "/projects/medical_data_sw/";
+            },},{id: "projects-precision-medicine-hospital-information-system-p-his",
+          title: 'Precision Medicine Hospital Information System (P-HIS)',
+          description: "[MSIT] Development of SNOMED CT code mapping assistance algorithms for hospital-to-international standard code mapping.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
+              window.location.href = "/projects/phis/";
+            },},{id: "projects-multi-center-surgical-mortality-amp-icu-admission-prediction",
+          title: 'Multi-center Surgical Mortality &amp;amp; ICU Admission Prediction',
+          description: "Development of 30-day mortality and ICU admission prediction models using perioperative data from four major hospitals in South Korea.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/surgical_mortality/";
+            },},{id: "projects-talli-healthcare-career-platform",
+          title: 'TALLI — Healthcare Career Platform',
+          description: "Backend development for a career growth platform for healthcare professionals, built with FastAPI and PostgreSQL.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/talli/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
