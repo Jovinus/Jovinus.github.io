@@ -30,3 +30,12 @@ nav_order: 2
 {% bibliography %}
 
 </div>
+
+<h2 id="under-review" style="margin-top: 3rem;">Under Review</h2>
+<p class="text-muted" style="font-size: 0.9rem;">Manuscripts currently undergoing peer review. Author lists and role markers are being finalized.</p>
+
+<div class="publications">
+
+{% bibliography --file papers_inreview %}
+
+</div>
