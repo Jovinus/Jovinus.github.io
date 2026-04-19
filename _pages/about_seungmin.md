@@ -1,4 +1,4 @@
-Clinical Professor in the Division of Critical Care Medicine, Department of Surgery, at Ewha Womans University Mokdong Hospital.
+Clinical Assistant Professor in the Division of Critical Care Medicine, Department of Surgery, at Ewha Womans University Mokdong Hospital.
 
 Introduced through the AITRICS deterioration-prediction work and now an independent collaborator with Kyung Hyun — co-investigators on a submitted grant proposal for a multimodal ICU early-warning AI, bringing the surgical-ICU perspective to the work.
 
