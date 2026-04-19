@@ -31,12 +31,14 @@ profiles:
     image_circular: true
     more_info: >
       <p>Dayoon Lee (이다윤)</p>
-      <p>Quality Management Officer &middot; BreathYou</p>
+      <p>Co-founder &middot; Quality Management Officer &middot; BreathYou</p>
 
   - align: left
     image: 2.jpg
     content: about_wonjun.md
     image_circular: true
     more_info: >
-      <p>Wonjun Jang</p>
+      <p>Wonjun Jang (장원준)</p>
+      <p>Student &middot; Seoul Robotics High School</p>
+      <p>App Developer (side) &middot; BreathYou</p>
 ---
