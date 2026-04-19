@@ -20,7 +20,7 @@ profiles:
     align: left
     image: nam_youngwoo.jpg
     content: about_nam.md
-    image_circular: true
+    image_circular: false
     more_info: >
       <p>Young Woo Nam</p>
       <p>Deep Learning Researcher &middot; IBricks</p>
@@ -29,7 +29,7 @@ profiles:
   - align: right
     image: dayoon_placeholder.jpg
     content: about_dayoon.md
-    image_circular: true
+    image_circular: false
     more_info: >
       <p>Dayoon Lee</p>
       <p>Co-founder &middot; Quality Management Officer &middot; BreathYou</p>
@@ -37,7 +37,7 @@ profiles:
   - align: left
     image: yoon_donghwee.jpg
     content: about_donghwee.md
-    image_circular: true
+    image_circular: false
     more_info: >
       <p>Donghwee Yoon</p>
       <p>AI Researcher &middot; AITRICS</p>
@@ -46,7 +46,7 @@ profiles:
   - align: right
     image: kim_jinho.jpg
     content: about_jinho.md
-    image_circular: true
+    image_circular: false
     more_info: >
       <p>Jinho Kim</p>
       <p>TRIZN</p>
@@ -56,7 +56,7 @@ profiles:
     align: left
     image: wonjoon_jang.jpg
     content: about_wonjoon.md
-    image_circular: true
+    image_circular: false
     more_info: >
       <p>Wonjoon Jang</p>
       <p>Student &middot; Seoul Robotics High School</p>
