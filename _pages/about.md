@@ -31,12 +31,14 @@ latest_posts:
   limit: 3
 ---
 
-I am a PhD candidate in Digital Health at [SAIHST, Sungkyunkwan University](https://saihst.skku.edu/), advised by Professor Byung-Jae Lee, and an AI researcher at [AITRICS](https://www.aitrics.com). My research interests lie in **clinical time-series deep learning**, **medical device regulation**, and **respiratory digital health**.
+I'm a PhD candidate in Digital Health at [SAIHST, Sungkyunkwan University](https://saihst.skku.edu/), advised by Professor Byung-Jae Lee, and an AI researcher at [AITRICS](https://www.aitrics.com).
 
-At AITRICS, I contributed to a cardiac arrest early-warning system that received regulatory approval from Korea's MFDS as an AI medical device, and I am currently leading product development of an AKI prediction model I built, aiming for MFDS approval. These experiences have shaped how I think about translating machine learning models into clinically deployable solutions.
+My work sits between machine learning research and clinical deployment. I like thinking about how a model becomes a medical device — how it's trained, how it's validated, and how it earns regulatory trust.
 
-My doctoral research focuses on longitudinal pulmonary function test data from Samsung Medical Center, where I am working on **Transformer-based trajectory models of respiratory health**, Korean-specific reference equations, and a multimodal respiratory foundation model.
+At AITRICS, I contributed to a cardiac arrest early-warning system that was approved by Korea's MFDS as an AI medical device. I'm now leading the product development of an AKI prediction model I built, with the same goal of MFDS approval.
 
-In 2025, I co-founded [**BreathYou**](https://breathyou.care), a respiratory digital health startup that aims to bring some of these research directions closer to clinical practice, including **DeepBreath CDSS**, a clinical decision support system for predicting pulmonary function decline trajectories, and **MediPipe**, an OCR/NLP pipeline for medical record processing.
+For my doctoral research, I work with longitudinal pulmonary function data from Samsung Medical Center, building time-series models to better capture how respiratory health changes over time.
 
-I am always happy to connect with researchers and practitioners interested in clinical time-series modeling, SaMD regulatory pathways, respiratory AI, or the deployment of machine learning in healthcare settings. Please feel free to reach out.
+In 2025, I co-founded [**BreathYou**](https://breathyou.care), an allergy and respiratory AI startup that turns parts of this research into products clinicians can use.
+
+I'm always happy to talk with people working on clinical AI, medical device development, or respiratory health — feel free to reach out.
