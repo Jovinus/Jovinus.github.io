@@ -54,11 +54,11 @@ profiles:
 
   - section: Mentees
     align: left
-    image: wonjun_placeholder.jpg
-    content: about_wonjun.md
+    image: wonjoon_jang.jpg
+    content: about_wonjoon.md
     image_circular: true
     more_info: >
-      <p>Wonjun Jang</p>
+      <p>Wonjoon Jang</p>
       <p>Student &middot; Seoul Robotics High School</p>
       <p>App Developer (side) &middot; BreathYou</p>
 ---
