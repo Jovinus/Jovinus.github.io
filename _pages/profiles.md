@@ -26,7 +26,7 @@ profiles:
       <p>Seongnam, South Korea</p>
 
   - align: right
-    image: 1.jpg
+    image: dayoon_placeholder.jpg
     content: about_dayoon.md
     image_circular: true
     more_info: >
@@ -34,7 +34,7 @@ profiles:
       <p>Co-founder &middot; Quality Management Officer &middot; BreathYou</p>
 
   - align: left
-    image: 2.jpg
+    image: wonjun_placeholder.jpg
     content: about_wonjun.md
     image_circular: true
     more_info: >
