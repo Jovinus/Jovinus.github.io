@@ -49,11 +49,12 @@ profiles:
       <p>Seoul, South Korea</p>
 
   - align: right
-    image: kibyung_placeholder.jpg
+    image: lee_kibyung.png
     content: about_kibyung.md
     image_circular: false
     more_info: >
       <p>Ki-Byung Lee</p>
+      <p>Division of Pulmonology, Allergy and Critical Care Medicine</p>
       <p>Hallym University Chuncheon Sacred Heart Hospital</p>
       <p>Chuncheon, South Korea</p>
 
