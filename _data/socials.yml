@@ -6,7 +6,7 @@
 # Core contact & identity
 # -----------------------------------------------------------------------------
 
-cv_pdf: /assets/pdf/CV_KyungHyunLee.pdf # upload your CV PDF to assets/pdf/ with this filename
+# cv_pdf: /assets/pdf/CV_KyungHyunLee.pdf
 email: lkh256@breathyou.care
 
 # -----------------------------------------------------------------------------
@@ -27,4 +27,4 @@ linkedin_username: kyunghyun-lee-7963a3184
 # Feed
 # -----------------------------------------------------------------------------
 
-rss_icon: true # comment this line to hide the RSS icon
+# rss_icon: true
