@@ -1,4 +1,4 @@
-PhD student in Digital Health at [SAIHST, Sungkyunkwan University](https://saihst.skku.edu/), advised by Professor Byung-Jae Lee, and AI researcher at [AITRICS](https://www.aitrics.com).
+PhD student in Digital Health at [SAIHST, Sungkyunkwan University](https://www.saihst.kr/), advised by Professor Byung-Jae Lee, and AI researcher at [AITRICS](https://www.aitrics.com).
 
 Interested in how machine learning becomes a clinically deployable medical device — from model design through regulatory approval.
 
