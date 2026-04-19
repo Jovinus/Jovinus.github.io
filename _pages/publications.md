@@ -19,13 +19,7 @@ nav_order: 2
     <a href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}" target="_blank" rel="noopener" aria-label="Google Scholar profile">
       <img src="https://img.shields.io/badge/citations-{{ stats.total_citations }}-4285F4?logo=googlescholar&labelColor=beige" alt="Total citations: {{ stats.total_citations }}">
     </a>
-    <a href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}" target="_blank" rel="noopener" aria-label="Google Scholar profile">
-      <img src="https://img.shields.io/badge/h--index-{{ stats.h_index }}-4285F4?logo=googlescholar&labelColor=beige" alt="h-index: {{ stats.h_index }}">
-    </a>
-    <a href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}" target="_blank" rel="noopener" aria-label="Google Scholar profile">
-      <img src="https://img.shields.io/badge/i10--index-{{ stats.i10_index }}-4285F4?logo=googlescholar&labelColor=beige" alt="i10-index: {{ stats.i10_index }}">
-    </a>
-    {% if stats.last_updated %}<span class="text-muted">Updated {{ stats.last_updated }}</span>{% endif %}
+    <span class="text-muted">h-index {{ stats.h_index }} &middot; i10-index {{ stats.i10_index }}{% if stats.last_updated %} &middot; Updated {{ stats.last_updated }}{% endif %}</span>
   </div>
 {% endif %}
 

@@ -153,11 +153,6 @@ cv:
         issuer: Google Developers
         icon: fa-brands fa-google
 
-      - name: Deep Learning Specialization
-        date: 2020-12
-        issuer: Coursera
-        icon: fa-solid fa-brain
-
       - name: "Medical AI Expert Training Course"
         date: 2020-12
         issuer: Korea Human Resource Development Institute for Health & Welfare
