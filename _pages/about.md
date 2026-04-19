@@ -39,6 +39,6 @@ At AITRICS, I contributed to a cardiac arrest early-warning system that was appr
 
 For my doctoral research, I work with longitudinal pulmonary function data from Samsung Medical Center, building time-series models to better capture how respiratory health changes over time.
 
-In 2025, I co-founded [**BreathYou**](https://breathyou.care), an allergy and respiratory AI startup that turns parts of this research into products clinicians can use.
+In 2025, I co-founded [**BreathYou**](https://breathyou.care), a digital health startup focused on allergy and respiratory AI that turns parts of this research into products clinicians can use.
 
 I'm always happy to talk with people working on clinical AI, medical device development, or respiratory health — feel free to reach out.
