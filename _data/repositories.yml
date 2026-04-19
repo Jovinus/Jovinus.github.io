@@ -5,8 +5,8 @@ repo_description_lines_max: 2
 
 github_repos:
   - Jovinus/RoboticHand-EMG
-  - Jovinus/aki-timeseries-continuous-monitoring
-  - Jovinus/Asthma_AI
-  - Jovinus/genome_transformer
-  - Jovinus/EMG_Classification
-  - Jovinus/food_ai
+  - Bioelectronics-Laboratory/EMG_hand_finger_gestures_classification
+  - Jovinus/Asthma_study
+  - Jovinus/Tree_Algorithm
+  - Jovinus/HRV
+  - Jovinus/Autonomic_Aging
