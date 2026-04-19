@@ -50,6 +50,7 @@ profiles:
     more_info: >
       <p>Jinho Kim</p>
       <p>TRIZN</p>
+      <p>Backend Engineer (side) &middot; BreathYou</p>
       <p>Suwon, South Korea</p>
 
   - section: Mentees
