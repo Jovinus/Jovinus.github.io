@@ -33,7 +33,7 @@ latest_posts:
 
 I am a PhD candidate in Digital Health at [SAIHST, Sungkyunkwan University](https://saihst.skku.edu/), advised by Professor Byung-Jae Lee, and an AI researcher at [AITRICS](https://www.aitrics.com). My research interests lie in **clinical time-series deep learning**, **medical device regulation**, and **respiratory digital health**.
 
-During my time at AITRICS, I have had the opportunity to contribute to the development of two AI-based medical devices that received regulatory approval from Korea's MFDS: a cardiac arrest early-warning system for general wards and a sepsis prediction system for tertiary hospitals. One of these systems also received U.S. FDA clearance. These experiences have shaped my understanding of the challenges involved in translating machine learning models into clinically deployable solutions.
+At AITRICS, I contributed to a cardiac arrest early-warning system that received regulatory approval from Korea's MFDS as an AI medical device, and I am currently leading product development of an AKI prediction model I built, aiming for MFDS approval. These experiences have shaped how I think about translating machine learning models into clinically deployable solutions.
 
 My doctoral research focuses on longitudinal pulmonary function test data from Samsung Medical Center, where I am working on **Transformer-based trajectory models of respiratory health**, Korean-specific reference equations, and a multimodal respiratory foundation model.
 

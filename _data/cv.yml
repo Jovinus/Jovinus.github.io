@@ -67,14 +67,16 @@ cv:
         end_date: present
         summary: >
           Medical data (RWD) cleaning, analysis pipeline construction, predictive model development, and external validation.
-          Contributed to the development of two MFDS-approved AI medical devices (cardiac arrest early-warning, sepsis prediction),
-          one of which also received U.S. FDA clearance.
+          Contributed to the cardiac arrest early-warning model that obtained MFDS (Korean FDA) approval as an AI medical device,
+          and currently leading product development of a self-developed AKI prediction model toward MFDS approval.
         highlights:
           - "Research design for clinical data analysis projects"
           - "Data extraction and cleaning from multi-center hospitals"
           - "Automated data analysis pipelines using Airflow"
           - "Deep learning-based clinical time-series prediction models"
           - "Clinical simulation-based model evaluation and survival analysis"
+          - "Cardiac arrest prediction model — supported MFDS approval as an AI medical device"
+          - "AKI prediction model — developed the model and currently leading productization toward MFDS approval"
 
       - company: Exosystems
         position: Biosignal AI Research Engineer
