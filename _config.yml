@@ -279,7 +279,7 @@ display_categories: ["external-services"] # these categories will be displayed o
 
 scholar:
   last_name: [Lee, LEE]
-  first_name: [Kyung Hyun, Kyung-Hyun, Kyunghyun, K.H., K. H., K.]
+  first_name: [Kyung Hyun, KyungHyun, Kyung-Hyun, Kyunghyun, K.H., K. H., K.]
 
   style: apa
   locale: en

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our multicenter study on deep learning models for acute kidney injury prediction, including development and external validation, has been published in *npj Digital Medicine*.
+Our multicenter study on deep learning models for acute kidney injury prediction, including development and external validation, has been submitted to *npj Digital Medicine* and is currently under review.
