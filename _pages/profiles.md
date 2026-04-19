@@ -41,4 +41,22 @@ profiles:
       <p>Wonjun Jang (장원준)</p>
       <p>Student &middot; Seoul Robotics High School</p>
       <p>App Developer (side) &middot; BreathYou</p>
+
+  - align: right
+    image: kim_jinho.jpg
+    content: about_jinho.md
+    image_circular: true
+    more_info: >
+      <p>Jinho Kim (김진호)</p>
+      <p>TRIZN</p>
+      <p>Suwon, South Korea</p>
+
+  - align: left
+    image: yoon_donghwee.jpg
+    content: about_donghwee.md
+    image_circular: true
+    more_info: >
+      <p>Donghwee Yoon (윤동휘)</p>
+      <p>AI Researcher &middot; AITRICS</p>
+      <p>Seoul, South Korea</p>
 ---
