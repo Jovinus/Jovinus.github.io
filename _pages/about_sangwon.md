@@ -1,4 +1,4 @@
-Associate Professor in the Department of Electronic Engineering at Incheon National University, leading the [Bioelectronics Laboratory](https://sites.google.com/view/bioelectronics-lab/home).
+Professor in the Department of Electronic Engineering at Incheon National University, leading the [Bioelectronics Laboratory](https://sites.google.com/view/bioelectronics-lab/home).
 
 Kyung Hyun's undergraduate advisor — supervised his first SCI paper on EMG-based hand and finger gesture classification (*Sensors*, 2021), and introduced him to biosignal analysis that still anchors his research today.
 

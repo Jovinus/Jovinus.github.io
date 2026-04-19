@@ -23,7 +23,7 @@ profiles:
     image_circular: false
     more_info: >
       <p>Byung-Jae Lee</p>
-      <p>Associate Professor &middot; SAIHST, Sungkyunkwan University</p>
+      <p>Professor &middot; SAIHST, Sungkyunkwan University</p>
       <p>Dept. of Allergy and Clinical Immunology &middot; Samsung Medical Center</p>
       <p>Seoul, South Korea</p>
 
@@ -33,7 +33,7 @@ profiles:
     image_circular: false
     more_info: >
       <p>Sangwon Byun</p>
-      <p>Associate Professor &middot; Incheon National University</p>
+      <p>Professor &middot; Incheon National University</p>
       <p>Dept. of Electronic Engineering &middot; Bioelectronics Lab</p>
       <p>Incheon, South Korea</p>
 
