@@ -433,9 +433,9 @@ ninja.data = [{
           description: "[NIPA] AI-based intelligent medical solution for breast cancer risk prediction and recurrence risk prediction by survival period.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/medical_data_sw/";
-            },},{id: "projects-precision-medicine-hospital-information-system-p-his",
-          title: 'Precision Medicine Hospital Information System (P-HIS)',
-          description: "[MSIT] Development of SNOMED CT code mapping assistance algorithms for hospital-to-international standard code mapping.",
+            },},{id: "projects-public-health-information-system-phis",
+          title: 'Public Health Information System (PHIS)',
+          description: "[MSIT] Building a standards-based Public Health Information System through SNOMED CT code mapping and Common Data Model (CDM) construction.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/phis/";
             },},{id: "projects-multi-center-surgical-mortality-amp-icu-admission-prediction",
