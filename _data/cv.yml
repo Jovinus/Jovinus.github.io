@@ -18,7 +18,7 @@ cv:
     Education:
       - institution: Sungkyunkwan University (SAIHST)
         location: Seoul, South Korea
-        url: https://saihst.skku.edu/
+        url: https://www.saihst.kr/
         area: Digital Health
         studyType: PhD Student
         start_date: 2026
@@ -29,7 +29,7 @@ cv:
 
       - institution: Sungkyunkwan University (SAIHST)
         location: Seoul, South Korea
-        url: https://saihst.skku.edu/
+        url: https://www.saihst.kr/
         area: "Digital Health (Medical Big Data, Clinical Statistics)"
         studyType: MS
         start_date: 2019

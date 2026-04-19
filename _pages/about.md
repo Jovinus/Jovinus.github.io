@@ -5,7 +5,7 @@ permalink: /
 subtitle: >
   AI Researcher at <a href='https://www.aitrics.com'>AITRICS</a>
   &middot; PhD Student in Digital Health at
-  <a href='https://saihst.skku.edu/'>SAIHST</a>, Sungkyunkwan University
+  <a href='https://www.saihst.kr/'>SAIHST</a>, Sungkyunkwan University
   &middot; Co-founder &amp; CEO of <a href='https://breathyou.care'>BreathYou</a>
 
 profile:
@@ -31,7 +31,7 @@ latest_posts:
   limit: 3
 ---
 
-I'm a PhD student in Digital Health at [SAIHST, Sungkyunkwan University](https://saihst.skku.edu/), advised by Professor Byung-Jae Lee, and an AI researcher at [AITRICS](https://www.aitrics.com).
+I'm a PhD student in Digital Health at [SAIHST, Sungkyunkwan University](https://www.saihst.kr/), advised by Professor Byung-Jae Lee, and an AI researcher at [AITRICS](https://www.aitrics.com).
 
 My work sits between machine learning research and clinical deployment. I like thinking about how a model becomes a medical device — how it's trained, how it's validated, and how it earns regulatory trust.
 
