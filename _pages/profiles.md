@@ -16,8 +16,48 @@ profiles:
       <p>PhD Student &middot; AI Researcher &middot; Co-founder & CEO</p>
       <p>Suwon, Gyeonggi-do, Republic of Korea</p>
 
+  - section: Advisors
+    align: left
+    image: byungjae_placeholder.jpg
+    content: about_byungjae.md
+    image_circular: false
+    more_info: >
+      <p>Byung-Jae Lee</p>
+      <p>Associate Professor &middot; SAIHST, Sungkyunkwan University</p>
+      <p>Dept. of Allergy and Clinical Immunology &middot; Samsung Medical Center</p>
+      <p>Seoul, South Korea</p>
+
+  - align: right
+    image: sangwon_placeholder.jpg
+    content: about_sangwon.md
+    image_circular: false
+    more_info: >
+      <p>Sangwon Byun</p>
+      <p>Associate Professor &middot; Incheon National University</p>
+      <p>Dept. of Electronic Engineering &middot; Bioelectronics Lab</p>
+      <p>Incheon, South Korea</p>
+
   - section: Collaborators
     align: left
+    image: jinyoung_placeholder.jpg
+    content: about_jinyoung.md
+    image_circular: false
+    more_info: >
+      <p>Jin-Young Lee</p>
+      <p>Clinical Professor &middot; Samsung Medical Center</p>
+      <p>Health Promotion Center</p>
+      <p>Seoul, South Korea</p>
+
+  - align: right
+    image: kibyung_placeholder.jpg
+    content: about_kibyung.md
+    image_circular: false
+    more_info: >
+      <p>Ki-Byung Lee</p>
+      <p>Hallym University Chuncheon Sacred Heart Hospital</p>
+      <p>Chuncheon, South Korea</p>
+
+  - align: left
     image: nam_youngwoo.jpg
     content: about_nam.md
     image_circular: false
@@ -27,12 +67,13 @@ profiles:
       <p>Seongnam, South Korea</p>
 
   - align: right
-    image: dayoon_placeholder.jpg
-    content: about_dayoon.md
+    image: sungsoo_placeholder.jpg
+    content: about_sungsoo.md
     image_circular: false
     more_info: >
-      <p>Dayoon Lee</p>
-      <p>Co-founder &middot; Quality Management Officer &middot; BreathYou</p>
+      <p>Sungsoo Hong</p>
+      <p>AI Researcher &middot; AITRICS</p>
+      <p>Seoul, South Korea</p>
 
   - align: left
     image: yoon_donghwee.jpg
@@ -42,6 +83,24 @@ profiles:
       <p>Donghwee Yoon</p>
       <p>AI Researcher &middot; AITRICS</p>
       <p>Seoul, South Korea</p>
+
+  - align: right
+    image: seungmin_placeholder.jpg
+    content: about_seungmin.md
+    image_circular: false
+    more_info: >
+      <p>Seungmin Baik</p>
+      <p>Division of Critical Care Medicine, Dept. of Surgery</p>
+      <p>Ewha Womans University Mokdong Hospital</p>
+      <p>Seoul, South Korea</p>
+
+  - align: left
+    image: dayoon_placeholder.jpg
+    content: about_dayoon.md
+    image_circular: false
+    more_info: >
+      <p>Dayoon Lee</p>
+      <p>Co-founder &middot; Quality Management Officer &middot; BreathYou</p>
 
   - align: right
     image: kim_jinho.jpg
