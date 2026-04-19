@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2026-02-23 00:00:00+0900
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+Our multicenter study on deep learning models for acute kidney injury prediction, including development and external validation, has been published in *npj Digital Medicine*.
