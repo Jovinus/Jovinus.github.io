@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "A growing collection of your cool projects.",
+          description: "Selected research and engineering projects.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -32,7 +32,7 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "Curriculum Vitae of Kyung Hyun Lee — AI Researcher, PhD Candidate in Digital Health, Co-founder &amp; CEO of BreathYou.",
+          description: "Curriculum Vitae of Kyung Hyun Lee — AI Researcher, PhD Student in Digital Health, Co-founder &amp; CEO of BreathYou.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
@@ -385,12 +385,7 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{id: "books-the-godfather",
-          title: 'The Godfather',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
-            },},{id: "news-our-multicenter-study-on-deep-learning-models-for-acute-kidney-injury-prediction-including-development-and-external-validation-has-been-submitted-to-npj-digital-medicine-and-is-currently-under-review",
+      },{id: "news-our-multicenter-study-on-deep-learning-models-for-acute-kidney-injury-prediction-including-development-and-external-validation-has-been-submitted-to-npj-digital-medicine-and-is-currently-under-review",
           title: 'Our multicenter study on deep learning models for acute kidney injury prediction, including...',
           description: "",
           section: "News",},{id: "projects-asthma-diagnosis-ai-model-development",
@@ -448,22 +443,12 @@ ninja.data = [{
           description: "Backend development for a career growth platform for healthcare professionals, built with FastAPI and PostgreSQL.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/talli/";
-            },},{id: "teachings-data-science-fundamentals",
-          title: 'Data Science Fundamentals',
-          description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
-          section: "Teachings",handler: () => {
-              window.location.href = "/teachings/data-science-fundamentals/";
-            },},{id: "teachings-introduction-to-machine-learning",
-          title: 'Introduction to Machine Learning',
-          description: "This course provides an introduction to machine learning concepts, algorithms, and applications. Students will learn about supervised and unsupervised learning, model evaluation, and practical implementations.",
-          section: "Teachings",handler: () => {
-              window.location.href = "/teachings/introduction-to-machine-learning/";
             },},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%6C%6B%68%32%35%36@%62%72%65%61%74%68%79%6F%75.%63%61%72%65", "_blank");
+          window.open("mailto:%6C%6B%68%32%35%36@%67%6D%61%69%6C.%63%6F%6D", "_blank");
         },
       },{
         id: 'social-orcid',
