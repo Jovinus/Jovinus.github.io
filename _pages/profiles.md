@@ -30,7 +30,8 @@ profiles:
     content: about_dayoon.md
     image_circular: true
     more_info: >
-      <p>Dayoon Lee</p>
+      <p>Dayoon Lee (이다윤)</p>
+      <p>Quality Management Officer &middot; BreathYou</p>
 
   - align: left
     image: 2.jpg
