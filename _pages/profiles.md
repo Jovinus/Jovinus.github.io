@@ -28,6 +28,16 @@ profiles:
       <p>Seoul, South Korea</p>
 
   - align: right
+    image: kang_mira.jpg
+    content: about_mira.md
+    image_circular: false
+    more_info: >
+      <p>Mira Kang</p>
+      <p>Clinical Associate Professor &middot; Sungkyunkwan University School of Medicine</p>
+      <p>Endocrinology &middot; Health Promotion Center &middot; Samsung Medical Center</p>
+      <p>Seoul, South Korea</p>
+
+  - align: left
     image: byun_sangwon.jpg
     content: about_sangwon.md
     image_circular: false
@@ -44,8 +54,8 @@ profiles:
     image_circular: false
     more_info: >
       <p>Jin-Young Lee</p>
-      <p>Clinical Professor &middot; Samsung Medical Center</p>
-      <p>Health Promotion Center</p>
+      <p>Clinical Associate Professor &middot; Sungkyunkwan University School of Medicine</p>
+      <p>Allergy & Clinical Immunology &middot; Health Promotion Center &middot; Samsung Medical Center</p>
       <p>Seoul, South Korea</p>
 
   - align: right
@@ -54,7 +64,7 @@ profiles:
     image_circular: false
     more_info: >
       <p>Ki-Byung Lee</p>
-      <p>Clinical Professor &middot; Hallym University Chuncheon Sacred Heart Hospital</p>
+      <p>Clinical Assistant Professor &middot; Hallym University Chuncheon Sacred Heart Hospital</p>
       <p>Division of Pulmonology, Allergy and Critical Care Medicine</p>
       <p>Chuncheon, South Korea</p>
 
@@ -91,7 +101,7 @@ profiles:
     image_circular: false
     more_info: >
       <p>Seungmin Baik</p>
-      <p>Clinical Professor &middot; Ewha Womans University Mokdong Hospital</p>
+      <p>Clinical Assistant Professor &middot; Ewha Womans University Mokdong Hospital</p>
       <p>Division of Critical Care Medicine, Dept. of Surgery</p>
       <p>Seoul, South Korea</p>
 

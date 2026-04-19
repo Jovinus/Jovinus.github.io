@@ -1,5 +1,5 @@
-Clinical Professor at the Health Promotion Center, Samsung Medical Center, with a clinical focus on respiratory disease, allergy, and smoking cessation.
+Clinical Associate Professor at Sungkyunkwan University School of Medicine, specializing in allergy and clinical immunology, with her clinical practice at Samsung Medical Center's Health Promotion Center.
 
-A continuing academic mentor since Kyung Hyun's master's training at SAIHST, and a trusted clinical sounding board on respiratory and allergy questions throughout his graduate studies.
+An academic mentor to Kyung Hyun since his master's training at SAIHST, and a continuing source of guidance on respiratory and allergy research over the years.
 
 Co-author with Kyung Hyun on the AI-based asthma diagnosis study using methacholine challenge tests (*Allergy, Asthma & Immunology Research*, 2024).
