@@ -25,9 +25,19 @@ nav_order: 2
 
 <p class="text-muted" style="font-size: 0.9rem;"><sup>†</sup> First (or co-first) author &nbsp;·&nbsp; <sup>*</sup> Corresponding author</p>
 
+<h2 id="journal-articles">Journal Articles</h2>
+
 <div class="publications">
 
-{% bibliography %}
+{% bibliography --query "@article" %}
+
+</div>
+
+<h2 id="conference-proceedings" style="margin-top: 3rem;">Conference Proceedings</h2>
+
+<div class="publications">
+
+{% bibliography --query "@inproceedings" %}
 
 </div>
 

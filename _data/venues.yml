@@ -1,9 +1,46 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+# Venue badges rendered in the left column of each publication entry.
+# Match the bibtex `abbr={...}` value to a key here. Used by _layouts/bib.liquid
+# (gated on site.enable_publication_thumbnails, currently true in _config.yml).
 
-"PhysRev":
-  url: https://journals.aps.org/
+# --- Machine learning / AI conferences ---
+"NeurIPS":
+  url: https://neurips.cc/
+  color: "#3a4f7a"
 
-"Vision":
-  color: "#009f36"
+"ICML":
+  url: https://icml.cc/
+  color: "#c8102e"
+
+"ICLR":
+  url: https://iclr.cc/
+  color: "#5e35b1"
+
+"AAAI":
+  url: https://aaai.org/conference/aaai/
+  color: "#1a5490"
+
+"CVPR":
+  url: https://cvpr.thecvf.com/
+  color: "#1565c0"
+
+# --- Medical / health informatics conferences ---
+"MIE":
+  url: https://efmi.org/
+  color: "#2e7d32"
+
+"STC":
+  url: https://efmi.org/
+  color: "#388e3c"
+
+"MEDINFO":
+  url: https://imia-medinfo.org/
+  color: "#1b5e20"
+
+"AMIA":
+  url: https://amia.org/
+  color: "#43a047"
+
+# --- Korean domestic computing conferences ---
+"KCC":
+  url: https://www.kiise.or.kr/
+  color: "#6c757d"
