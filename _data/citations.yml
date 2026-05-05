@@ -1,8 +1,8 @@
 metadata:
   h_index: 8
   i10_index: 6
-  last_updated: '2026-05-01'
-  total_citations: 399
+  last_updated: '2026-05-06'
+  total_citations: 401
 papers:
   T0DHr9QAAAAJ:2osOgNQ5qMEC:
     citations: 163
@@ -24,6 +24,10 @@ papers:
     citations: 69
     title: 'Nonalcoholic fatty liver disease and accelerated loss of skeletal muscle mass: A longitudinal cohort study'
     year: '2022'
+  T0DHr9QAAAAJ:M3ejUd6NZC8C:
+    citations: 0
+    title: 'Enhancing Clinical Decision-Making in Rapid Response Systems: Integrating AI-Based Predictions and Early Pattern Clustering'
+    year: '2025'
   T0DHr9QAAAAJ:MXK_kJrjxJIC:
     citations: 5
     title: "Validation of an artificial intelligence-based algorithm for predictive performance and risk stratification of sepsis using real-world data from hospitalised patients: a \u2026"
@@ -81,7 +85,7 @@ papers:
     title: Novel artificial intelligence-based technology to diagnose asthma using methacholine challenge tests
     year: '2023'
   T0DHr9QAAAAJ:hqOjcs7Dif8C:
-    citations: 32
+    citations: 34
     title: A novel deep learning algorithm for real-time prediction of clinical deterioration in the emergency department for a multimodal clinical decision support system
     year: '2024'
   T0DHr9QAAAAJ:qjMakFHDy7sC:
