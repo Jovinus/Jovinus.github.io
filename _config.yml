@@ -15,6 +15,7 @@ footer_text: >
 keywords: medical-ai, clinical-deep-learning, digital-health, respiratory-ai, samd, academic-website
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+timezone: Asia/Seoul # render dates in KST so `+0900` news entries don't shift back a day under UTC
 
 url: https://kh.breathyou.care
 baseurl: ""
