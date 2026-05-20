@@ -1,8 +1,8 @@
 metadata:
   h_index: 8
   i10_index: 6
-  last_updated: '2026-05-15'
-  total_citations: 403
+  last_updated: '2026-05-20'
+  total_citations: 406
 papers:
   T0DHr9QAAAAJ:2osOgNQ5qMEC:
     citations: 163
@@ -61,7 +61,7 @@ papers:
     title: Association between cardiorespiratory fitness and trend of age-related rise in arterial stiffness in individuals with and without hypertension or diabetes
     year: '2025'
   T0DHr9QAAAAJ:Y0pCki6q_DkC:
-    citations: 14
+    citations: 15
     title: "Gender-specific relationship between thigh muscle and fat mass and brain amyloid-\u03B2 positivity"
     year: '2022'
   T0DHr9QAAAAJ:YOwf2qJgpHMC:
@@ -85,11 +85,11 @@ papers:
     title: Novel artificial intelligence-based technology to diagnose asthma using methacholine challenge tests
     year: '2023'
   T0DHr9QAAAAJ:hqOjcs7Dif8C:
-    citations: 36
+    citations: 37
     title: A novel deep learning algorithm for real-time prediction of clinical deterioration in the emergency department for a multimodal clinical decision support system
     year: '2024'
   T0DHr9QAAAAJ:qjMakFHDy7sC:
-    citations: 4
+    citations: 5
     title: "Stakeholders\u2019 Requirements for Artificial Intelligence for Healthcare in Korea"
     year: '2022'
   T0DHr9QAAAAJ:qxL8FJ1GzNcC:
