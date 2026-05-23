@@ -2,4 +2,4 @@ Clinical Associate Professor at Samsung Medical Center, specializing in allergy 
 
 An academic mentor to Kyung Hyun since his master's training at SAIHST, and a continuing source of guidance on respiratory and allergy research over the years.
 
-Co-author with Kyung Hyun on the AI-based asthma diagnosis study using methacholine challenge tests (*Allergy, Asthma & Immunology Research*, 2024).
+Co-author with Kyung Hyun on the AI-based asthma diagnosis study using methacholine challenge tests (_Allergy, Asthma & Immunology Research_, 2024).

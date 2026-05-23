@@ -14,6 +14,7 @@ category: research
 Developed an AI-based intelligent medical solution for predicting breast cancer occurrence risk and recurrence risk by survival period, using health screening center data.
 
 **Key Responsibilities:**
+
 - Designed case & control, inclusion & exclusion criteria
 - Extracted data from health screening center DB and CDW
 - Cleaned numerical data, performed EDA, and converted free-text medical records into structured data

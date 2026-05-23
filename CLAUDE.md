@@ -12,23 +12,23 @@ AGENTS.md (imported below) covers the theme's generic build/test/format workflow
 
 ## Most-edited files
 
-| Area | File(s) |
-| --- | --- |
-| Hero / landing copy | `_pages/about.md` |
-| CV data (rendercv format) | `_data/cv.yml` |
-| Publications | `_bibliography/papers.bib` |
-| Projects | `_projects/*.md` |
-| People (Collaborators / Mentees) | `_pages/profiles.md` + `_pages/about_*.md` |
-| News line | `_news/*.md` |
-| Teaching | `_pages/teaching.md` (plain markdown; the `teachings` collection has been removed) |
-| Contact / socials | `_data/socials.yml` |
-| Scholar stats cache | `_data/citations.yml` (auto-updated — see below) |
+| Area                             | File(s)                                                                            |
+| -------------------------------- | ---------------------------------------------------------------------------------- |
+| Hero / landing copy              | `_pages/about.md`                                                                  |
+| CV data (rendercv format)        | `_data/cv.yml`                                                                     |
+| Publications                     | `_bibliography/papers.bib`                                                         |
+| Projects                         | `_projects/*.md`                                                                   |
+| People (Collaborators / Mentees) | `_pages/profiles.md` + `_pages/about_*.md`                                         |
+| News line                        | `_news/*.md`                                                                       |
+| Teaching                         | `_pages/teaching.md` (plain markdown; the `teachings` collection has been removed) |
+| Contact / socials                | `_data/socials.yml`                                                                |
+| Scholar stats cache              | `_data/citations.yml` (auto-updated — see below)                                   |
 
 ## Site-specific conventions
 
 ### Publications (`_bibliography/papers.bib`)
 
-- **First/corresponding-author markers are embedded in the surname** on *any* author, not just Lee: e.g., `Kang†, Danbee` (co-first), `Shin*, Soo-Yong` (corresponding), `Jae†*, Sae Young` (first + corresponding — combine markers consecutively). The theme's `_layouts/bib.liquid` (lines 62–64) strips `†*‡§¶‖&^` from surnames before self-matching and wraps them in `<sup>` tags for rendering — do not "clean up" the author field or self-name bolding will break. The `publications.md` page has a bottom legend explaining the symbols.
+- **First/corresponding-author markers are embedded in the surname** on _any_ author, not just Lee: e.g., `Kang†, Danbee` (co-first), `Shin*, Soo-Yong` (corresponding), `Jae†*, Sae Young` (first + corresponding — combine markers consecutively). The theme's `_layouts/bib.liquid` (lines 62–64) strips `†*‡§¶‖&^` from surnames before self-matching and wraps them in `<sup>` tags for rendering — do not "clean up" the author field or self-name bolding will break. The `publications.md` page has a bottom legend explaining the symbols.
 - **`annotation` field text** is standardized and describes the markers used in that entry. Allowed values:
   - `† First author` — a single first author
   - `† Co-first author` — multiple first authors sharing credit

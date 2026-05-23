@@ -14,6 +14,7 @@ category: work
 Developed a remote IoT door lock system and a web-based membership/reservation system for unmanned tennis court operation.
 
 **Key Responsibilities:**
+
 - Built unmanned access control system using Raspberry Pi and Arduino with wireless door lock control via API
 - Developed membership registration and court reservation web pages with PayApp REST API payment integration
 - Built admin management pages with anomaly detection to prevent unauthorized private use by instructors

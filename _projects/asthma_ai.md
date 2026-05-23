@@ -14,6 +14,7 @@ category: research
 Developed an AI model for asthma diagnosis using clinical data from Samsung Medical Center. While conventional diagnosis requires three separate tests, the model achieved statistically comparable performance using only one test by leveraging previously unused variables discovered through data mining.
 
 **Key Responsibilities:**
+
 - Designed inclusion & exclusion criteria in collaboration with clinicians
 - Extracted data from CDW and built analysis database
 - Data cleaning, EDA, and predictive variable generation from multiple data sources (lab data, questionnaire data, sputum test data, bronchial challenge test results)

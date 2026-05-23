@@ -14,6 +14,7 @@ category: research
 Developed a cardiorespiratory fitness (CRF) prediction model for the Korean population using data from health screening recipients who underwent regular checkups and exercise stress tests at Samsung Medical Center.
 
 **Key Responsibilities:**
+
 - Designed inclusion & exclusion criteria based on literature review
 - Built analysis database by querying and merging data from health screening center DB and CDW
 - Data cleaning, EDA, and derived variable generation (lab data, questionnaire data, exercise stress test data)

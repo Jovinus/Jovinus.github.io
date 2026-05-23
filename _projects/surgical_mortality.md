@@ -14,6 +14,7 @@ category: research
 Developed 30-day mortality prediction and ICU admission prediction models using data from non-cardiac surgery patients collected across four hospitals.
 
 **Key Responsibilities:**
+
 - Designed AI research inclusion & exclusion criteria and study design in collaboration with clinicians
 - Data cleaning (deduplication, special character removal via regex, QC), EDA (correlation analysis, risk factor analysis via logistic regression)
 - Data imbalance handling (under-sampling, ROSE, SMOTE, sample weighting)

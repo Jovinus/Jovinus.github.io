@@ -14,6 +14,7 @@ category: research
 Investigated domestic and international trends in academia and industry for healthcare AI development, conducted surveys, and proposed a healthcare AI roadmap.
 
 **Key Responsibilities:**
+
 - Researched and analyzed domestic and international healthcare AI trends
 - Designed and analyzed surveys for healthcare AI roadmap development
 - Proposed healthcare AI roadmap

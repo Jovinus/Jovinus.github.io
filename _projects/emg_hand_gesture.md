@@ -14,6 +14,7 @@ category: research
 Collected electromyogram (EMG) signals from subjects via sensors and developed a data-driven model capable of recognizing complex hand gestures in real time.
 
 **Key Responsibilities:**
+
 - Designed a prospective study and obtained IRB approval based on literature review
 - Recruited subjects and conducted experiments following the study protocol
 - Designed bandpass and band-stop filters using LabVIEW for real-time signal noise removal

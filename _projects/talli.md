@@ -14,6 +14,7 @@ category: work
 Developed a platform to support career growth for healthcare professionals.
 
 **Key Responsibilities:**
+
 - Built backend server prototype using FastAPI and PostgreSQL
 - Designed data schema and optimized database queries for service operation
 
