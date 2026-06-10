@@ -1,11 +1,11 @@
 metadata:
   h_index: 8
   i10_index: 7
-  last_updated: '2026-06-01'
-  total_citations: 414
+  last_updated: '2026-06-10'
+  total_citations: 419
 papers:
   T0DHr9QAAAAJ:2osOgNQ5qMEC:
-    citations: 165
+    citations: 167
     title: Electromyogram-based classification of hand and finger gestures using artificial neural networks
     year: '2021'
   T0DHr9QAAAAJ:4TOpqqG69KYC:
@@ -21,7 +21,7 @@ papers:
     title: Prospective external validation of a deep-learning-based early-warning system for major adverse events in general wards in South Korea
     year: '2025'
   T0DHr9QAAAAJ:IjCSPb-OGe4C:
-    citations: 70
+    citations: 69
     title: 'Nonalcoholic fatty liver disease and accelerated loss of skeletal muscle mass: A longitudinal cohort study'
     year: '2022'
   T0DHr9QAAAAJ:M3ejUd6NZC8C:
@@ -37,7 +37,7 @@ papers:
     title: 'Beyond the ROC Curve: Activity Monitoring to Evaluate Deep Learning Models in Clinical Settings'
     year: '2024'
   T0DHr9QAAAAJ:Tyk-4Ss8FVUC:
-    citations: 54
+    citations: 56
     title: Multi-center validation of machine learning model for preoperative prediction of postoperative mortality
     year: '2022'
   T0DHr9QAAAAJ:ULOm3_A8WrAC:
@@ -85,7 +85,7 @@ papers:
     title: Novel artificial intelligence-based technology to diagnose asthma using methacholine challenge tests
     year: '2023'
   T0DHr9QAAAAJ:hqOjcs7Dif8C:
-    citations: 40
+    citations: 42
     title: A novel deep learning algorithm for real-time prediction of clinical deterioration in the emergency department for a multimodal clinical decision support system
     year: '2024'
   T0DHr9QAAAAJ:qjMakFHDy7sC:
