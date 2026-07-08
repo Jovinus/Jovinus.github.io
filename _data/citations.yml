@@ -1,11 +1,11 @@
 metadata:
   h_index: 8
   i10_index: 7
-  last_updated: '2026-07-01'
-  total_citations: 435
+  last_updated: '2026-07-08'
+  total_citations: 441
 papers:
   T0DHr9QAAAAJ:2osOgNQ5qMEC:
-    citations: 172
+    citations: 173
     title: Electromyogram-based classification of hand and finger gestures using artificial neural networks
     year: '2021'
   T0DHr9QAAAAJ:4TOpqqG69KYC:
@@ -29,7 +29,7 @@ papers:
     title: 'Enhancing Clinical Decision-Making in Rapid Response Systems: Integrating AI-Based Predictions and Early Pattern Clustering'
     year: '2025'
   T0DHr9QAAAAJ:MXK_kJrjxJIC:
-    citations: 5
+    citations: 6
     title: "Validation of an artificial intelligence-based algorithm for predictive performance and risk stratification of sepsis using real-world data from hospitalised patients: a \u2026"
     year: '2025'
   T0DHr9QAAAAJ:Se3iqnhoufwC:
@@ -37,7 +37,7 @@ papers:
     title: 'Beyond the ROC Curve: Activity Monitoring to Evaluate Deep Learning Models in Clinical Settings'
     year: '2024'
   T0DHr9QAAAAJ:Tyk-4Ss8FVUC:
-    citations: 57
+    citations: 59
     title: Multi-center validation of machine learning model for preoperative prediction of postoperative mortality
     year: '2022'
   T0DHr9QAAAAJ:ULOm3_A8WrAC:
@@ -89,7 +89,7 @@ papers:
     title: Novel artificial intelligence-based technology to diagnose asthma using methacholine challenge tests
     year: '2023'
   T0DHr9QAAAAJ:hqOjcs7Dif8C:
-    citations: 48
+    citations: 50
     title: A novel deep learning algorithm for real-time prediction of clinical deterioration in the emergency department for a multimodal clinical decision support system
     year: '2024'
   T0DHr9QAAAAJ:qjMakFHDy7sC:
