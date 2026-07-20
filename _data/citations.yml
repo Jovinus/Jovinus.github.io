@@ -1,8 +1,8 @@
 metadata:
   h_index: 8
   i10_index: 7
-  last_updated: '2026-07-20'
-  total_citations: 444
+  last_updated: '2026-07-21'
+  total_citations: 446
 papers:
   T0DHr9QAAAAJ:2osOgNQ5qMEC:
     citations: 173
@@ -13,8 +13,8 @@ papers:
     title: Evaluating the predictive potential of an AI-driven deep learning model for pneumonia-associated sepsis
     year: '2026'
   T0DHr9QAAAAJ:5nxA0vEk-isC:
-    citations: 0
-    title: Development of Labeling Algorithm for Early Prediction of Acute Kidney Injury
+    citations: 1
+    title: Development of labeling algorithm for early prediction of acute kidney injury
     year: '2025'
   T0DHr9QAAAAJ:8k81kl-MbHgC:
     citations: 4
@@ -32,10 +32,6 @@ papers:
     citations: 7
     title: "Validation of an artificial intelligence-based algorithm for predictive performance and risk stratification of sepsis using real-world data from hospitalised patients: a \u2026"
     year: '2025'
-  T0DHr9QAAAAJ:Se3iqnhoufwC:
-    citations: 0
-    title: 'Beyond the ROC Curve: Activity Monitoring to Evaluate Deep Learning Models in Clinical Settings'
-    year: '2024'
   T0DHr9QAAAAJ:Tyk-4Ss8FVUC:
     citations: 59
     title: Multi-center validation of machine learning model for preoperative prediction of postoperative mortality
@@ -73,7 +69,7 @@ papers:
     title: 'Self-Supervised Contrastive Loss for Multimodal Emotion Recognition: Self-Supervision is All You Need'
     year: '2023'
   T0DHr9QAAAAJ:Zph67rFs4hoC:
-    citations: 0
+    citations: 1
     title: Deep learning-based stress detection from RR intervals in major depressive disorder, panic disorder, and healthy individuals
     year: '2025'
   T0DHr9QAAAAJ:aqlVkmm33-oC:
