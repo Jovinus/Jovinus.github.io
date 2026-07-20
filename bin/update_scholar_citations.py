@@ -4,7 +4,7 @@ import os
 import sys
 import yaml
 from datetime import datetime
-from scholarly import scholarly
+from scholarly import ProxyGenerator, scholarly
 
 
 def load_scholar_user_id() -> str:
@@ -36,6 +36,24 @@ SCHOLAR_USER_ID: str = load_scholar_user_id()
 OUTPUT_FILE: str = "_data/citations.yml"
 
 
+def configure_proxy() -> bool:
+    """Use ScraperAPI when its key is available in the environment."""
+    api_key = os.environ.get("SCRAPER_API_KEY")
+    if not api_key:
+        print(
+            "Warning: SCRAPER_API_KEY is not configured; querying Google Scholar directly."
+        )
+        return False
+
+    proxy = ProxyGenerator()
+    if not proxy.ScraperAPI(api_key):
+        raise RuntimeError("Could not configure the ScraperAPI proxy.")
+
+    scholarly.use_proxy(proxy)
+    print("Using ScraperAPI for Google Scholar requests.")
+    return True
+
+
 def get_scholar_citations() -> None:
     """Fetch and update Google Scholar citation data."""
     print(f"Fetching citations for Google Scholar ID: {SCHOLAR_USER_ID}")
@@ -63,6 +81,7 @@ def get_scholar_citations() -> None:
 
     citation_data = {"metadata": {"last_updated": today}, "papers": {}}
 
+    configure_proxy()
     scholarly.set_timeout(15)
     scholarly.set_retries(3)
     try:
@@ -80,25 +99,36 @@ def get_scholar_citations() -> None:
         )
         sys.exit(1)
 
-    citation_data["metadata"]["total_citations"] = author_data.get("citedby", 0)
-    citation_data["metadata"]["h_index"] = author_data.get("hindex", 0)
-    citation_data["metadata"]["i10_index"] = author_data.get("i10index", 0)
+    required_metrics = ("citedby", "hindex", "i10index")
+    missing_metrics = [key for key in required_metrics if key not in author_data]
+    if missing_metrics:
+        raise RuntimeError(
+            "Google Scholar returned incomplete author metrics: "
+            + ", ".join(missing_metrics)
+        )
+
+    citation_data["metadata"]["total_citations"] = author_data["citedby"]
+    citation_data["metadata"]["h_index"] = author_data["hindex"]
+    citation_data["metadata"]["i10_index"] = author_data["i10index"]
     print(
         f"Author stats — citations: {citation_data['metadata']['total_citations']}, "
         f"h-index: {citation_data['metadata']['h_index']}, "
         f"i10-index: {citation_data['metadata']['i10_index']}"
     )
 
-    if "publications" not in author_data:
-        print(f"No publications found in author data for user ID '{SCHOLAR_USER_ID}'.")
-        sys.exit(1)
+    publications = author_data.get("publications")
+    if not publications:
+        raise RuntimeError(
+            f"No publications found in author data for user ID '{SCHOLAR_USER_ID}'; preserving the previous cache."
+        )
 
-    for pub in author_data["publications"]:
+    publication_errors = []
+    for pub in publications:
         try:
             pub_id = pub.get("pub_id") or pub.get("author_pub_id")
             if not pub_id:
-                print(
-                    f"Warning: No ID found for publication: {pub.get('bib', {}).get('title', 'Unknown')}. This publication will be skipped."
+                publication_errors.append(
+                    f"No ID found for publication: {pub.get('bib', {}).get('title', 'Unknown')}"
                 )
                 continue
 
@@ -114,9 +144,15 @@ def get_scholar_citations() -> None:
                 "citations": citations,
             }
         except Exception as e:
-            print(
-                f"Error processing publication '{pub.get('bib', {}).get('title', 'Unknown')}': {e}. This publication will be skipped."
+            publication_errors.append(
+                f"Could not process publication '{pub.get('bib', {}).get('title', 'Unknown')}': {e}"
             )
+
+    if publication_errors:
+        raise RuntimeError(
+            "Google Scholar returned incomplete publication data; preserving the previous cache:\n- "
+            + "\n- ".join(publication_errors)
+        )
 
     # Always write the file so last_updated reflects the date of the latest successful fetch,
     # even when citation counts are unchanged.

@@ -14,10 +14,12 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
+        with:
+          token: ${{ secrets.PAT }}
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.13"
 
@@ -37,8 +39,24 @@ jobs:
           fi
 
       - name: Fetch new publications
+        env:
+          SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
         run: |
-          timeout 900 python bin/update_scholar_publications.py
+          status=1
+          for attempt in 1 2; do
+            echo "Attempt $attempt of 2..."
+            if timeout 600 python bin/update_scholar_publications.py; then
+              status=0
+              break
+            else
+              status=$?
+            fi
+            if [ "$attempt" -lt 2 ]; then
+              echo "Retrying in 30 seconds..."
+              sleep 30
+            fi
+          done
+          exit "$status"
 
       - name: Save new papers.bib hash
         id: after

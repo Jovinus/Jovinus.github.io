@@ -8,7 +8,7 @@ import sys
 import unicodedata
 
 import yaml
-from scholarly import scholarly
+from scholarly import ProxyGenerator, scholarly
 
 
 def load_scholar_user_id() -> str:
@@ -24,6 +24,30 @@ def load_scholar_user_id() -> str:
         print("No 'scholar_userid' found in _data/socials.yml.")
         sys.exit(1)
     return scholar_user_id
+
+
+def configure_proxy() -> bool:
+    """Use ScraperAPI when its key is available in the environment."""
+    api_key = os.environ.get("SCRAPER_API_KEY")
+    if not api_key:
+        print(
+            "Warning: SCRAPER_API_KEY is not configured; querying Google Scholar directly."
+        )
+        return False
+
+    proxy = ProxyGenerator()
+    if not proxy.ScraperAPI(api_key):
+        raise RuntimeError("Could not configure the ScraperAPI proxy.")
+
+    scholarly.use_proxy(proxy)
+    print("Using ScraperAPI for Google Scholar requests.")
+    return True
+
+
+def normalize_title(title: str) -> str:
+    """Normalize a title for punctuation- and whitespace-insensitive matching."""
+    normalized = unicodedata.normalize("NFKC", title).casefold()
+    return " ".join(re.sub(r"[^\w]+", " ", normalized).split())
 
 
 def make_cite_key(bib: dict) -> str:
@@ -133,15 +157,41 @@ def load_existing_keys(bib_path: str) -> set[str]:
 
 
 def load_existing_titles(bib_path: str) -> set[str]:
-    """Extract existing titles (lowercased) from a .bib file for dedup."""
+    """Extract normalized existing titles from a .bib file for dedup."""
     titles = set()
     if not os.path.exists(bib_path):
         return titles
     with open(bib_path, "r") as f:
         content = f.read()
     for match in re.finditer(r"title\s*=\s*\{(.+?)\}", content):
-        titles.add(match.group(1).strip().lower())
+        titles.add(normalize_title(match.group(1)))
     return titles
+
+
+def fill_publication_details(publications: list[dict]) -> list[dict]:
+    """Fetch full metadata atomically so partial records are never committed."""
+    filled_pubs = []
+    failures = []
+
+    for pub in publications:
+        title = pub.get("bib", {}).get("title", "Unknown")
+        try:
+            filled = scholarly.fill(pub)
+            # scholarly may omit this link on a filled result; preserve it so
+            # the generated BibTeX entry still receives its citation badge.
+            if pub.get("author_pub_id") and not filled.get("author_pub_id"):
+                filled["author_pub_id"] = pub["author_pub_id"]
+            filled_pubs.append(filled)
+        except Exception as e:
+            failures.append(f"{title}: {e}")
+
+    if failures:
+        raise RuntimeError(
+            "Could not fetch complete metadata for new publications; papers.bib was not changed:\n- "
+            + "\n- ".join(failures)
+        )
+
+    return filled_pubs
 
 
 def main() -> None:
@@ -150,6 +200,7 @@ def main() -> None:
 
     print(f"Fetching publications for Google Scholar ID: {scholar_id}")
 
+    configure_proxy()
     scholarly.set_timeout(15)
     scholarly.set_retries(3)
 
@@ -174,26 +225,19 @@ def main() -> None:
     # request per publication, which is what pushed CI past its timeout.
     new_pubs = []
     for pub in publications:
-        title = pub.get("bib", {}).get("title", "").strip().lower()
+        title = normalize_title(pub.get("bib", {}).get("title", ""))
         if title and title in existing_titles:
             continue
         new_pubs.append(pub)
 
     print(f"{len(new_pubs)} publications not yet in {bib_path}.")
 
-    filled_pubs = []
-    for pub in new_pubs:
-        try:
-            filled_pubs.append(scholarly.fill(pub))
-        except Exception as e:
-            title = pub.get("bib", {}).get("title", "Unknown")
-            print(f"Warning: Could not fetch details for '{title}': {e}")
-            filled_pubs.append(pub)
+    filled_pubs = fill_publication_details(new_pubs)
 
     new_entries = []
     for pub in filled_pubs:
         bib = pub.get("bib", {})
-        title = bib.get("title", "").strip().lower()
+        title = normalize_title(bib.get("title", ""))
 
         # Re-check in case fill() normalized the title differently
         if title and title in existing_titles:
