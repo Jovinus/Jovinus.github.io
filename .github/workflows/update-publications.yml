@@ -38,7 +38,7 @@ jobs:
 
       - name: Fetch new publications
         run: |
-          timeout 300 python bin/update_scholar_publications.py
+          timeout 900 python bin/update_scholar_publications.py
 
       - name: Save new papers.bib hash
         id: after

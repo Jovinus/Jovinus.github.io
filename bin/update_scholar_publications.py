@@ -110,6 +110,12 @@ def pub_to_bibtex(pub: dict) -> tuple[str, str]:
     if bib.get("publisher"):
         fields.append(f"  publisher={{{escape_bibtex(bib['publisher'])}}}")
 
+    # Link the entry to its Scholar citation record (citations badge on the
+    # publications page reads _data/citations.yml keyed by this id).
+    author_pub_id = pub.get("author_pub_id", "")
+    if ":" in author_pub_id:
+        fields.append(f"  google_scholar_id={{{author_pub_id.split(':')[-1]}}}")
+
     fields_str = ",\n".join(fields)
     return cite_key, f"@{entry_type}{{{cite_key},\n{fields_str}\n}}"
 
@@ -161,26 +167,35 @@ def main() -> None:
 
     print(f"Found {len(publications)} publications on Google Scholar.")
 
-    # Fill each publication to get full details
-    filled_pubs = []
+    existing_keys = load_existing_keys(bib_path)
+    existing_titles = load_existing_titles(bib_path)
+
+    # Only fill publications that are actually new — fill() makes one Scholar
+    # request per publication, which is what pushed CI past its timeout.
+    new_pubs = []
     for pub in publications:
+        title = pub.get("bib", {}).get("title", "").strip().lower()
+        if title and title in existing_titles:
+            continue
+        new_pubs.append(pub)
+
+    print(f"{len(new_pubs)} publications not yet in {bib_path}.")
+
+    filled_pubs = []
+    for pub in new_pubs:
         try:
-            filled = scholarly.fill(pub)
-            filled_pubs.append(filled)
+            filled_pubs.append(scholarly.fill(pub))
         except Exception as e:
             title = pub.get("bib", {}).get("title", "Unknown")
             print(f"Warning: Could not fetch details for '{title}': {e}")
             filled_pubs.append(pub)
-
-    existing_keys = load_existing_keys(bib_path)
-    existing_titles = load_existing_titles(bib_path)
 
     new_entries = []
     for pub in filled_pubs:
         bib = pub.get("bib", {})
         title = bib.get("title", "").strip().lower()
 
-        # Skip if title already exists (fuzzy dedup)
+        # Re-check in case fill() normalized the title differently
         if title and title in existing_titles:
             continue
 
