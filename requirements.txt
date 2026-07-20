@@ -1,4 +1,4 @@
 nbconvert
 pyyaml
 rendercv[full]
-scholarly
+scholarly==1.7.11
