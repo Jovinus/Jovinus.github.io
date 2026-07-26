@@ -52,14 +52,12 @@ To enhance GitHub Copilot's effectiveness when working with specific file types,
 - **`.github/instructions/liquid-templates.instructions.md`** – Guidance for modifying Liquid template files (`.liquid`)
 - **`.github/instructions/yaml-configuration.instructions.md`** – Guidance for configuration and data files (`_config.yml`, `_data/**/*.yml`)
 - **`.github/instructions/bibtex-bibliography.instructions.md`** – Guidance for bibliography files (`.bib`, `_bibliography/**`)
-- **`.github/instructions/markdown-content.instructions.md`** – Guidance for content files across collections (`_books/`, `_news/`, `_pages/`, `_posts/`, `_projects/`, `_teachings/`)
+- **`.github/instructions/markdown-content.instructions.md`** – Guidance for content files across collections (`_news/`, `_pages/`, `_posts/`, `_projects/`)
 - **`.github/instructions/javascript-scripts.instructions.md`** – Guidance for JavaScript files in `_scripts/`
 
 These files help Copilot agents understand project conventions, build requirements, and development workflows without requiring codebase exploration.
 
 ### Copilot Environment Setup
-
-A GitHub Actions workflow (`.github/workflows/copilot-setup-steps.yml`) automatically configures the Copilot environment with required dependencies (Ruby 3.3.5, Python 3.13, Node.js, ImageMagick, nbconvert) before agent execution.
 
 ### Important: Verify Agent Output
 

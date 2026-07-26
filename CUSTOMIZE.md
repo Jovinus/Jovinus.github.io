@@ -22,10 +22,8 @@ Here we will give you some tips on how to customize the website. One important t
     - [Build and Deployment](#build-and-deployment)
     - [Key Integration Points](#key-integration-points)
   - [Modifying the CV information](#modifying-the-cv-information)
-    - [RenderCV Format (Recommended)](#rendercv-format-recommended)
-    - [JSONResume Format](#jsonresume-format)
-    - [Using Both Formats Simultaneously](#using-both-formats-simultaneously)
-    - [Automatic PDF Generation (RenderCV only)](#automatic-pdf-generation-rendercv-only)
+    - [Editing RenderCV data](#editing-rendercv-data)
+    - [Automatic PDF Generation](#automatic-pdf-generation)
   - [Modifying the user and repository information](#modifying-the-user-and-repository-information)
     - [Configuring external service URLs](#configuring-external-service-urls)
   - [Creating new pages](#creating-new-pages)
@@ -35,11 +33,6 @@ Here we will give you some tips on how to customize the website. One important t
   - [Adding Collections](#adding-collections)
     - [Creating a new collection](#creating-a-new-collection)
     - [Using frontmatter fields in your collection](#using-frontmatter-fields-in-your-collection)
-    - [Creating a teachings collection](#creating-a-teachings-collection)
-      - [Course file format](#course-file-format)
-      - [Important course collection notes](#important-course-collection-notes)
-      - [Required fields](#required-fields)
-      - [Optional fields](#optional-fields)
     - [Collections with categories and tags](#collections-with-categories-and-tags)
     - [Creating custom metadata groups and archive pages](#creating-custom-metadata-groups-and-archive-pages)
       - [Understanding Jekyll's special handling of fields](#understanding-jekylls-special-handling-of-fields)
@@ -75,13 +68,9 @@ Here we will give you some tips on how to customize the website. One important t
     - [Removing the projects page](#removing-the-projects-page)
     - [Removing the publications page](#removing-the-publications-page)
     - [Removing the repositories page](#removing-the-repositories-page)
-    - [You can also remove pages through commenting out front-matter blocks](#you-can-also-remove-pages-through-commenting-out-front-matter-blocks)
-  - [Adding Token for Lighthouse Badger](#adding-token-for-lighthouse-badger)
-    - [Personal Access Token (fine-grained) Permissions for Lighthouse Badger:](#personal-access-token-fine-grained-permissions-for-lighthouse-badger)
+    - [Hiding pages from navigation](#hiding-pages-from-navigation)
   - [Customizing fonts, spacing, and more](#customizing-fonts-spacing-and-more)
   - [Scheduled Posts](#scheduled-posts)
-    - [Name Format](#name-format)
-    - [Important Notes](#important-notes)
   - [GDPR Cookie Consent Dialog](#gdpr-cookie-consent-dialog)
     - [How it works](#how-it-works-1)
     - [When to use](#when-to-use)
@@ -103,15 +92,12 @@ The project is structured as follows, focusing on the main components that you w
 
 ```txt
 .
-├── 📂 assets/: contains the assets that are displayed in the website
-│   └── 📂 json/
-    │   └── 📄 resume.json: CV in JSON format (https://jsonresume.org/)
+├── 📂 assets/: contains images, generated CV files, CSS, and JavaScript
 ├── 📂 _bibliography/
 │   └── 📄 papers.bib: bibliography in BibTeX format
-├── 📂 _books/: contains the bookshelf pages
 ├── 📄 _config.yml: the configuration file of the template
 ├── 📂 _data/: contains some of the data used in the template
-│   ├── 📄 cv.yml: CV in YAML format, used when assets/json/resume.json is not found
+│   ├── 📄 cv.yml: CV in RenderCV YAML format
 │   ├── 📄 repositories.yml: users and repositories info in YAML format
 │   └── 📄 socials.yml: your social media and contact info in YAML format
 ├── 📂 _includes/: contains code parts that are included in the main HTML file
@@ -133,7 +119,6 @@ The project is structured as follows, focusing on the main components that you w
     ├── 📄 _navbar.scss: navigation bar and dropdown menu styles
     ├── 📄 _publications.scss: publication list and bibliography styles
     ├── 📄 _tabs.scss: tabbed content styles
-    ├── 📄 _teachings.scss: course and teaching styles
     ├── 📄 _themes.scss: theme colors and icons
     ├── 📄 _typograms.scss: typogram diagram styles
     ├── 📄 _typography.scss: text, headings, links, tables, and blockquote styles
@@ -301,7 +286,6 @@ Understanding al-folio's technology stack will help you better customize and ext
   - **Link checking**: Validates that all links in your site are not broken
   - **Code formatting**: Ensures code follows the Prettier code style
   - **Accessibility testing**: Checks for accessibility issues using Axe
-  - **Lighthouse**: Measures site performance and best practices
   - **Citation updates**: Automatically fetches citation counts from Google Scholar
 
 - **GitHub Pages**: Free hosting for your static website built by Jekyll
@@ -321,44 +305,19 @@ Understanding how these technologies work together will help you customize al-fo
 
 ## Modifying the CV information
 
-Your CV can be created using one of two formats. Choose the format that works best for you, or use both simultaneously by switching between them:
+The CV page uses RenderCV data from [`_data/cv.yml`](_data/cv.yml). The upstream JSONResume path was removed from this fork.
 
-### RenderCV Format (Recommended)
+### Editing RenderCV data
 
 [`_data/cv.yml`](_data/cv.yml) uses the [RenderCV](https://rendercv.com/) YAML format, which is human-readable and designed specifically for generating professional resumes. This format also enables optional automatic PDF generation via GitHub Actions.
-
-**If you choose this format:**
 
 1. Edit your CV data in [`_data/cv.yml`](_data/cv.yml)
 2. Optionally customize how the PDF is styled by editing:
    - [`assets/rendercv/design.yaml`](assets/rendercv/design.yaml) — Design and styling
    - [`assets/rendercv/locale.yaml`](assets/rendercv/locale.yaml) — Localization and formatting
    - [`assets/rendercv/settings.yaml`](assets/rendercv/settings.yaml) — RenderCV settings
-3. To display only this format, delete [`assets/json/resume.json`](assets/json/resume.json) (optional)
 
-### JSONResume Format
-
-[`assets/json/resume.json`](assets/json/resume.json) uses the [JSONResume](https://jsonresume.org/) standard format, which is compatible with other tools and services.
-
-**If you choose this format:**
-
-1. Edit your CV data in [`assets/json/resume.json`](assets/json/resume.json)
-2. To display only this format, delete [`_data/cv.yml`](_data/cv.yml) (optional)
-
-### Using Both Formats Simultaneously
-
-You can keep both [`_data/cv.yml`](_data/cv.yml) and [`assets/json/resume.json`](assets/json/resume.json) in your repository and switch between them on your website by setting the `cv_format` frontmatter variable in [`_pages/cv.md`](_pages/cv.md):
-
-```yaml
----
-layout: cv
-cv_format: rendercv # options: rendercv or jsonresume
----
-```
-
-Change `rendercv` to `jsonresume` to display the JSONResume format instead.
-
-### Automatic PDF Generation (RenderCV only)
+### Automatic PDF Generation
 
 If you use the RenderCV format, a GitHub Actions workflow can automatically generate a PDF version of your CV whenever you push changes to [`_data/cv.yml`](_data/cv.yml). The PDF is saved to `assets/rendercv/rendercv_output/`.
 
@@ -370,7 +329,6 @@ Set the `cv_pdf` variable in the frontmatter of [`_pages/cv.md`](_pages/cv.md) t
 ---
 layout: cv
 cv_pdf: /assets/rendercv/rendercv_output/CV.pdf
-cv_format: rendercv
 ---
 ```
 
@@ -526,74 +484,15 @@ Then in your landing page template:
 {% endif %}
 ```
 
-### Creating a teachings collection
-
-The al-folio theme includes a pre-configured `_teachings/` collection for course pages. Each course is represented by a markdown file with frontmatter metadata. Here's how to add or modify courses:
-
-#### Course file format
-
-Create markdown files in `_teachings/` with the following structure:
-
-```yaml
----
-layout: course
-title: Course Title
-description: Course description
-instructor: Your Name
-year: 2023
-term: Fall
-location: Room 101
-time: MWF 10:00-11:00
-course_id: course-id # This should be unique
-schedule:
-  - week: 1
-    date: Jan 10
-    topic: Introduction
-    description: Overview of course content and objectives
-    materials:
-      - name: Slides
-        url: /assets/pdf/example_pdf.pdf
-      - name: Reading
-        url: https://example.com/reading
-  - week: 2
-    date: Jan 17
-    topic: Topic 2
-    description: Description of this week's content
----
-Additional course content, information, or resources can be added here as markdown.
-```
-
-#### Important course collection notes
-
-1. Each course file must have a unique `course_id` in the frontmatter
-2. Course files will be grouped by `year` on the teaching page
-3. Within each year, courses are sorted by `term`
-4. The content below the frontmatter (written in markdown) will appear on the individual course page
-5. The schedule section will be automatically formatted into a table
-
-#### Required fields
-
-- `layout: course` — Must be set to use the course layout
-- `title` — The course title
-- `year` — The year the course was/will be taught (used for sorting)
-- `course_id` — A unique identifier for the course
-
-#### Optional fields
-
-- `description` — A brief description of the course
-- `instructor` — The course instructor's name
-- `term` — The academic term (e.g., Fall, Spring, Summer)
-- `location` — The course location
-- `time` — The course meeting time
-- `schedule` — A list of course sessions with details
-
 ### Collections with categories and tags
 
-If you want to add category and tag support (like the blog posts have), you need to configure the `jekyll-archives` section in [\_config.yml](_config.yml). See how this is done with the `books` collection for reference. For more details, check the [jekyll-archives-v2 documentation](https://george-gca.github.io/jekyll-archives-v2/).
+If you want to add category and tag support (like the blog posts have), configure the `jekyll-archives` section in [\_config.yml](_config.yml). For details, see the [jekyll-archives-v2 documentation](https://george-gca.github.io/jekyll-archives-v2/).
 
 ### Creating custom metadata groups and archive pages
 
 Beyond the built-in `categories` and `tags` fields, you can create custom metadata fields for your collections to organize content in new ways. For example, if you have a book review collection, you might want to organize books by their **adaptations** (movies, TV shows, video games, etc.).
+
+> The book collection and `book-review` layout used below are not included in this fork. They are placeholder names for a custom collection and layout that you would need to create explicitly.
 
 #### Understanding Jekyll's special handling of fields
 
@@ -1103,7 +1002,6 @@ exclude:
   - _pages/blog.md
   - _posts/
   - _projects/?_project.md
-  - assets/jupyter/blog.ipynb
 ```
 
 Here is a list of the main components that you may want to delete, and how to do it. Don't forget if you delete a page to update the `nav_order` of the remaining pages.
@@ -1177,20 +1075,19 @@ To remove the repositories, you can:
 - delete the repositories page [\_pages/repositories.md](_pages/repositories.md)
 - delete [\_includes/repository/](_includes/repository/) directory
 
-### You can also remove pages through commenting out front-matter blocks
+### Hiding pages from navigation
 
-For `.md` files in [\_pages](_pages/) directory, if you do not want to completely edit or delete them but save for later use, you can temporarily disable these variables. But be aware that Jekyll only recognizes front matter when it appears as uncommented. The layout, permalink, and other front-matter behavior are disabled for that file.
+For `.md` files in [\_pages](_pages/), set `nav: false` when you want to keep a page reachable without showing it in the main navigation.
 
-For example, books.md do:
+For example, a page can remain reachable at its permalink without appearing in navigation:
 
 ```md
-<!-- ---
-layout: book-shelf
-title: bookshelf
-permalink: /books/
-nav: true
-collection: books
---- -->
+---
+layout: page
+title: Additional notes
+permalink: /notes/
+nav: false
+---
 
 > What an astonishing thing a book is. It's a flat object made from a tree with flexible parts on which are imprinted lots of funny dark squiggles. But one glance at it and you're inside the mind of another person, maybe somebody dead for thousands of years. Across the millennia, an author is speaking clearly and silently inside your head, directly to you. Writing is perhaps the greatest of human inventions, binding together people who never knew each other, citizens of distant epochs. Books break the shackles of time. A book is proof that humans are capable of working magic.
 >
@@ -1198,19 +1095,6 @@ collection: books
 
 ## Books that I am reading, have read, or will read
 ```
-
-## Adding Token for Lighthouse Badger
-
-To add secrets for [lighthouse-badger](https://github.com/alshedivat/al-folio/actions/workflows/lighthouse-badger.yml), create a [personal access token (PAT)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token) and add it as a [secret](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-encrypted-secrets-for-a-repository) named `LIGHTHOUSE_BADGER_TOKEN` to your repository. The [lighthouse-badger documentation](https://github.com/MyActionWay/lighthouse-badger-workflows#lighthouse-badger-easyyml) specifies using an environment variable, but using it as a secret is more secure and appropriate for a PAT.
-
-Also In case you face the error: "Input required and not supplied: token" in the Lighthouse Badger action, this solution resolves it.
-
-### Personal Access Token (fine-grained) Permissions for Lighthouse Badger:
-
-- **contents**: access: read and write
-- **metadata**: access: read-only
-
-Due to the necessary permissions (PAT and others mentioned above), it is recommended to use it as a secret rather than an environment variable.
 
 ## Customizing fonts, spacing, and more
 
@@ -1229,31 +1113,7 @@ The easiest way to preview changes in advance is by using [Chrome dev tools](htt
 
 ## Scheduled Posts
 
-`al-folio` contains a workflow which automatically publishes all posts scheduled at a specific day, at the end of the day (23:30). By default the action is disabled, and to enable it you need to go to `.github/workflows/` and find the file called `schedule-posts.txt`. This is the workflow file. For GitHub to recognize it as one (or to enable the action), you need to rename it to `schedule-posts.yml`.
-
-In order to use this you need to save all of your "Completed" blog posts which are scheduled to be uploaded on a specific date, in a folder named `_scheduled/` in the root directory.
-
-> Incomplete posts should be saved in `_drafts/`
-
-### Name Format
-
-In this folder you need to store your file in the same format as you would in `_posts/`
-
-> Example file name: `2024-08-26-This file will be uploaded on 26 August.md`
-
-### Important Notes
-
-- The scheduler uploads posts everyday at 🕛 23:30 UTC
-- It will only upload posts at 23:30 UTC of their respective scheduled days, It's not uploaded in 23:59 in case there are a lot of files as the scheduler must finish before 00:00
-- It will only upload files which follow the pattern `yyyy-mm-dd-title.md`
-  - This means that only markdown files will be posted
-  - It means that any markdown which do not follow this pattern will not be posted
-- The scheduler works by moving posts from the `_scheduled/` directory to `_posts/`, it will not post to folders like `_projects/` or `_news/`
-- The date in the name of the file is the day that file will be uploaded on
-  - `2024-08-27-file1.md` will not be posted before or after 27-August-2024 (Scheduler only works for posts scheduled on the present day)
-  - `2025-08-27-file2.md` will be posted exactly on 27-August-2025
-  - `File3.md` will not be posted at all
-  - `2026-02-31-file4.md` is supposed to be posted on 31-February-2026, but there is no 31st in February hence this file will never be posted either
+This fork does not currently auto-publish future-dated posts. Jekyll will hide a future-dated post, but a scheduled deployment workflow must run on or after its publication date before it becomes visible. Add such a workflow explicitly if scheduled publishing is needed.
 
 ## GDPR Cookie Consent Dialog
 

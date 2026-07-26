@@ -1,5 +1,5 @@
 ---
-applyTo: "_books/**/*.md,_news/**/*.md,_pages/**/*.md,_posts/**/*.md,_projects/**/*.md,_teachings/**/*.md"
+applyTo: "_news/**/*.md,_pages/**/*.md,_posts/**/*.md,_projects/**/*.md"
 ---
 
 # Content Files (Markdown) Instructions
@@ -8,30 +8,14 @@ applyTo: "_books/**/*.md,_news/**/*.md,_pages/**/*.md,_posts/**/*.md,_projects/*
 
 Content in al-folio is organized by type:
 
-- **\_books/** – Book reviews and summaries
 - **\_news/** – News/announcements
 - **\_pages/** – Static pages (about, CV, publications, projects, etc.)
 - **\_posts/** – Blog posts (format: `YYYY-MM-DD-title.md`)
 - **\_projects/** – Project showcase entries
-- **\_teachings/** – Course and teaching information
 
 ## Frontmatter Structure
 
 Every markdown file requires YAML frontmatter at the top. The structure varies by content type.
-
-### Book Frontmatter (\_books/)
-
-```yaml
----
-layout: book-review
-title: Book Title
-author: Book Author Name
-publisher: Publisher Name
-year: 2023
-rating: 8/10
-img: /assets/img/book-cover.jpg
----
-```
 
 ### News Frontmatter (\_news/)
 
@@ -63,6 +47,10 @@ title: Post Title
 date: YYYY-MM-DD
 categories: category-name
 description: Brief description
+thumbnail: /assets/img/blog/post-thumbnail.jpg
+thumbnail_alt: Concise description of the thumbnail
+featured: false
+math: false
 ---
 ```
 
@@ -80,30 +68,15 @@ importance: 1
 ---
 ```
 
-### Teaching/Course Frontmatter (\_teachings/)
-
-```yaml
----
-layout: page
-title: Course Title
-description: Course description
----
-```
-
 ## Special Frontmatter Fields
-
-### For Books
-
-- **author:** Author name or comma-separated list
-- **publisher:** Publisher name
-- **year:** Publication year
-- **rating:** Personal rating (e.g., `8/10`)
-- **img:** Path to book cover image (`/assets/img/...`)
 
 ### For Blog Posts
 
 - **categories:** Tag for post organization (single word, no spaces)
 - **related_posts:** Set to `false` to disable related posts display (useful for short posts)
+- **featured:** Set to boolean `true` to show the post in the featured section.
+- **thumbnail_alt:** Required when `thumbnail` is set; describe the image's relevant content.
+- **math:** Set to `true` only for posts that need MathJax.
 
 ### For Projects
 

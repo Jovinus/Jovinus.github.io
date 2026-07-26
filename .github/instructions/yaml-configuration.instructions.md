@@ -75,7 +75,7 @@ Defines social media links and contact information displayed on the site.
 **Example:**
 
 ```yaml
-cv_pdf: /assets/pdf/example_pdf.pdf
+cv_pdf: /assets/rendercv/rendercv_output/Your_Name_CV.pdf
 email: you@example.com
 scholar_userid: qc6CJjYAAAAJ
 github_username: username
@@ -106,9 +106,9 @@ CV content in **RenderCV format** (recommended approach for generating professio
 
 **Automatic PDF Generation:** When using RenderCV format, a GitHub Actions workflow (`render-cv.yml`) automatically generates a PDF version whenever you push changes to `_data/cv.yml`. The generated PDF is saved to `assets/rendercv/rendercv_output/` and can be linked via `cv_pdf` setting in `_config.yml`.
 
-**Alternative Format (JSONResume):** For an alternative format, see `assets/json/resume.json` which uses the [JSONResume](https://jsonresume.org/) standard. Switch between formats using the `cv_format` frontmatter variable in `_pages/cv.md` (options: `rendercv` or `jsonresume`).
+This fork supports RenderCV only. The upstream JSONResume path and `cv_format` switch were deliberately removed.
 
-**For more details:** See [CUSTOMIZE.md § Modifying the CV information](CUSTOMIZE.md#modifying-the-cv-information) for setup, switching formats, and PDF generation configuration.
+**For more details:** See [CUSTOMIZE.md § Modifying the CV information](CUSTOMIZE.md#modifying-the-cv-information) for CV editing and PDF generation.
 
 ### citations.yml
 

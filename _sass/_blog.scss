@@ -23,7 +23,6 @@
     justify-content: center;
     display: flow-root;
 
-    p,
     li {
       list-style: none;
       display: inline-block;
@@ -125,15 +124,15 @@
 }
 
 .featured-posts {
+  .card-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
   a {
     color: var(--global-text-color-light);
     text-decoration: none;
-
-    .card-text {
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
 
     &:hover {
       color: var(--global-theme-color);

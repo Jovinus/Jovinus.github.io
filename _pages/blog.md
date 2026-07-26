@@ -2,6 +2,7 @@
 layout: default
 permalink: /blog/
 title: blog
+description: Research notes, paper reviews, and reflections on medical AI.
 nav: true
 nav_order: 1
 pagination:
@@ -38,34 +39,39 @@ pagination:
           <i class="fa-solid fa-hashtag fa-sm"></i> <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">{{ tag }}</a>
         </li>
         {% unless forloop.last %}
-          <p>&bull;</p>
+          <li aria-hidden="true">&bull;</li>
         {% endunless %}
       {% endfor %}
       {% if site.display_categories.size > 0 and site.display_tags.size > 0 %}
-        <p>&bull;</p>
+        <li aria-hidden="true">&bull;</li>
       {% endif %}
       {% for category in site.display_categories %}
         <li>
           <i class="fa-solid fa-tag fa-sm"></i> <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category }}</a>
         </li>
         {% unless forloop.last %}
-          <p>&bull;</p>
+          <li aria-hidden="true">&bull;</li>
         {% endunless %}
       {% endfor %}
     </ul>
   </div>
   {% endif %}
 
-{% assign featured_posts = site.posts | where: "featured", "true" %}
+{% assign featured_posts = site.posts | where: "featured", true %}
 {% if featured_posts.size > 0 %}
 <br>
 
 <div class="container featured-posts">
 {% assign is_even = featured_posts.size | modulo: 2 %}
-<div class="row row-cols-{% if featured_posts.size <= 2 or is_even == 0 %}2{% else %}3{% endif %}">
+{% assign featured_columns = 3 %}
+{% if featured_posts.size == 1 %}
+  {% assign featured_columns = 1 %}
+{% elsif featured_posts.size == 2 or is_even == 0 %}
+  {% assign featured_columns = 2 %}
+{% endif %}
+<div class="row row-cols-1 row-cols-md-{{ featured_columns }}">
 {% for post in featured_posts %}
 <div class="col mb-4">
-<a href="{{ post.url | relative_url }}">
 <div class="card hoverable">
 <div class="row g-0">
 <div class="col-md-12">
@@ -73,7 +79,7 @@ pagination:
 <div class="float-right">
 <i class="fa-solid fa-thumbtack fa-xs"></i>
 </div>
-<h3 class="card-title text-lowercase">{{ post.title }}</h3>
+<h3 class="card-title text-lowercase"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
 <p class="card-text">{{ post.description }}</p>
 
                     {% if post.external_source == blank %}
@@ -89,10 +95,9 @@ pagination:
                         <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
                     </p>
                   </div>
-                </div>
               </div>
             </div>
-          </a>
+          </div>
         </div>
       {% endfor %}
       </div>
@@ -179,7 +184,12 @@ pagination:
 </div>
 
   <div class="col-sm-3">
-    <img class="card-img" src="{{ post.thumbnail | relative_url }}" style="object-fit: cover; height: 90%" alt="image">
+    <img
+      class="card-img"
+      src="{{ post.thumbnail | relative_url }}"
+      style="object-fit: cover; height: 90%;"
+      alt="{{ post.thumbnail_alt | default: post.title | escape }}"
+    >
   </div>
 </div>
 {% endif %}
