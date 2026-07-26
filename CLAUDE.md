@@ -21,6 +21,7 @@ AGENTS.md (imported below) covers the theme's generic build/test/format workflow
 | People (Collaborators / Mentees) | `_pages/profiles.md` + `_pages/about_*.md`                                         |
 | News line                        | `_news/*.md`                                                                       |
 | Teaching                         | `_pages/teaching.md` (plain markdown; the `teachings` collection has been removed) |
+| Blog posts                       | `_posts/*.md`                                                                      |
 | Contact / socials                | `_data/socials.yml`                                                                |
 | Scholar stats cache              | `_data/citations.yml` (auto-updated — see below)                                   |
 
@@ -62,7 +63,8 @@ Academic register with quiet warmth — the user is INFJ. No editorial flourishe
 
 ### Hidden-but-reachable pages
 
-- `_pages/blog.md` and `_pages/books.md` both have `published: false` — they will render once that flag is removed. When the user starts blogging, drop `published: false` and set `nav: true`. `/repositories/` is also `nav: false` (still at the URL) because code links live in publications via `code=`.
+- `/repositories/` is `nav: false` (still live at the URL) because code links live in publications via `code=`.
+- The blog is live at `/blog/` (`nav_order: 1`), backed by `_posts/`. `_pages/news.md` has no `nav` entry; news items surface on the about page.
 
 ### Korean-language policy
 
@@ -72,6 +74,29 @@ Public content is English-only. Korean parentheticals (e.g., `(남영우)`, `(�
 
 - `studyType` uses full names: `Bachelor of Science`, `Master of Science`, `PhD Student`.
 - References use possessive form: `Bachelor's advisor`, `Master's advisor`, `Doctoral advisor` — match this if adding new references.
+
+## Upstream theme features removed from this fork
+
+The al-folio theme ships a lot of machinery this site never uses. The following were deliberately deleted — **do not restore them from upstream** unless the user asks:
+
+| Removed                                                                                                                                                                                              | Why                                                                     |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| `_books/`, `_pages/books.md`, `_layouts/book-{shelf,review}.liquid`, `assets/img/book_covers/`                                                                                                       | Bookshelf feature, never populated                                      |
+| `_includes/courses.liquid`, `_includes/course_schedule.liquid`, `_layouts/course.liquid`, `_sass/_teachings.scss`                                                                                    | Remnants of the `teachings` collection; teaching page is plain markdown |
+| JSONResume CV path (`assets/json/resume.json`, `jekyll_get_json`/`jsonresume` config, `jekyll-get-json` plugin)                                                                                      | CV renders from `_data/cv.yml` (rendercv) only                          |
+| `assets/{audio,plotly,jupyter,video,html,bibliography}/`, `assets/img/{1..12}.jpg`, `rhino.png`, `template_error.png`, `prof_pic_color.png`, `assets/pdf/example_pdf.pdf`, `Albert_Einstein_CV.pdf`  | Theme demo media, zero references (~35 MB)                              |
+| `lighthouse_results/`, `readme_preview/`, `.all-contributorsrc`, `.github/{ISSUE_TEMPLATE,stale.yml,release.yml}`                                                                                    | Upstream repo maintenance, irrelevant to a personal fork                |
+| Workflows: `axe`, `codeql`, `lighthouse-badger`, `deploy-image`, `deploy-docker-tag`, `docker-slim`, `broken-links`, `copilot-setup-steps`, `prettier-html`, `prettier-comment-on-pr`, `update-tocs` | Upstream CI for theme development                                       |
+| TikZJax (`assets/css/tikzjax.min.css`, `assets/js/tikzjax.min.js`, and the `{% if page.tikzjax %}` blocks in `head.liquid` / `scripts.liquid` / `distill_scripts.liquid`)                            | 8.8 MB, loaded only for pages with `tikzjax: true`; no page uses it     |
+| Vendored source maps (`mdb.min.css.map`, `bootstrap.min.css.map`, `bootstrap.bundle.min.js.map`, `distillpub/*.js.map`) + `sass: sourcemap: never`                                                   | 2.8 MB of debug artifacts shipped to production                         |
+
+When deleting a vendored `*.map`, also strip the trailing `sourceMappingURL` pragma from its `.min` file — otherwise browsers 404 on it with devtools open. That has already been done for the five files above.
+
+Still present but unused, kept intentionally: the blog subsystem's optional pieces (distill layout, giscus/disqus, newsletter), and the `jekyll-jupyter-notebook` / `jekyll-twitter-plugin` gems.
+
+Built-site size after the trim: **14 MB** (was 25 MB).
+
+Surviving workflows: `deploy.yml`, `prettier.yml`, `render-cv.yml`, `update-citations.yml`, `update-publications.yml`, `test-scholar-sync.yml`, `broken-links-site.yml`.
 
 ## Scholar automation
 

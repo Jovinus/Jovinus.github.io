@@ -146,8 +146,6 @@ newsletter:
 # -----------------------------------------------------------------------------
 
 collections:
-  books:
-    output: true
   news:
     defaults:
       layout: post
@@ -175,24 +173,50 @@ kramdown:
 # Includes & excludes
 include: ["_pages", "_scripts"]
 exclude:
+  # People-page prose partials. These are pulled into /people/ via
+  # `include_relative` in _layouts/profiles.liquid, which reads them from disk —
+  # excluding them stops the raw .md being served at /_pages/about_*.md without
+  # affecting rendering.
+  - _pages/about_byungjae.md
+  - _pages/about_dayoon.md
+  - _pages/about_donghwee.md
+  - _pages/about_jinho.md
+  - _pages/about_jinyoung.md
+  - _pages/about_kibyung.md
+  - _pages/about_kyunghyun.md
+  - _pages/about_mira.md
+  - _pages/about_nam.md
+  - _pages/about_sangwon.md
+  - _pages/about_seungmin.md
+  - _pages/about_sungsoo.md
+  - _pages/about_wonjoon.md
+  # Repo tooling and dev environment
   - bin/
-  - CONTRIBUTING.md
-  - CUSTOMIZE.md
   - Dockerfile
   - docker-compose.yml
   - docker-compose-slim.yml
-  - FAQ.md
   - Gemfile
   - Gemfile.lock
-  - INSTALL.md
-  - LICENSE
-  - lighthouse_results/
+  - node_modules/
   - package.json
   - package-lock.json
   - purgecss.config.js
-  - README.md
-  - readme_preview/
+  - requirements.txt
+  - tests/
   - vendor
+  # Documentation (repo-only, never served)
+  - AGENTS.md
+  - ANALYTICS.md
+  - CLAUDE.md
+  - CONTRIBUTING.md
+  - CUSTOMIZE.md
+  - FAQ.md
+  - INSTALL.md
+  - LICENSE
+  - QUICKSTART.md
+  - README.md
+  - SEO.md
+  - TROUBLESHOOTING.md
 keep_files:
   - CNAME
   - .nojekyll
@@ -204,7 +228,6 @@ plugins:
   - jekyll-cache-bust
   - jekyll-email-protect
   - jekyll-feed
-  - jekyll-get-json
   - jekyll-imagemagick
   - jekyll-jupyter-notebook
   - jekyll-link-attributes
@@ -229,6 +252,7 @@ defaults:
 
 sass:
   style: compressed
+  sourcemap: never # don't ship main.css.map to production
 
 # -----------------------------------------------------------------------------
 # Jekyll Minifier
@@ -257,8 +281,6 @@ jekyll-archives:
       year: "/blog/:year/"
       tags: "/blog/:type/:name/"
       categories: "/blog/:type/:name/"
-  books:
-    enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
 
 display_tags: [] # these tags will be displayed on the front page of your blog
 display_categories: [] # these categories will be displayed on the front page of your blog
@@ -637,25 +659,3 @@ third_party_libraries:
       css: "https://cdn.jsdelivr.net/npm/venobox@{{version}}/dist/venobox.min.css"
       js: "https://cdn.jsdelivr.net/npm/venobox@{{version}}/dist/venobox.min.js"
     version: "2.1.8"
-
-# -----------------------------------------------------------------------------
-# Get external JSON data
-# -----------------------------------------------------------------------------
-
-jekyll_get_json:
-  - data: resume
-    json: assets/json/resume.json # it can also be an url
-
-jsonresume:
-  - basics
-  - work
-  - education
-  - publications
-  - projects
-  - volunteer
-  - awards
-  - certificates
-  - skills
-  - languages
-  - interests
-  - references

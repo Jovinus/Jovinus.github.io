@@ -1,5 +1,5 @@
-Currently at [TRIZN](https://github.com/kimjinho1), based in Suwon, South Korea, and contributing as a backend engineer (side) at [BreathYou](https://breathyou.care).
+Solution Engineer at [AITRICS](https://www.aitrics.com), based in Seoul, South Korea, and contributing as a backend engineer (side) at [BreathYou](https://breathyou.care).
 
-Shares his undergraduate alma mater with Kyung Hyun — long-time friend and fellow engineer.
+Shares his undergraduate alma mater with Kyung Hyun — long-time friend and fellow engineer, and now a colleague at AITRICS.
 
 GitHub: [kimjinho1](https://github.com/kimjinho1)

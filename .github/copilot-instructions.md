@@ -101,7 +101,6 @@ bundle exec jekyll serve --port 4000   # Run at http://localhost:4000
 - `_projects/` – Project showcase entries
 - `_sass/` – SCSS stylesheets
 - `_scripts/` – JavaScript files for functionality
-- `_teachings/` – Course and teaching entries
 - `assets/img/` – Images, profile pictures
 - `docker-compose.yml` – Docker compose configuration
 - `Dockerfile` – Docker image definition
@@ -135,11 +134,15 @@ When making changes:
   - **Fails PRs if code is not properly formatted**
   - Generates HTML diff artifact on failure
   - Must install prettier locally to avoid failures: `npm install prettier @shopify/prettier-plugin-liquid`
-- **broken-links.yml, broken-links-site.yml** – Link validation
-- **axe.yml** – Accessibility testing
-- **codeql.yml** – Security scanning
+- **broken-links-site.yml** – Link validation against the deployed site
 - **update-citations.yml** – Automatic citation updates
+- **update-publications.yml** – Automatic publication sync from Google Scholar
+- **test-scholar-sync.yml** – Unit tests for the Scholar sync scripts
 - **render-cv.yml** – CV rendering from RenderCV format
+
+Upstream theme workflows (axe, codeql, lighthouse-badger, docker image builds, prettier-html,
+prettier-comment-on-pr, update-tocs) have been removed from this fork — see the
+"Upstream theme features removed from this fork" table in CLAUDE.md.
 
 ### Pre-commit Requirements
 

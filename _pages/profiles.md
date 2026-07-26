@@ -49,7 +49,7 @@ profiles:
       <p>Incheon, South Korea</p>
 
   - section: Collaborators
-    align: left
+    align: right
     image: lee_jinyoung.jpg
     content: about_jinyoung.md
     image_circular: false
@@ -60,7 +60,7 @@ profiles:
       <p>Allergy & Clinical Immunology &middot; Health Promotion Center</p>
       <p>Seoul, South Korea</p>
 
-  - align: right
+  - align: left
     image: lee_kibyung.png
     content: about_kibyung.md
     image_circular: false
@@ -70,7 +70,7 @@ profiles:
       <p>Division of Pulmonology, Allergy and Critical Care Medicine</p>
       <p>Chuncheon, South Korea</p>
 
-  - align: left
+  - align: right
     image: baik_seungmin.jpg
     content: about_seungmin.md
     image_circular: false
@@ -80,7 +80,7 @@ profiles:
       <p>Division of Critical Care Medicine, Dept. of Surgery</p>
       <p>Seoul, South Korea</p>
 
-  - align: right
+  - align: left
     image: dayoon_placeholder.jpg
     content: about_dayoon.md
     image_circular: false
@@ -88,7 +88,7 @@ profiles:
       <p>Dayoon Lee</p>
       <p>Co-founder &middot; Quality Management Officer &middot; BreathYou</p>
 
-  - align: left
+  - align: right
     image: hong_sungsoo.png
     content: about_sungsoo.md
     image_circular: false
@@ -97,7 +97,7 @@ profiles:
       <p>AI Researcher &middot; AITRICS</p>
       <p>Seoul, South Korea</p>
 
-  - align: right
+  - align: left
     image: yoon_donghwee.jpg
     content: about_donghwee.md
     image_circular: false
@@ -106,7 +106,7 @@ profiles:
       <p>AI Researcher &middot; AITRICS</p>
       <p>Seoul, South Korea</p>
 
-  - align: left
+  - align: right
     image: nam_youngwoo.jpg
     content: about_nam.md
     image_circular: false
@@ -115,19 +115,19 @@ profiles:
       <p>Deep Learning Researcher &middot; IBricks</p>
       <p>Seongnam, South Korea</p>
 
-  - align: right
+  - align: left
     image: kim_jinho.jpg
     content: about_jinho.md
     image_circular: false
     more_info: >
       <p>Jinho Kim</p>
-      <p>TRIZN</p>
+      <p>Solution Engineer &middot; AITRICS</p>
       <p>Backend Engineer (side) &middot; BreathYou</p>
-      <p>Suwon, South Korea</p>
+      <p>Seoul, South Korea</p>
 
   - section: Mentees
-    align: left
-    image: wonjoon_jang.jpg
+    align: right
+    image: jang_wonjoon.jpg
     content: about_wonjoon.md
     image_circular: false
     more_info: >

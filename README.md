@@ -23,12 +23,14 @@ Pushes to `main` trigger a GitHub Pages rebuild automatically. The live site is 
 
 ## Layout
 
-- `_pages/` — top-level pages (about, publications, projects, cv, people, teaching)
+- `_pages/` — top-level pages (about, publications, projects, cv, people, teaching, blog)
+- `_posts/` — blog posts
 - `_projects/` — individual project entries
 - `_bibliography/papers.bib` — publications (rendered via jekyll-scholar)
 - `_data/` — structured data (CV, socials, citations, repositories)
 - `_news/` — short news items shown on the about page
-- `assets/` — images, PDFs, static files
+- `assets/` — images and static files
+- `bin/`, `tests/` — Google Scholar sync scripts and their tests
 
 ## License
 
