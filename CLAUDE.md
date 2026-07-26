@@ -102,13 +102,36 @@ Surviving workflows: `deploy.yml`, `prettier.yml`, `render-cv.yml`, `update-cita
 
 Three scheduled GitHub Actions keep publications and citation counts fresh:
 
-- `.github/workflows/update-citations.yml` — runs `bin/update_scholar_citations.py` Mon/Wed/Fri at 00:00 UTC; updates `_data/citations.yml` and commits.
-- `.github/workflows/update-publications.yml` — runs the publications sync (see the workflow file).
+- `.github/workflows/update-citations.yml` — runs `bin/update_scholar_citations.py` Mon/Wed/Fri at 02:37 UTC; updates `_data/citations.yml` and commits.
+- `.github/workflows/update-publications.yml` — runs the publications sync quarterly (see the workflow file).
 - `.github/workflows/render-cv.yml` — renders the CV PDF.
 
 The publications page (`_pages/publications.md`) reads `_data/citations.yml.metadata` to render the citations badge and the `h-index · i10-index · Updated YYYY-MM-DD` line at the top.
 
-Do not hand-edit `_data/citations.yml` — it will be overwritten by the next scheduled run.
+Do not hand-edit `_data/citations.yml` — regenerate it by running the script instead (see below).
+
+### Google Scholar blocks GitHub Actions IPs
+
+This is the single most important fact about these workflows. Google Scholar refuses requests from datacenter IP ranges, so a scheduled Actions run fails intermittently — while the identical fetch from a laptop finishes in about 7 seconds. It is an environment problem, not a bug in the scripts. **Do not "fix" it by rewriting the fetch logic.**
+
+The failure contract:
+
+| Exit code | Meaning                                                      | Workflow behaviour                                                                |
+| --------- | ------------------------------------------------------------ | --------------------------------------------------------------------------------- |
+| `0`       | Success                                                      | Commits any change                                                                |
+| `75`      | `ScholarUnavailable` — blocked, refused, or empty response   | Warning only, job passes — **unless** `citations.yml` is > 14 days old, then fail |
+| `124`     | `timeout(1)` killed a hung fetch                             | Treated as `75`                                                                   |
+| `1`       | Anything real: bad config, incomplete metrics, write failure | Fails immediately                                                                 |
+
+`ScholarUnavailable` subclasses `RuntimeError` so `except ScholarUnavailable` catches only fetch failures, while a plain `RuntimeError` (bad data we _did_ receive) still hard-fails. Keep that relationship if you touch the scripts — `tests/test_scholar_sync.py` asserts it.
+
+Two ways to get fresh data when Actions is being blocked:
+
+1. **Run it locally** (works reliably from a residential IP), then commit:
+   ```bash
+   python bin/update_scholar_citations.py
+   ```
+2. **Add a `SCRAPER_API_KEY` repository secret.** `configure_proxy()` in both scripts already routes through ScraperAPI when the secret exists; no code change needed. This is the only way to make the scheduled runs succeed unattended.
 
 ## Identity facts (keep consistent across pages)
 

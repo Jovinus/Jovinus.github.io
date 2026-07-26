@@ -1,8 +1,8 @@
 metadata:
   h_index: 8
   i10_index: 7
-  last_updated: '2026-07-21'
-  total_citations: 446
+  last_updated: '2026-07-26'
+  total_citations: 448
 papers:
   T0DHr9QAAAAJ:2osOgNQ5qMEC:
     citations: 173
@@ -29,7 +29,7 @@ papers:
     title: 'Enhancing Clinical Decision-Making in Rapid Response Systems: Integrating AI-Based Predictions and Early Pattern Clustering'
     year: '2025'
   T0DHr9QAAAAJ:MXK_kJrjxJIC:
-    citations: 7
+    citations: 8
     title: "Validation of an artificial intelligence-based algorithm for predictive performance and risk stratification of sepsis using real-world data from hospitalised patients: a \u2026"
     year: '2025'
   T0DHr9QAAAAJ:Tyk-4Ss8FVUC:
@@ -85,7 +85,7 @@ papers:
     title: Novel artificial intelligence-based technology to diagnose asthma using methacholine challenge tests
     year: '2023'
   T0DHr9QAAAAJ:hqOjcs7Dif8C:
-    citations: 50
+    citations: 51
     title: A novel deep learning algorithm for real-time prediction of clinical deterioration in the emergency department for a multimodal clinical decision support system
     year: '2024'
   T0DHr9QAAAAJ:qjMakFHDy7sC:

@@ -10,6 +10,13 @@ import unicodedata
 import yaml
 from scholarly import ProxyGenerator, scholarly
 
+# See bin/update_scholar_citations.py for the rationale behind this exit code.
+EXIT_SCHOLAR_UNAVAILABLE: int = 75
+
+
+class ScholarUnavailable(RuntimeError):
+    """Google Scholar could not be reached or refused the request."""
+
 
 def load_scholar_user_id() -> str:
     """Load the Google Scholar user ID from the configuration file."""
@@ -186,7 +193,7 @@ def fill_publication_details(publications: list[dict]) -> list[dict]:
             failures.append(f"{title}: {e}")
 
     if failures:
-        raise RuntimeError(
+        raise ScholarUnavailable(
             "Could not fetch complete metadata for new publications; papers.bib was not changed:\n- "
             + "\n- ".join(failures)
         )
@@ -208,8 +215,7 @@ def main() -> None:
         author = scholarly.search_author_id(scholar_id)
         author_data = scholarly.fill(author)
     except Exception as e:
-        print(f"Error fetching author data: {e}")
-        sys.exit(1)
+        raise ScholarUnavailable(f"Could not fetch author data: {e}") from e
 
     publications = author_data.get("publications", [])
     if not publications:
@@ -275,6 +281,10 @@ def main() -> None:
 if __name__ == "__main__":
     try:
         main()
+    except ScholarUnavailable as e:
+        print(f"Google Scholar unavailable: {e}")
+        print("Leaving papers.bib untouched.")
+        sys.exit(EXIT_SCHOLAR_UNAVAILABLE)
     except Exception as e:
         print(f"Unexpected error: {e}")
         sys.exit(1)

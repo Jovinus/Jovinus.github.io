@@ -1,8 +1,15 @@
 name: Update Publications from Google Scholar
 
+# Same Scholar-blocks-datacenter-IPs problem as update-citations.yml. Here a
+# transient block only warns and never fails the run: this job is quarterly, so
+# a staleness gate of its own would be meaningless. update-citations.yml runs
+# three times a week and goes red if Scholar stays unreachable for 14 days, so
+# a durable outage is already alarmed on there — no need to duplicate it.
+
 on:
   schedule:
-    - cron: "0 0 1 1,4,7,10 *" # Quarterly: Jan 1, Apr 1, Jul 1, Oct 1
+    # Off the top of the hour; see the note in update-citations.yml.
+    - cron: "23 3 1 1,4,7,10 *" # Quarterly: Jan 1, Apr 1, Jul 1, Oct 1
   workflow_dispatch:
 
 permissions:
@@ -39,23 +46,51 @@ jobs:
           fi
 
       - name: Fetch new publications
+        shell: bash
         env:
           SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
         run: |
+          if [ -z "${SCRAPER_API_KEY}" ]; then
+            echo "::notice::SCRAPER_API_KEY is not set — querying Google Scholar directly, which Actions IPs are often blocked from."
+          fi
+
+          attempts=3
           status=1
-          for attempt in 1 2; do
-            echo "Attempt $attempt of 2..."
-            if timeout 600 python bin/update_scholar_publications.py; then
+          for attempt in $(seq 1 "$attempts"); do
+            echo "── Attempt $attempt of $attempts ──"
+            # `status=$?` belongs in the else branch: after a closed `if`,
+            # $? is the status of the `if` itself (0), not the command.
+            if timeout 180 python bin/update_scholar_publications.py; then
               status=0
               break
             else
               status=$?
             fi
-            if [ "$attempt" -lt 2 ]; then
-              echo "Retrying in 30 seconds..."
-              sleep 30
+            echo "Attempt $attempt exited with status $status."
+            if [ "$attempt" -lt "$attempts" ]; then
+              backoff=$(( attempt * 45 + RANDOM % 30 ))
+              echo "Retrying in ${backoff}s..."
+              sleep "$backoff"
             fi
           done
+
+          # timeout(1) reports 124 for a hung fetch; same class as exit 75.
+          if [ "$status" -eq 124 ]; then
+            status=75
+          fi
+
+          if [ "$status" -eq 0 ]; then
+            echo "✅ Publication sync completed." | tee -a $GITHUB_STEP_SUMMARY
+            exit 0
+          fi
+
+          if [ "$status" -eq 75 ]; then
+            echo "::warning::Google Scholar was unreachable; papers.bib left unchanged. update-citations.yml will fail if this persists."
+            echo "⚠️ Google Scholar unreachable — papers.bib left unchanged." >> $GITHUB_STEP_SUMMARY
+            exit 0
+          fi
+
+          echo "❌ Publication sync failed with exit code $status (not a Scholar availability problem)." | tee -a $GITHUB_STEP_SUMMARY
           exit "$status"
 
       - name: Save new papers.bib hash

@@ -6,6 +6,24 @@ import yaml
 from datetime import datetime
 from scholarly import ProxyGenerator, scholarly
 
+# Exit code for "Google Scholar was unreachable" (EX_TEMPFAIL, sysexits.h).
+# Google blocks datacenter IP ranges, so a scheduled GitHub Actions run is
+# refused far more often than a run from a residential connection. That is a
+# transient environment problem, not a bug, so it gets its own exit code: the
+# workflow downgrades it to a warning while the cached data is still fresh.
+# Every other failure (bad config, incomplete response, unwritable file) keeps
+# exit code 1 and fails the run immediately.
+EXIT_SCHOLAR_UNAVAILABLE: int = 75
+
+
+class ScholarUnavailable(RuntimeError):
+    """Google Scholar could not be reached or refused the request.
+
+    Subclasses RuntimeError so that `except ScholarUnavailable` matches only
+    fetch failures, while a plain RuntimeError (bad data we did receive) still
+    falls through to the hard-failure path.
+    """
+
 
 def load_scholar_user_id() -> str:
     """Load the Google Scholar user ID from the configuration file."""
@@ -88,16 +106,14 @@ def get_scholar_citations() -> None:
         author = scholarly.search_author_id(SCHOLAR_USER_ID)
         author_data = scholarly.fill(author)
     except Exception as e:
-        print(
-            f"Error fetching author data from Google Scholar for user ID '{SCHOLAR_USER_ID}': {e}. Please check your internet connection and Scholar user ID."
-        )
-        sys.exit(1)
+        raise ScholarUnavailable(
+            f"Could not fetch author data for user ID '{SCHOLAR_USER_ID}': {e}"
+        ) from e
 
     if not author_data:
-        print(
-            f"Could not fetch author data for user ID '{SCHOLAR_USER_ID}'. Please verify the Scholar user ID and try again."
+        raise ScholarUnavailable(
+            f"Google Scholar returned no author data for user ID '{SCHOLAR_USER_ID}'."
         )
-        sys.exit(1)
 
     required_metrics = ("citedby", "hindex", "i10index")
     missing_metrics = [key for key in required_metrics if key not in author_data]
@@ -173,6 +189,10 @@ def get_scholar_citations() -> None:
 if __name__ == "__main__":
     try:
         get_scholar_citations()
+    except ScholarUnavailable as e:
+        print(f"Google Scholar unavailable: {e}")
+        print("Leaving the existing citation cache untouched.")
+        sys.exit(EXIT_SCHOLAR_UNAVAILABLE)
     except Exception as e:
         print(f"Unexpected error: {e}")
         sys.exit(1)

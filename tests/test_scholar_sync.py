@@ -103,6 +103,76 @@ class ScholarProxyTests(unittest.TestCase):
         use_proxy.assert_called_once_with(proxy_factory.return_value)
 
 
+class ScholarUnavailableContractTests(unittest.TestCase):
+    """The workflows branch on exit 75, so the classification must hold."""
+
+    def setUp(self):
+        # Point OUTPUT_FILE at a path that does not exist, so these tests never
+        # read the repo's real cache. If they did, a cache already stamped with
+        # today's date would trip the "already up-to-date" early return and the
+        # fetch under test would never run.
+        self._tmpdir = tempfile.TemporaryDirectory()
+        self.addCleanup(self._tmpdir.cleanup)
+        patcher = patch.object(
+            citations, "OUTPUT_FILE", os.path.join(self._tmpdir.name, "absent.yml")
+        )
+        patcher.start()
+        self.addCleanup(patcher.stop)
+
+    def test_unavailable_is_a_runtime_error_subclass(self):
+        # `except ScholarUnavailable` must not swallow a plain RuntimeError,
+        # but the existing atomicity tests still assert RuntimeError.
+        for module in (publications, citations):
+            self.assertTrue(issubclass(module.ScholarUnavailable, RuntimeError))
+            self.assertNotIsInstance(RuntimeError("x"), module.ScholarUnavailable)
+            self.assertEqual(75, module.EXIT_SCHOLAR_UNAVAILABLE)
+
+    def test_fetch_failure_raises_unavailable_not_plain_error(self):
+        with (
+            patch.object(citations, "configure_proxy"),
+            patch.object(
+                citations.scholarly,
+                "search_author_id",
+                side_effect=Exception("Cannot Fetch from Google Scholar."),
+            ),
+        ):
+            with self.assertRaises(citations.ScholarUnavailable):
+                citations.get_scholar_citations()
+
+    def test_empty_author_response_raises_unavailable(self):
+        with (
+            patch.object(citations, "configure_proxy"),
+            patch.object(
+                citations.scholarly, "search_author_id", return_value={"scholar_id": "p"}
+            ),
+            patch.object(citations.scholarly, "fill", return_value=None),
+        ):
+            with self.assertRaises(citations.ScholarUnavailable):
+                citations.get_scholar_citations()
+
+    def test_incomplete_metrics_is_not_classified_as_unavailable(self):
+        # Bad data we *did* receive is a real failure: it must stay exit 1.
+        incomplete_author = {"citedby": 1, "hindex": 5, "publications": []}
+        with (
+            patch.object(citations, "configure_proxy"),
+            patch.object(
+                citations.scholarly, "search_author_id", return_value={"scholar_id": "p"}
+            ),
+            patch.object(citations.scholarly, "fill", return_value=incomplete_author),
+        ):
+            with self.assertRaises(RuntimeError) as ctx:
+                citations.get_scholar_citations()
+        self.assertNotIsInstance(ctx.exception, citations.ScholarUnavailable)
+
+    def test_publication_fill_failure_is_unavailable(self):
+        publication = {"author_pub_id": "x:y", "bib": {"title": "A Paper"}}
+        with patch.object(
+            publications.scholarly, "fill", side_effect=RuntimeError("blocked")
+        ):
+            with self.assertRaises(publications.ScholarUnavailable):
+                publications.fill_publication_details([publication])
+
+
 class ScholarCitationSyncTests(unittest.TestCase):
     def test_incomplete_response_preserves_existing_cache(self):
         existing_data = {
