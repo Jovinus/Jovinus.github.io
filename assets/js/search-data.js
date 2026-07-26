@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-blog",
           title: "blog",
-          description: "",
+          description: "Research notes, paper reviews, and reflections on medical AI.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/blog/";
@@ -55,7 +55,7 @@ ninja.data = [{
         
           title: "Notes from AKI &amp; CRRT 2026",
         
-        description: "Reflections from the 31st International Conference on Advances in Critical Care Nephrology (AKI &amp; CRRT 2026) in San Diego — our oral-poster presentations on online-simulation evaluation of AKI prediction and LLM-embedded nursing notes, plus notes on the 2026 KDIGO guideline update and other AI-for-nephrology research.",
+        description: "Reflections from AKI &amp; CRRT 2026 on continuous AKI prediction, LLM-embedded nursing notes, clinical deployment, and the updated KDIGO guideline.",
         section: "Posts",
         handler: () => {
           
