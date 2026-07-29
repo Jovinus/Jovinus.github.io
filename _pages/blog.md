@@ -4,7 +4,7 @@ permalink: /blog/
 title: blog
 description: Research notes, paper reviews, and reflections on medical AI.
 nav: true
-nav_order: 1
+nav_order: 6
 pagination:
   enabled: true
   collection: posts

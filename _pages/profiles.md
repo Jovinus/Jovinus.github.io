@@ -4,7 +4,7 @@ permalink: /people/
 title: people
 description: people I work with and have mentored
 nav: true
-nav_order: 7
+nav_order: 5
 
 profiles:
   - align: right

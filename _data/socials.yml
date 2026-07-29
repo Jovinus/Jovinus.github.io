@@ -6,8 +6,9 @@
 # Core contact & identity
 # -----------------------------------------------------------------------------
 
-# cv_pdf: /assets/pdf/CV_KyungHyunLee.pdf
 email: lkh256@gmail.com
+# rendered by .github/workflows/render-cv.yml from _data/cv.yml
+cv_pdf: /assets/rendercv/rendercv_output/Kyung_Hyun_Lee_CV.pdf
 
 # -----------------------------------------------------------------------------
 # Academic profiles

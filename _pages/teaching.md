@@ -4,7 +4,7 @@ permalink: /teaching/
 title: teaching
 description: Courses, invited lectures, and guest talks.
 nav: true
-nav_order: 6
+nav_order: 3
 ---
 
 ## Courses
