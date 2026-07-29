@@ -13,6 +13,8 @@ cv:
       username: Jovinus
     - network: LinkedIn
       username: kyung-hyun-lee
+    - network: ORCID
+      username: 0000-0002-7010-5284
 
   sections:
     Education:
@@ -136,6 +138,13 @@ cv:
         date: 2018
         awarder: DSP-IN-U Smart Device Talent Development Program
         summary: "EMG-based real-time hand gesture prediction model development"
+
+    Academic Service:
+      - label: "Computers in Biology and Medicine"
+        details: "Peer reviewer · 4 manuscripts (2026)"
+
+      - label: "Information Processing & Management"
+        details: "Peer reviewer · 1 manuscript (2026)"
 
     Certificates:
       - name: "Medical Information Analysis Expert Advanced Course"
