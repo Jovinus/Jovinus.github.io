@@ -2,8 +2,11 @@
 settings:
   render_command:
     # Paths must be relative to _data/cv.yaml
-    design: ../assets/rendercv/design.yaml
-    locale: ../assets/rendercv/locale.yaml
+    #
+    # `design:` and `locale:` are deliberately absent. RenderCV 2.8 validates those
+    # two keys (it errors if the file is missing) but never applies their contents,
+    # so design.yaml/locale.yaml are passed on the command line with
+    # `--design` / `--locale-catalog` instead. See render-cv.yml.
     typst_path: ../assets/rendercv/rendercv_output/NAME_IN_SNAKE_CASE_CV.typ
     pdf_path: ../assets/rendercv/rendercv_output/NAME_IN_SNAKE_CASE_CV.pdf
     markdown_path: ../assets/rendercv/rendercv_output/NAME_IN_SNAKE_CASE_CV.md
