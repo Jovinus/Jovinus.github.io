@@ -215,3 +215,7 @@ cv:
       - name: Prof. Byung-Jae Lee
         icon: fa-solid fa-user
         summary: "Samsung Medical Center, Department of Allergy and Clinical Immunology; Doctoral advisor at SAIHST, Sungkyunkwan University"
+
+      - name: Prof. Sae Young Jae
+        icon: fa-solid fa-user
+        summary: "University of Seoul, Department of Sport Science; research collaborator"
