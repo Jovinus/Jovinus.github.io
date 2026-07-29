@@ -1,8 +1,7 @@
 {% comment %}
-  Unified education entry renderer for both RenderCV and JSONResume formats
-  Handles both:
-  - RenderCV: institution, area, studyType (or degree), start_date, end_date, location, courses, highlights
-  - JSONResume: institution, area, studyType, startDate, endDate, location, courses, highlights
+  Education renderer for RenderCV EducationEntry data: institution, area, degree,
+  start_date, end_date, location, highlights. `url` is web-only (RenderCV ignores
+  it). `studyType` is the older JSONResume name for `degree`, still accepted below.
 {% endcomment %}
 
 <ul class="card-text font-weight-light list-group list-group-flush">

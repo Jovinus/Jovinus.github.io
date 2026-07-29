@@ -1,5 +1,6 @@
 {% comment %}
-  Unified certificates entry renderer for both formats
+  Certificates renderer. The issuing body is stored in `summary`
+  (RenderCV has no `issuer` field); `icon` is web-only and ignored by RenderCV.
 {% endcomment %}
 
 <ul class="card-text font-weight-light list-group list-group-flush">
@@ -16,8 +17,8 @@
         <strong>{{ entry.name }}</strong>
       {% endif %}
 
-      {% if entry.issuer %}
-        - <em>{{ entry.issuer }}</em>
+      {% if entry.summary %}
+        - <em>{{ entry.summary }}</em>
       {% endif %}
 
       {% if entry.date %}

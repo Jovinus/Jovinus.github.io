@@ -40,7 +40,7 @@ layout: default
         {% assign cv = site.data.cv.cv %}
 
         <!-- Header/Contact Information -->
-        {% if cv.name or cv.label or cv.location or cv.email or cv.phone or cv.website %}
+        {% if cv.name or cv.headline or cv.location or cv.email or cv.phone or cv.website %}
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">Contact Information</h3>
             <table class="table table-cv table-sm table-borderless">
@@ -50,10 +50,10 @@ layout: default
                   <td class="p-1 pl-2 font-weight-light">{{ cv.name }}</td>
                 </tr>
               {% endif %}
-              {% if cv.label %}
+              {% if cv.headline %}
                 <tr>
                   <td class="p-1 pr-2 font-weight-bold"><b>Professional Title</b></td>
-                  <td class="p-1 pl-2 font-weight-light">{{ cv.label }}</td>
+                  <td class="p-1 pl-2 font-weight-light">{{ cv.headline }}</td>
                 </tr>
               {% endif %}
               {% if cv.email %}
@@ -68,7 +68,16 @@ layout: default
                   <td class="p-1 pl-2 font-weight-light">{{ cv.phone }}</td>
                 </tr>
               {% endif %}
-              {% if cv.address %}
+              {% comment %}
+                RenderCV stores the location as a single `cv.location` string; the
+                structured `cv.address` map is the older JSONResume shape.
+              {% endcomment %}
+              {% if cv.location %}
+                <tr>
+                  <td class="p-1 pr-2 font-weight-bold"><b>Location</b></td>
+                  <td class="p-1 pl-2 font-weight-light">{{ cv.location }}</td>
+                </tr>
+              {% elsif cv.address %}
                 <tr>
                   <td class="p-1 pr-2 font-weight-bold"><b>Location</b></td>
                   <td class="p-1 pl-2 font-weight-light">
@@ -91,11 +100,18 @@ layout: default
           </div>
         {% endif %}
 
-        <!-- Summary -->
-        {% if cv.summary %}
+        {% comment %}
+          Summary. RenderCV has no `cv.summary` field, so the text lives in a
+          `Summary` section as a text entry (a bare string). It is rendered here and
+          skipped in the section loop below.
+        {% endcomment %}
+        {% assign summary_entries = cv.sections.Summary %}
+        {% if summary_entries %}
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">Professional Summary</h3>
-            <p>{{ cv.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+            {% for paragraph in summary_entries %}
+              <p>{{ paragraph | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+            {% endfor %}
           </div>
         {% endif %}
 
@@ -120,7 +136,7 @@ layout: default
           {% assign section_title = section_pair[0] %}
           {% assign section_entries = section_pair[1] %}
 
-          {% if section_title == 'Experience' or section_title == 'Volunteer' %}
+          {% if section_title == 'Experience' or section_title == 'Volunteer' or section_title == 'Summary' %}
             {% continue %}
           {% endif %}
 

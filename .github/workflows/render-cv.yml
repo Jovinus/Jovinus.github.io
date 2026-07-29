@@ -42,7 +42,13 @@ jobs:
             echo "Missing RenderCV config file!"
             exit 1
           fi
-          rendercv render $cv_file --settings $settings
+          # design.yaml and locale.yaml must be passed as flags: RenderCV validates
+          # settings.render_command.design / .locale but never applies them, which
+          # silently reverted the page settings in design.yaml.
+          rendercv render "$cv_file" \
+            --settings "$settings" \
+            --design "$rendercv_dir/design.yaml" \
+            --locale-catalog "$rendercv_dir/locale.yaml"
           rm assets/rendercv/rendercv_output/*.typ
       - name: Upload rendercv_output as an artifact
         uses: actions/upload-artifact@v4

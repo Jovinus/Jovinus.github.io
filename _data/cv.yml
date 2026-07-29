@@ -1,12 +1,8 @@
 cv:
   name: Kyung Hyun Lee
-  label: Clinical AI Researcher
+  headline: Clinical AI Researcher
   email: lkh256@gmail.com
   location: Suwon, Gyeonggi-do, Republic of Korea
-  image: ""
-  summary: >
-    PhD student in Digital Health at SAIHST, Sungkyunkwan University. AI researcher working on clinical
-    time-series deep learning, medical AI regulatory pathways, and respiratory digital health. Co-founder & CEO of BreathYou.
 
   social_networks:
     - network: GitHub
@@ -17,12 +13,17 @@ cv:
       username: 0000-0002-7010-5284
 
   sections:
+    Summary:
+      - PhD student in Digital Health at SAIHST, Sungkyunkwan University. AI researcher working on
+        clinical time-series deep learning, medical AI regulatory pathways, and respiratory digital
+        health. Co-founder & CEO of BreathYou.
+
     Education:
       - institution: Sungkyunkwan University (SAIHST)
         location: Seoul, South Korea
         url: https://www.saihst.kr/
         area: Digital Health
-        studyType: PhD Student
+        degree: PhD Student
         start_date: 2026
         end_date: present
         highlights:
@@ -33,7 +34,7 @@ cv:
         location: Seoul, South Korea
         url: https://www.saihst.kr/
         area: Digital Health
-        studyType: Master of Science
+        degree: Master of Science
         start_date: 2019
         end_date: 2021
         highlights:
@@ -43,7 +44,7 @@ cv:
       - institution: Incheon National University
         location: Incheon, South Korea
         area: "Electronic Engineering & Computational Neuroscience"
-        studyType: Bachelor of Science
+        degree: Bachelor of Science
         start_date: 2014
         end_date: 2019
         highlights:
@@ -114,30 +115,38 @@ cv:
           - "Statistical analysis and predictive/diagnostic model development"
 
     Awards:
-      - title: "Human Understanding AI Paper Competition — Top 7 & ETRI Director's Award"
+      # RenderCV NormalEntry: `summary` carries the awarding body, `highlights` the
+      # description. There is no `awarder` field in the schema — see the note in
+      # `_includes/cv/awards.liquid`.
+      - name: "Human Understanding AI Paper Competition — Top 7 & ETRI Director's Award"
         date: 2022
-        awarder: ETRI, Ministry of Science and ICT
-        summary: "Multimodal Attention-based Korean emotion recognition model combining RoBERTa (Text) and Wav2vec 2.0 (Audio)"
+        summary: ETRI, Ministry of Science and ICT
+        highlights:
+          - "Multimodal Attention-based Korean emotion recognition model combining RoBERTa (Text) and Wav2vec 2.0 (Audio)"
 
-      - title: "OCR AI Training Data Hackathon — Excellence Award"
+      - name: "OCR AI Training Data Hackathon — Excellence Award"
         date: 2021
-        awarder: Ministry of Science and ICT, NIA
-        summary: "AI-Assisted OCR Annotation System for pharmaceutical products (CRAFT-based)"
+        summary: Ministry of Science and ICT, NIA
+        highlights:
+          - "AI-Assisted OCR Annotation System for pharmaceutical products (CRAFT-based)"
 
-      - title: "Medical Information Analysis Expert Advanced Course — Grand Prize"
+      - name: "Medical Information Analysis Expert Advanced Course — Grand Prize"
         date: 2021
-        awarder: Ministry of Health and Welfare, Asan Medical Center
-        summary: "Real-time BIS prediction model using intraoperative EEG data (25-second lookahead)"
+        summary: Ministry of Health and Welfare, Asan Medical Center
+        highlights:
+          - "Real-time BIS prediction model using intraoperative EEG data (25-second lookahead)"
 
-      - title: "Medical AI Expert Training Course — Excellence Award"
+      - name: "Medical AI Expert Training Course — Excellence Award"
         date: 2020
-        awarder: Korea Human Resource Development Institute for Health & Welfare
-        summary: "30-day mortality and ICU admission prediction model using preoperative and intraoperative vital signs"
+        summary: Korea Human Resource Development Institute for Health & Welfare
+        highlights:
+          - "30-day mortality and ICU admission prediction model using preoperative and intraoperative vital signs"
 
-      - title: "STAR Program Paper Presentation — Grand Prize"
+      - name: "STAR Program Paper Presentation — Grand Prize"
         date: 2018
-        awarder: DSP-IN-U Smart Device Talent Development Program
-        summary: "EMG-based real-time hand gesture prediction model development"
+        summary: DSP-IN-U Smart Device Talent Development Program
+        highlights:
+          - "EMG-based real-time hand gesture prediction model development"
 
     Academic Service:
       - label: "Computers in Biology and Medicine"
@@ -149,39 +158,39 @@ cv:
     Certificates:
       - name: "Medical Information Analysis Expert Advanced Course"
         date: 2021-08
-        issuer: "Korea Human Resource Development Institute for Health & Welfare, Asan Medical Center"
+        summary: "Korea Human Resource Development Institute for Health & Welfare, Asan Medical Center"
         icon: fa-solid fa-certificate
 
       - name: Google Developer Machine Learning Boot Camp
         date: 2021-01
-        issuer: Google Developers
+        summary: Google Developers
         icon: fa-brands fa-google
 
       - name: "Medical AI Expert Training Course"
         date: 2020-12
-        issuer: Korea Human Resource Development Institute for Health & Welfare
+        summary: Korea Human Resource Development Institute for Health & Welfare
         icon: fa-solid fa-certificate
 
     Skills:
-      - name: Programming & ML
+      - label: Programming & ML
         level: Expert
         icon: fa-solid fa-code
-        keywords: "Python, PyTorch, TensorFlow, Scikit-learn"
+        details: "Python, PyTorch, TensorFlow, Scikit-learn"
 
-      - name: Data & Database
+      - label: Data & Database
         level: Expert
         icon: fa-solid fa-database
-        keywords: "SQL (PostgreSQL), Airflow, Data Pipeline"
+        details: "SQL (PostgreSQL), Airflow, Data Pipeline"
 
-      - name: Statistics & Analysis
+      - label: Statistics & Analysis
         level: Advanced
         icon: fa-solid fa-chart-line
-        keywords: "R, Survival Analysis, Clinical Statistics"
+        details: "R, Survival Analysis, Clinical Statistics"
 
-      - name: Web Development
+      - label: Web Development
         level: Intermediate
         icon: fa-solid fa-globe
-        keywords: "FastAPI, Flask, JavaScript, HTML/CSS, AWS"
+        details: "FastAPI, Flask, JavaScript, HTML/CSS, AWS"
 
     Languages:
       - name: Korean
@@ -193,16 +202,16 @@ cv:
     References:
       - name: Prof. Sangwon Byun
         icon: fa-solid fa-user
-        reference: "Incheon National University, Department of Electronic Engineering; Bachelor's advisor ([Bioelectronics Lab.](https://sites.google.com/view/bioelectronics-lab/home) · [Scholar](https://scholar.google.com/citations?user=QTU4AM4AAAAJ))"
+        summary: "Incheon National University, Department of Electronic Engineering; Bachelor's advisor ([Bioelectronics Lab.](https://sites.google.com/view/bioelectronics-lab/home) · [Scholar](https://scholar.google.com/citations?user=QTU4AM4AAAAJ))"
 
       - name: Prof. Mira Kang
         icon: fa-solid fa-user
-        reference: "Samsung Medical Center; Master's advisor at SAIHST, Sungkyunkwan University"
+        summary: "Samsung Medical Center; Master's advisor at SAIHST, Sungkyunkwan University"
 
       - name: Prof. Jin-Young Lee
         icon: fa-solid fa-user
-        reference: "Samsung Medical Center, Health Promotion Center"
+        summary: "Samsung Medical Center, Health Promotion Center"
 
       - name: Prof. Byung-Jae Lee
         icon: fa-solid fa-user
-        reference: "Samsung Medical Center, Department of Allergy and Clinical Immunology; Doctoral advisor at SAIHST, Sungkyunkwan University"
+        summary: "Samsung Medical Center, Department of Allergy and Clinical Immunology; Doctoral advisor at SAIHST, Sungkyunkwan University"

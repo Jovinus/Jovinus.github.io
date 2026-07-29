@@ -72,8 +72,40 @@ Public content is English-only. Korean parentheticals (e.g., `(남영우)`, `(�
 
 ### Degree and advisor naming (CV)
 
-- `studyType` uses full names: `Bachelor of Science`, `Master of Science`, `PhD Student`.
+- `degree` uses full names: `Bachelor of Science`, `Master of Science`, `PhD Student`. The classic theme's default `degree_width` of `1cm` hyphen-breaks these across four lines, so `assets/rendercv/design.yaml` widens it to `3.2cm`.
 - References use possessive form: `Bachelor's advisor`, `Master's advisor`, `Doctoral advisor` — match this if adding new references.
+
+### `_data/cv.yml` serves two consumers
+
+`_data/cv.yml` is read by **both** rendercv (→ the PDF, via `render-cv.yml`) and the Jekyll layout (→ `/cv/`, via `_layouts/cv.liquid` + `_includes/cv/*.liquid`). rendercv's schema is authoritative because it hard-fails on mismatch; the Liquid side is ours to adapt. Two rules follow:
+
+1. **Only rendercv field names carry into the PDF.** Entries tolerate unknown keys silently — the entry still validates, and the extra content simply vanishes from the PDF. That is how `awarder`, `issuer`, `reference`, and `keywords` were being dropped. `level` and `icon` remain as deliberate web-only extras.
+2. **The `cv:` object itself rejects unknown keys**, so there is nowhere to stash Jekyll-only metadata. `label` → `headline` (rendercv's own field), and the professional summary lives in a `Summary` **section** (a bare string = a text entry), which `cv.liquid` renders as the Professional Summary card and skips in its section loop.
+
+Current mapping, if you add or edit an entry:
+
+| Section          | rendercv entry type | Field usage                                                     |
+| ---------------- | ------------------- | --------------------------------------------------------------- |
+| Education        | EducationEntry      | `institution`, `area`, `degree`; `url` is web-only              |
+| Experience       | ExperienceEntry     | `company`, `position`; `url` is web-only                        |
+| Awards           | NormalEntry         | `summary` = awarding body, `highlights` = description           |
+| Academic Service | OneLineEntry        | `label` = journal, `details` = role + count + year              |
+| Certificates     | NormalEntry         | `summary` = issuing body                                        |
+| Skills           | OneLineEntry        | `label` = category, `details` = keyword string                  |
+| Languages        | NormalEntry         | `name` + `summary`                                              |
+| References       | NormalEntry         | `summary` = affiliation text (markdown links render in the PDF) |
+
+Peer review goes under **Academic Service** — journal name and review count only, never manuscript details. ORCID (in `cv.social_networks`, public) is the verification path.
+
+Validate locally before pushing — `render-cv.yml` is the only other check, and it takes minutes:
+
+```bash
+pip install -r requirements.txt
+rendercv render _data/cv.yml --settings assets/rendercv/settings.yaml \
+  --design assets/rendercv/design.yaml --locale-catalog assets/rendercv/locale.yaml
+```
+
+**`--design` and `--locale-catalog` are mandatory.** rendercv 2.8 validates `settings.render_command.design` / `.locale` (it errors when the file is missing) but never applies their contents, so pointing at design.yaml from settings.yaml silently rendered with theme defaults. The flag is `--locale-catalog`; plain `--locale` is parsed as a YAML-location override and crashes with a `KeyError`.
 
 ## Upstream theme features removed from this fork
 
