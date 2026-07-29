@@ -1,13 +1,13 @@
 metadata:
   h_index: 8
   i10_index: 7
-  last_updated: '2026-07-26'
-  total_citations: 448
+  last_updated: '2026-07-29'
+  total_citations: 445
 papers:
   T0DHr9QAAAAJ:2osOgNQ5qMEC:
-    citations: 173
+    citations: 172
     title: Electromyogram-based classification of hand and finger gestures using artificial neural networks
-    year: '2021'
+    year: '2022'
   T0DHr9QAAAAJ:4TOpqqG69KYC:
     citations: 1
     title: Evaluating the predictive potential of an AI-driven deep learning model for pneumonia-associated sepsis
@@ -33,7 +33,7 @@ papers:
     title: "Validation of an artificial intelligence-based algorithm for predictive performance and risk stratification of sepsis using real-world data from hospitalised patients: a \u2026"
     year: '2025'
   T0DHr9QAAAAJ:Tyk-4Ss8FVUC:
-    citations: 59
+    citations: 58
     title: Multi-center validation of machine learning model for preoperative prediction of postoperative mortality
     year: '2022'
   T0DHr9QAAAAJ:ULOm3_A8WrAC:
@@ -85,7 +85,7 @@ papers:
     title: Novel artificial intelligence-based technology to diagnose asthma using methacholine challenge tests
     year: '2023'
   T0DHr9QAAAAJ:hqOjcs7Dif8C:
-    citations: 51
+    citations: 50
     title: A novel deep learning algorithm for real-time prediction of clinical deterioration in the emergency department for a multimodal clinical decision support system
     year: '2024'
   T0DHr9QAAAAJ:qjMakFHDy7sC:
