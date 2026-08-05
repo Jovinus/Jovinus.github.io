@@ -1,13 +1,17 @@
 metadata:
   h_index: 8
   i10_index: 7
-  last_updated: '2026-07-29'
-  total_citations: 445
+  last_updated: '2026-08-05'
+  total_citations: 442
 papers:
   T0DHr9QAAAAJ:2osOgNQ5qMEC:
-    citations: 172
+    citations: 170
     title: Electromyogram-based classification of hand and finger gestures using artificial neural networks
-    year: '2022'
+    year: '2021'
+  T0DHr9QAAAAJ:4DMP91E08xMC:
+    citations: 0
+    title: "NEUROTRANSMISSION AND SIGNALLING-Phospholipase C, Protein Kinase C, Ca2+/Calmodulin-Dependent Protein Kinase II, and Tyrosine Phosphorylation Are Involved in Carbachol-Induced \u2026"
+    year: '2000'
   T0DHr9QAAAAJ:4TOpqqG69KYC:
     citations: 1
     title: Evaluating the predictive potential of an AI-driven deep learning model for pneumonia-associated sepsis
@@ -21,19 +25,19 @@ papers:
     title: Prospective external validation of a deep-learning-based early-warning system for major adverse events in general wards in South Korea
     year: '2025'
   T0DHr9QAAAAJ:IjCSPb-OGe4C:
-    citations: 70
-    title: 'Nonalcoholic fatty liver disease and accelerated loss of skeletal muscle mass: A longitudinal cohort study'
+    citations: 68
+    title: 'Nonalcoholic fatty liver disease and accelerated loss of skeletal muscle mass: a longitudinal cohort study'
     year: '2022'
   T0DHr9QAAAAJ:M3ejUd6NZC8C:
     citations: 0
     title: 'Enhancing Clinical Decision-Making in Rapid Response Systems: Integrating AI-Based Predictions and Early Pattern Clustering'
     year: '2025'
   T0DHr9QAAAAJ:MXK_kJrjxJIC:
-    citations: 8
+    citations: 9
     title: "Validation of an artificial intelligence-based algorithm for predictive performance and risk stratification of sepsis using real-world data from hospitalised patients: a \u2026"
     year: '2025'
   T0DHr9QAAAAJ:Tyk-4Ss8FVUC:
-    citations: 58
+    citations: 59
     title: Multi-center validation of machine learning model for preoperative prediction of postoperative mortality
     year: '2022'
   T0DHr9QAAAAJ:ULOm3_A8WrAC:
@@ -57,7 +61,7 @@ papers:
     title: Association between cardiorespiratory fitness and trend of age-related rise in arterial stiffness in individuals with and without hypertension or diabetes
     year: '2025'
   T0DHr9QAAAAJ:Y0pCki6q_DkC:
-    citations: 17
+    citations: 16
     title: "Gender-specific relationship between thigh muscle and fat mass and brain amyloid-\u03B2 positivity"
     year: '2022'
   T0DHr9QAAAAJ:YOwf2qJgpHMC:
@@ -69,7 +73,7 @@ papers:
     title: 'Self-Supervised Contrastive Loss for Multimodal Emotion Recognition: Self-Supervision is All You Need'
     year: '2023'
   T0DHr9QAAAAJ:Zph67rFs4hoC:
-    citations: 1
+    citations: 2
     title: Deep learning-based stress detection from RR intervals in major depressive disorder, panic disorder, and healthy individuals
     year: '2025'
   T0DHr9QAAAAJ:aqlVkmm33-oC:
@@ -81,11 +85,11 @@ papers:
     title: The relationship between breast density change during menopause and the risk of breast cancer in Korean women
     year: '2021'
   T0DHr9QAAAAJ:eQOLeE2rZwMC:
-    citations: 19
+    citations: 17
     title: Novel artificial intelligence-based technology to diagnose asthma using methacholine challenge tests
     year: '2023'
   T0DHr9QAAAAJ:hqOjcs7Dif8C:
-    citations: 50
+    citations: 51
     title: A novel deep learning algorithm for real-time prediction of clinical deterioration in the emergency department for a multimodal clinical decision support system
     year: '2024'
   T0DHr9QAAAAJ:qjMakFHDy7sC:
