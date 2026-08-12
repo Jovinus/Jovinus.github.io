@@ -1,17 +1,13 @@
 metadata:
   h_index: 8
   i10_index: 7
-  last_updated: '2026-08-05'
-  total_citations: 442
+  last_updated: '2026-08-12'
+  total_citations: 447
 papers:
   T0DHr9QAAAAJ:2osOgNQ5qMEC:
-    citations: 170
+    citations: 172
     title: Electromyogram-based classification of hand and finger gestures using artificial neural networks
     year: '2021'
-  T0DHr9QAAAAJ:4DMP91E08xMC:
-    citations: 0
-    title: "NEUROTRANSMISSION AND SIGNALLING-Phospholipase C, Protein Kinase C, Ca2+/Calmodulin-Dependent Protein Kinase II, and Tyrosine Phosphorylation Are Involved in Carbachol-Induced \u2026"
-    year: '2000'
   T0DHr9QAAAAJ:4TOpqqG69KYC:
     citations: 1
     title: Evaluating the predictive potential of an AI-driven deep learning model for pneumonia-associated sepsis
@@ -25,7 +21,7 @@ papers:
     title: Prospective external validation of a deep-learning-based early-warning system for major adverse events in general wards in South Korea
     year: '2025'
   T0DHr9QAAAAJ:IjCSPb-OGe4C:
-    citations: 68
+    citations: 69
     title: 'Nonalcoholic fatty liver disease and accelerated loss of skeletal muscle mass: a longitudinal cohort study'
     year: '2022'
   T0DHr9QAAAAJ:M3ejUd6NZC8C:
@@ -37,7 +33,7 @@ papers:
     title: "Validation of an artificial intelligence-based algorithm for predictive performance and risk stratification of sepsis using real-world data from hospitalised patients: a \u2026"
     year: '2025'
   T0DHr9QAAAAJ:Tyk-4Ss8FVUC:
-    citations: 59
+    citations: 60
     title: Multi-center validation of machine learning model for preoperative prediction of postoperative mortality
     year: '2022'
   T0DHr9QAAAAJ:ULOm3_A8WrAC:
@@ -89,7 +85,7 @@ papers:
     title: Novel artificial intelligence-based technology to diagnose asthma using methacholine challenge tests
     year: '2023'
   T0DHr9QAAAAJ:hqOjcs7Dif8C:
-    citations: 51
+    citations: 52
     title: A novel deep learning algorithm for real-time prediction of clinical deterioration in the emergency department for a multimodal clinical decision support system
     year: '2024'
   T0DHr9QAAAAJ:qjMakFHDy7sC:
