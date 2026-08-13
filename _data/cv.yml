@@ -114,6 +114,13 @@ cv:
           - "Text mining of unstructured medical records"
           - "Statistical analysis and predictive/diagnostic model development"
 
+    Teaching:
+      # RenderCV OneLineEntry (`label` + `details`), same shape as Academic Service.
+      # `_layouts/cv.liquid` has no Teaching branch, so its generic renderer picks
+      # this up as "**label:** details" — no new include needed.
+      - label: University of Seoul, Department of Sport Science
+        details: "Lecturer · Exercise and Digital Healthcare, fourth-year undergraduate elective (Fall 2026)"
+
     Awards:
       # RenderCV NormalEntry: `summary` carries the awarding body, `highlights` the
       # description. There is no `awarder` field in the schema — see the note in
