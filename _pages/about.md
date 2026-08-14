@@ -6,7 +6,7 @@ subtitle: >
   AI Researcher at <a href='https://www.aitrics.com'>AITRICS</a>
   &middot; PhD Student in Digital Health at
   <a href='https://www.saihst.kr/'>SAIHST</a>, Sungkyunkwan University
-  &middot; Co-founder &amp; CEO of <a href='https://breathyou.care'>BreathYou</a>
+  &middot; Co-founder &amp; CEO of <a href='https://breathyou.care'>BreathYou Co., Ltd.</a>
 
 profile:
   align: right
@@ -39,6 +39,6 @@ At AITRICS, I contributed to a cardiac arrest early-warning system that was appr
 
 For my doctoral research, I work with longitudinal pulmonary function data from Samsung Medical Center, building time-series models to better capture how respiratory health changes over time.
 
-In 2025, I co-founded [**BreathYou**](https://breathyou.care), a digital health startup focused on allergy and respiratory AI that turns parts of this research into products clinicians can use.
+In 2025, I co-founded [**BreathYou**](https://breathyou.care), a digital health startup focused on allergy and respiratory AI that turns parts of this research into products clinicians can use. It was incorporated as **BreathYou Co., Ltd.** in August 2026.
 
 I'm always happy to talk with people working on clinical AI, medical device development, or respiratory health — feel free to reach out.

@@ -4,4 +4,4 @@ Interested in how machine learning becomes a clinically deployable medical devic
 
 Contributed to an MFDS-approved cardiac arrest early-warning AI medical device. Currently leading the productization of an AKI prediction model I developed, toward MFDS approval.
 
-Co-founded [**BreathYou**](https://breathyou.care) in 2025, a digital health startup focused on allergy and respiratory AI.
+Co-founded [**BreathYou**](https://breathyou.care) in 2025, a digital health startup focused on allergy and respiratory AI, incorporated as **BreathYou Co., Ltd.** in 2026.

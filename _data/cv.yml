@@ -16,7 +16,7 @@ cv:
     Summary:
       - PhD student in Digital Health at SAIHST, Sungkyunkwan University. AI researcher working on
         clinical time-series deep learning, medical AI regulatory pathways, and respiratory digital
-        health. Co-founder & CEO of BreathYou.
+        health. Co-founder & CEO of BreathYou Co., Ltd.
 
     Education:
       - institution: Sungkyunkwan University (SAIHST)
@@ -52,7 +52,7 @@ cv:
           - "[Bioelectronics Lab.](https://sites.google.com/view/bioelectronics-lab/home) — Biosignal (ECG, EMG) data collection, signal analysis, and real-time prediction model development"
 
     Experience:
-      - company: BreathYou
+      - company: BreathYou Co., Ltd.
         position: Co-founder & CEO
         location: South Korea
         url: https://breathyou.care
@@ -61,6 +61,7 @@ cv:
         summary: Digital health startup focused on allergy and respiratory AI, developing DeepBreath CDSS and MediPipe.
         highlights:
           - "Selected for 2025 Pre-startup Package"
+          - "Incorporated on 5 August 2026"
           - "DeepBreath CDSS: Clinical decision support for predicting pulmonary function decline trajectories"
           - "MediPipe: OCR/NLP pipeline for medical record processing"
 

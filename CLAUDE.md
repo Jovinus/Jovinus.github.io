@@ -172,3 +172,5 @@ Two ways to get fresh data when Actions is being blocked:
 - **SAIHST URL**: `https://www.saihst.kr/` (not `saihst.skku.edu`)
 - **Public email**: `lkh256@gmail.com` (used in `_config.yml`, `_data/cv.yml`, `_data/socials.yml`, and the obfuscated `about.md` address line)
 - **BreathYou role**: Co-founder (not sole founder) — Dayoon Lee is the other co-founder.
+- **BreathYou legal name**: incorporated **5 August 2026** as **BreathYou Co., Ltd.** Every affiliation reference on the site uses the full legal name — `about.md` subtitle, `cv.md` description, `_data/cv.yml` (Summary + Experience), and all `profiles.md` / `about_*.md` lines. The bare brand name survives only where the founding of the 2025 venture is described (it predates the corporation), with the incorporation stated alongside.
+- **Dayoon Lee's title**: Co-founder & **Chief Quality Officer** (CQO) at BreathYou Co., Ltd. — was "Quality Management Officer" before incorporation.

@@ -13,7 +13,9 @@ profiles:
     image_circular: false
     more_info: >
       <p>Kyung Hyun Lee</p>
-      <p>PhD Student &middot; AI Researcher &middot; Co-founder & CEO</p>
+      <p>PhD Student &middot; SAIHST, Sungkyunkwan University</p>
+      <p>AI Researcher &middot; AITRICS</p>
+      <p>Co-founder & CEO &middot; BreathYou Co., Ltd.</p>
       <p>Suwon, Gyeonggi-do, Republic of Korea</p>
 
   - section: Advisors
@@ -86,7 +88,8 @@ profiles:
     image_circular: false
     more_info: >
       <p>Dayoon Lee</p>
-      <p>Co-founder &middot; Quality Management Officer &middot; BreathYou</p>
+      <p>Co-founder &middot; Chief Quality Officer &middot; BreathYou Co., Ltd.</p>
+      <p>South Korea</p>
 
   - align: right
     image: hong_sungsoo.png
@@ -122,7 +125,7 @@ profiles:
     more_info: >
       <p>Jinho Kim</p>
       <p>Solution Engineer &middot; AITRICS</p>
-      <p>Backend Engineer (side) &middot; BreathYou</p>
+      <p>Backend Engineer (side) &middot; BreathYou Co., Ltd.</p>
       <p>Seoul, South Korea</p>
 
   - section: Mentees
@@ -133,5 +136,6 @@ profiles:
     more_info: >
       <p>Wonjoon Jang</p>
       <p>Student &middot; Seoul Robotics High School</p>
-      <p>App Developer (side) &middot; BreathYou</p>
+      <p>App Developer (side) &middot; BreathYou Co., Ltd.</p>
+      <p>Seoul, South Korea</p>
 ---
