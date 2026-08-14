@@ -32,7 +32,7 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "Curriculum Vitae of Kyung Hyun Lee — AI Researcher, PhD Student in Digital Health, Co-founder &amp; CEO of BreathYou.",
+          description: "Curriculum Vitae of Kyung Hyun Lee — AI Researcher, PhD Student in Digital Health, Co-founder &amp; CEO of BreathYou Co., Ltd.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
