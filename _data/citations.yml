@@ -1,11 +1,11 @@
 metadata:
   h_index: 8
   i10_index: 7
-  last_updated: '2026-08-12'
-  total_citations: 447
+  last_updated: '2026-08-19'
+  total_citations: 448
 papers:
   T0DHr9QAAAAJ:2osOgNQ5qMEC:
-    citations: 172
+    citations: 173
     title: Electromyogram-based classification of hand and finger gestures using artificial neural networks
     year: '2021'
   T0DHr9QAAAAJ:4TOpqqG69KYC:
