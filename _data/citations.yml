@@ -1,15 +1,15 @@
 metadata:
   h_index: 8
-  i10_index: 7
-  last_updated: '2026-08-21'
-  total_citations: 450
+  i10_index: 8
+  last_updated: '2026-08-26'
+  total_citations: 454
 papers:
   T0DHr9QAAAAJ:2osOgNQ5qMEC:
     citations: 174
     title: Electromyogram-based classification of hand and finger gestures using artificial neural networks
     year: '2021'
   T0DHr9QAAAAJ:4TOpqqG69KYC:
-    citations: 1
+    citations: 2
     title: Evaluating the predictive potential of an AI-driven deep learning model for pneumonia-associated sepsis
     year: '2026'
   T0DHr9QAAAAJ:5nxA0vEk-isC:
@@ -29,7 +29,7 @@ papers:
     title: 'Enhancing Clinical Decision-Making in Rapid Response Systems: Integrating AI-Based Predictions and Early Pattern Clustering'
     year: '2025'
   T0DHr9QAAAAJ:MXK_kJrjxJIC:
-    citations: 9
+    citations: 10
     title: "Validation of an artificial intelligence-based algorithm for predictive performance and risk stratification of sepsis using real-world data from hospitalised patients: a \u2026"
     year: '2025'
   T0DHr9QAAAAJ:Tyk-4Ss8FVUC:
@@ -57,7 +57,7 @@ papers:
     title: Association between cardiorespiratory fitness and trend of age-related rise in arterial stiffness in individuals with and without hypertension or diabetes
     year: '2025'
   T0DHr9QAAAAJ:Y0pCki6q_DkC:
-    citations: 16
+    citations: 17
     title: "Gender-specific relationship between thigh muscle and fat mass and brain amyloid-\u03B2 positivity"
     year: '2022'
   T0DHr9QAAAAJ:YOwf2qJgpHMC:
@@ -77,7 +77,7 @@ papers:
     title: 'Machine learning models for early mortality prediction in trauma patients using public data: a nationwide retrospective study'
     year: '2026'
   T0DHr9QAAAAJ:d1gkVwhDpl0C:
-    citations: 6
+    citations: 7
     title: The relationship between breast density change during menopause and the risk of breast cancer in Korean women
     year: '2021'
   T0DHr9QAAAAJ:eQOLeE2rZwMC:
