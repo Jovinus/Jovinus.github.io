@@ -1,11 +1,11 @@
 metadata:
-  h_index: 8
-  i10_index: 8
-  last_updated: '2026-08-26'
-  total_citations: 454
+  h_index: 10
+  i10_index: 10
+  last_updated: '2026-09-07'
+  total_citations: 723
 papers:
   T0DHr9QAAAAJ:2osOgNQ5qMEC:
-    citations: 174
+    citations: 175
     title: Electromyogram-based classification of hand and finger gestures using artificial neural networks
     year: '2021'
   T0DHr9QAAAAJ:4TOpqqG69KYC:
@@ -20,6 +20,10 @@ papers:
     citations: 4
     title: Prospective external validation of a deep-learning-based early-warning system for major adverse events in general wards in South Korea
     year: '2025'
+  T0DHr9QAAAAJ:9ZlFYXVOiuMC:
+    citations: 116
+    title: Diffusion-weighted MRI in vascular dementia
+    year: '2000'
   T0DHr9QAAAAJ:IjCSPb-OGe4C:
     citations: 69
     title: 'Nonalcoholic fatty liver disease and accelerated loss of skeletal muscle mass: a longitudinal cohort study'
@@ -85,9 +89,13 @@ papers:
     title: Novel artificial intelligence-based technology to diagnose asthma using methacholine challenge tests
     year: '2023'
   T0DHr9QAAAAJ:hqOjcs7Dif8C:
-    citations: 52
+    citations: 53
     title: A novel deep learning algorithm for real-time prediction of clinical deterioration in the emergency department for a multimodal clinical decision support system
     year: '2024'
+  T0DHr9QAAAAJ:mVmsd5A6BfQC:
+    citations: 151
+    title: "Korean Society of Radiology. Ultrasonography diagnosis and imaging-based management of thyroid nodules: revised Korean Society of Thyroid Radiology consensus statement and \u2026"
+    year: '2016'
   T0DHr9QAAAAJ:qjMakFHDy7sC:
     citations: 6
     title: "Stakeholders\u2019 Requirements for Artificial Intelligence for Healthcare in Korea"
