@@ -134,3 +134,63 @@ blockquote {
     }
   }
 }
+
+/*******************************************************************************
+ * Vertical rhythm for markdown page content.
+ *
+ * Bootstrap gives headings `margin-top: 0`, so a `##` on a plain markdown page
+ * ends up exactly one paragraph-gap below the text above it — a section break
+ * reads no stronger than a line break, and long pages feel like one dense
+ * block. These rules restore a scale, scoped with `>` so they only reach the
+ * top-level elements kramdown emits for page content (`_layouts/page.liquid`,
+ * `about`, `cv`, `profiles`) and never the headings inside cards, publication
+ * lists, or other components.
+ ******************************************************************************/
+
+.post > article {
+  > h2 {
+    margin-top: 2.75rem;
+    margin-bottom: 1rem;
+  }
+
+  > h3 {
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  > h4,
+  > h5,
+  > h6 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* A heading that opens the article, or one that directly follows another
+     heading, has nothing above it to separate itself from. */
+  > :first-child,
+  > h2 + h3,
+  > h3 + h4 {
+    margin-top: 0;
+  }
+
+  > p,
+  > ul,
+  > ol,
+  > table,
+  > blockquote {
+    margin-bottom: 1.25rem;
+  }
+
+  /* Long-form bullets (syllabus weeks, course notes) run together otherwise. */
+  > ul > li + li,
+  > ol > li + li {
+    margin-top: 0.5rem;
+  }
+
+  /* The global 1px cell padding is meant for the CV's dense key/value tables
+     (`table.table-cv`, which keeps it); prose tables need room to breathe. */
+  > table td,
+  > table th {
+    padding: 0.4rem 1rem 0.4rem 0;
+  }
+}

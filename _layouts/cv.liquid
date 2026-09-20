@@ -173,13 +173,20 @@ layout: default
                 {% include cv/references.liquid %}
               {% else %}
                 <!-- Generic section -->
+                {% comment %}
+                  Generic renderer for sections with no dedicated include —
+                  Teaching and Academic Service, both RenderCV OneLineEntry.
+                  `.cv-one-line-entry` gives consecutive entries the same
+                  breathing room as `.language-item`; without it they stack with
+                  no gap at all.
+                {% endcomment %}
                 {% for entry in section_entries %}
                   {% if entry.bullet %}
                     <ul class="card-text font-weight-light list-group list-group-flush">
                       <li class="list-group-item">{{ entry.bullet | markdownify | remove: '<p>' | remove: '</p>' }}</li>
                     </ul>
                   {% elsif entry.label %}
-                    <div class="card-text font-weight-light">
+                    <div class="card-text font-weight-light cv-one-line-entry">
                       <strong>{{ entry.label }}:</strong> {{ entry.details }}
                     </div>
                   {% endif %}
