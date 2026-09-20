@@ -52,6 +52,18 @@ cv:
           - "[Bioelectronics Lab.](https://sites.google.com/view/bioelectronics-lab/home) — Biosignal (ECG, EMG) data collection, signal analysis, and real-time prediction model development"
 
     Experience:
+      - company: University of Seoul
+        position: Lecturer
+        location: Seoul, South Korea
+        url: https://www.uos.ac.kr/
+        start_date: 2026
+        end_date: present
+        summary: >
+          Faculty appointment in the Department of Sport Science, teaching the undergraduate course
+          Exercise and Digital Healthcare.
+        highlights:
+          - "Designed and teach Exercise and Digital Healthcare, a fourth-year major elective (Fall 2026)"
+
       - company: BreathYou Co., Ltd.
         position: Co-founder & CEO
         location: South Korea
@@ -136,6 +148,12 @@ cv:
         date: 2026
         highlights:
           - "MediPipe: on-premise medical data infrastructure software that turns in-hospital test results and clinical records into AI-ready data"
+
+      - name: "Consortium Lab-based Startup Camp — Excellence Award"
+        date: 2026
+        summary: Sungkyunkwan University, Startup-Centered University program
+        highlights:
+          - "MediPipe: the data infrastructure that lets hospitals use AI"
 
       - name: "Human Understanding AI Paper Competition — Top 7 & ETRI Director's Award"
         date: 2022
