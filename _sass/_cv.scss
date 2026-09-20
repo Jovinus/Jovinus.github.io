@@ -42,9 +42,19 @@ a.btncv:hover {
  * CV TIME_TABLE styles
  *****************************/
 
+/* The date/location table is `width: auto`, so it sized itself to whichever
+   row was widest — almost always the location. "Incheon, South Korea" made it
+   125px, "South Korea" only 77px, and since the column is `text-center` the
+   date badge above got centered inside that varying width: the badges never
+   lined up down the page, and the wider tables overflowed the 104px column.
+   Pinning the table to the column and letting the location wrap fixes both. */
+.date-column table.table-cv {
+  width: 100%;
+}
+
 p.location {
   font-size: 0.7rem;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 i.iconlocation {
