@@ -86,7 +86,7 @@ ninja.data = [{
           section: "News",},{id: "news-presented-breathyou-co-ltd-s-investor-relations-pitch-medipipe-the-data-infrastructure-that-lets-hospitals-use-ai-at-the-2026-consortium-lab-based-startup-camp-hosted-by-sungkyunkwan-university-s-startup-centered-university-program-and-received-the-excellence-award",
           title: 'Presented BreathYou Co., Ltd.’s investor-relations pitch, “MediPipe: The Data Infrastructure That Lets Hospitals...',
           description: "",
-          section: "News",},{id: "news-presented-breathyou-co-ltd-s-investor-relations-pitch-medipipe-on-premise-medical-data-infrastructure-software-that-turns-in-hospital-test-results-and-clinical-records-into-ai-ready-data-at-the-2026-lab-startup-competition-and-received-the-excellence-award",
+          section: "News",},{id: "news-presented-breathyou-co-ltd-s-investor-relations-pitch-medipipe-on-premise-medical-data-infrastructure-software-that-turns-in-hospital-test-results-and-clinical-records-into-ai-ready-data-at-the-2026-lab-startup-competition-hosted-by-sungkyunkwan-university-s-startup-centered-university-program-and-received-the-excellence-award",
           title: 'Presented BreathYou Co., Ltd.’s investor-relations pitch, “MediPipe: On-Premise Medical Data Infrastructure Software That...',
           description: "",
           section: "News",},{id: "projects-asthma-diagnosis-ai-model-development",
