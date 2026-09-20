@@ -122,6 +122,12 @@ cv:
       - label: University of Seoul, Department of Sport Science
         details: "Lecturer · Exercise and Digital Healthcare, fourth-year undergraduate elective (Fall 2026)"
 
+      - label: University of Seoul, Department of Sport Science
+        details: "Invited seminar · Healthcare industry, two hours, hosted by Prof. Sae Young Jae (2024)"
+
+      - label: Incheon National University
+        details: "Guest lecture · Student-Designed Convergence Major, one hour (2024)"
+
     Awards:
       # RenderCV NormalEntry: `summary` carries the awarding body, `highlights` the
       # description. There is no `awarder` field in the schema — see the note in
