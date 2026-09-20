@@ -83,7 +83,7 @@ ninja.data = [{
           section: "News",},{id: "news-appointed-as-a-lecturer-in-the-department-of-sport-science-university-of-seoul-teaching-exercise-and-digital-healthcare-to-undergraduates-in-the-fall-2026-semester",
           title: 'Appointed as a lecturer in the Department of Sport Science, University of Seoul,...',
           description: "",
-          section: "News",},{id: "news-presented-breathyou-co-ltd-s-investor-relations-pitch-medipipe-the-data-infrastructure-that-lets-hospitals-use-ai-at-the-2026-consortium-lab-based-startup-camp-hosted-by-sungkyunkwan-university-s-startup-centered-university-program-and-received-the-grand-prize",
+          section: "News",},{id: "news-presented-breathyou-co-ltd-s-investor-relations-pitch-medipipe-the-data-infrastructure-that-lets-hospitals-use-ai-at-the-2026-consortium-lab-based-startup-camp-hosted-by-sungkyunkwan-university-s-startup-centered-university-program-and-received-the-excellence-award",
           title: 'Presented BreathYou Co., Ltd.’s investor-relations pitch, “MediPipe: The Data Infrastructure That Lets Hospitals...',
           description: "",
           section: "News",},{id: "news-presented-breathyou-co-ltd-s-investor-relations-pitch-medipipe-on-premise-medical-data-infrastructure-software-that-turns-in-hospital-test-results-and-clinical-records-into-ai-ready-data-at-the-2026-lab-startup-competition-and-received-the-excellence-award",
