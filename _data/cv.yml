@@ -148,12 +148,14 @@ cv:
         date: 2026
         summary: Sungkyunkwan University, Startup-Centered University program
         highlights:
+          - "University-wide competition among Sungkyunkwan University laboratory startup clubs"
           - "MediPipe: on-premise medical data infrastructure software that turns in-hospital test results and clinical records into AI-ready data"
 
       - name: "Consortium Lab-based Startup Camp — Excellence Award"
         date: 2026
         summary: Sungkyunkwan University, Startup-Centered University program
         highlights:
+          - "Consortium competition among laboratory startup teams from universities across the Seoul metropolitan area"
           - "MediPipe: the data infrastructure that lets hospitals use AI"
 
       - name: "Human Understanding AI Paper Competition — Top 7 & ETRI Director's Award"
