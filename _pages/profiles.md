@@ -83,7 +83,7 @@ profiles:
       <p>Seoul, South Korea</p>
 
   - align: left
-    image: dayoon_placeholder.jpg
+    image: lee_dayoon.jpg
     content: about_dayoon.md
     image_circular: false
     more_info: >
