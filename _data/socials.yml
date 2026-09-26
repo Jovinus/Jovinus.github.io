@@ -16,6 +16,12 @@ cv_pdf: /assets/rendercv/rendercv_output/Kyung_Hyun_Lee_CV.pdf
 
 orcid_id: 0000-0002-7010-5284
 scholar_userid: T0DHr9QAAAAJ
+# jekyll-socials has no built-in OpenReview entry (and no icon font ships one),
+# so this is a custom social using an already-loaded Font Awesome icon.
+openreview:
+  logo: fa-solid fa-file-pen
+  title: OpenReview
+  url: https://openreview.net/profile?id=~Kyung_Hyun_Lee1
 
 # -----------------------------------------------------------------------------
 # Professional / code
