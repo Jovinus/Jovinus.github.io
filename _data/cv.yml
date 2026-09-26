@@ -195,6 +195,21 @@ cv:
       - label: "Information Processing & Management"
         details: "Peer reviewer · 1 manuscript (2026)"
 
+      - label: "Frontiers in Medicine"
+        details: "Peer reviewer · 2 manuscripts (2026)"
+
+      - label: "Frontiers in Digital Health"
+        details: "Peer reviewer · 1 manuscript (2026)"
+
+      - label: "Frontiers in Network Physiology"
+        details: "Peer reviewer · 1 manuscript (2026)"
+
+      - label: "Frontiers in Psychiatry"
+        details: "Peer reviewer · 1 manuscript (2026)"
+
+      - label: "NeurIPS 2026 Workshop on Responsible Communication of Machine Learning Research in Biomedicine (RCMLR)"
+        details: "Reviewer · 1 paper (2026)"
+
     Certificates:
       - name: "Medical Information Analysis Expert Advanced Course"
         date: 2021-08
