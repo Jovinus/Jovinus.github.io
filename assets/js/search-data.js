@@ -11,14 +11,14 @@ ninja.data = [{
     },
   },{id: "nav-publications",
           title: "publications",
-          description: "Journal articles, conference proceedings, and manuscripts under review in clinical AI, digital health, and respiratory medicine.",
+          description: "Journal articles, conference papers and abstracts, preprints, and manuscripts under review in clinical AI, digital health, and respiratory medicine.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-projects",
-          title: "projects",
-          description: "Selected research and engineering projects.",
+        },{id: "nav-research",
+          title: "research",
+          description: "Three research themes — physiological signal learning, clinical prediction, and real-world evaluation — followed by current work and earlier projects.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -73,35 +73,23 @@ ninja.data = [{
             window.location.href = "/blog/2026/aki-crrt-2026/";
           
         },
-      },{id: "news-our-multicenter-study-on-deep-learning-models-for-acute-kidney-injury-prediction-including-development-and-external-validation-has-been-submitted-to-npj-digital-medicine-and-is-currently-under-review",
-          title: 'Our multicenter study on deep learning models for acute kidney injury prediction, including...',
+      },{id: "news-presented-an-oral-poster-on-online-simulation-evaluation-of-aki-prediction-models-at-aki-amp-amp-crrt-2026-san-diego-conference-notes",
+          title: 'Presented an oral poster on online-simulation evaluation of AKI prediction models at AKI...',
           description: "",
-          section: "News",},{id: "news-presented-an-oral-poster-online-simulation-versus-single-point-evaluation-for-aki-prediction-identifying-optimal-prediction-horizons-for-continuous-monitoring-at-aki-amp-amp-crrt-2026-part-of-the-work-submitted-to-npj-digital-medicine",
-          title: 'Presented an oral poster, “Online Simulation Versus Single-Point Evaluation for AKI Prediction: Identifying...',
+          section: "News",},{id: "news-published-in-npj-digital-medicine-multi-center-external-validation-of-deep-learning-aki-prediction-models-under-simulated-continuous-monitoring-paper",
+          title: 'Published in npj Digital Medicine: multi-center external validation of deep learning AKI prediction...',
           description: "",
-          section: "News",},{id: "news-our-paper-on-deep-learning-models-for-aki-prediction-multi-center-external-validation-and-evaluation-under-simulated-continuous-monitoring-conditions-has-been-accepted-in-npj-digital-medicine",
-          title: 'Our paper on deep learning models for AKI prediction — multi-center external validation...',
+          section: "News",},{id: "news-appointed-lecturer-in-the-department-of-sport-science-university-of-seoul-teaching-exercise-and-digital-healthcare-fall-2026",
+          title: 'Appointed lecturer in the Department of Sport Science, University of Seoul, teaching Exercise...',
           description: "",
-          section: "News",},{id: "news-our-paper-on-deep-learning-models-for-aki-prediction-multi-center-external-validation-and-evaluation-under-simulated-continuous-monitoring-conditions-has-been-published-in-npj-digital-medicine",
-          title: 'Our paper on deep learning models for AKI prediction — multi-center external validation...',
+          section: "News",},{id: "news-breathyou-co-ltd-received-the-excellence-award-at-the-2026-consortium-lab-based-startup-camp-sungkyunkwan-university",
+          title: 'BreathYou Co., Ltd. received the Excellence Award at the 2026 Consortium Lab-based Startup...',
           description: "",
-          section: "News",},{id: "news-submitted-a-late-breaking-abstract-reading-screening-spirometry-as-a-trajectory-predicts-incident-airflow-obstruction-earlier-a-landmark-deep-learning-analysis-of-221-903-adults-to-the-european-respiratory-society-ers-international-congress-2026-late-breaking-abstract-session",
-          title: 'Submitted a late-breaking abstract, “Reading screening spirometry as a trajectory predicts incident airflow...',
+          section: "News",},{id: "news-presented-a-poster-on-spirometry-trajectories-and-incident-airflow-obstruction-at-the-ers-international-congress-2026-barcelona-conference-notes",
+          title: 'Presented a poster on spirometry trajectories and incident airflow obstruction at the ERS...',
           description: "",
-          section: "News",},{id: "news-our-late-breaking-abstract-reading-screening-spirometry-as-a-trajectory-predicts-incident-airflow-obstruction-earlier-a-landmark-deep-learning-analysis-of-221-903-adults-has-been-accepted-as-a-poster-presentation-at-the-european-respiratory-society-ers-international-congress-2026-to-be-presented-on-september-8-2026",
-          title: 'Our late-breaking abstract, “Reading screening spirometry as a trajectory predicts incident airflow obstruction...',
-          description: "",
-          section: "News",},{id: "news-appointed-as-a-lecturer-in-the-department-of-sport-science-university-of-seoul-teaching-exercise-and-digital-healthcare-to-undergraduates-in-the-fall-2026-semester",
-          title: 'Appointed as a lecturer in the Department of Sport Science, University of Seoul,...',
-          description: "",
-          section: "News",},{id: "news-presented-breathyou-co-ltd-s-investor-relations-pitch-medipipe-the-data-infrastructure-that-lets-hospitals-use-ai-at-the-2026-consortium-lab-based-startup-camp-hosted-by-sungkyunkwan-university-s-startup-centered-university-program-where-laboratory-startup-teams-from-universities-across-the-seoul-metropolitan-area-competed-and-received-the-excellence-award",
-          title: 'Presented BreathYou Co., Ltd.’s investor-relations pitch, “MediPipe: The Data Infrastructure That Lets Hospitals...',
-          description: "",
-          section: "News",},{id: "news-presented-our-poster-reading-screening-spirometry-as-a-trajectory-predicts-incident-airflow-obstruction-earlier-a-landmark-deep-learning-analysis-of-221-903-adults-with-dayoon-lee-at-the-european-respiratory-society-ers-international-congress-2026-in-barcelona-notes-from-the-congress",
-          title: 'Presented our poster, “Reading screening spirometry as a trajectory predicts incident airflow obstruction...',
-          description: "",
-          section: "News",},{id: "news-presented-breathyou-co-ltd-s-investor-relations-pitch-medipipe-on-premise-medical-data-infrastructure-software-that-turns-in-hospital-test-results-and-clinical-records-into-ai-ready-data-at-the-2026-lab-startup-competition-sungkyunkwan-university-s-university-wide-competition-for-graduate-student-laboratory-startup-clubs-run-by-its-start-up-support-foundation-and-received-the-excellence-award",
-          title: 'Presented BreathYou Co., Ltd.’s investor-relations pitch, “MediPipe: On-Premise Medical Data Infrastructure Software That...',
+          section: "News",},{id: "news-breathyou-co-ltd-received-the-excellence-award-at-the-2026-lab-startup-competition-sungkyunkwan-university",
+          title: 'BreathYou Co., Ltd. received the Excellence Award at the 2026 Lab Startup Competition,...',
           description: "",
           section: "News",},{id: "projects-asthma-diagnosis-ai-model-development",
           title: 'Asthma Diagnosis AI Model Development',
@@ -113,6 +101,16 @@ ninja.data = [{
           description: "Full-stack development of IoT door lock, reservation/payment system, and management dashboard for an unmanned indoor tennis court.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/balllab/";
+            },},{id: "projects-clinical-prediction",
+          title: 'Clinical Prediction',
+          description: "Machine learning for specific clinical questions — asthma diagnosis and sepsis risk — validated on later or prospectively collected patients.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/clinical_prediction/";
+            },},{id: "projects-evaluating-continuously-read-clinical-models",
+          title: 'Evaluating Continuously Read Clinical Models',
+          description: "Metrics, horizons, and external validation for models read every hour or every minute — work in progress and under review.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/continuous_monitoring_evaluation/";
             },},{id: "projects-cardiorespiratory-fitness-prediction-in-korean-population",
           title: 'Cardiorespiratory Fitness Prediction in Korean Population',
           description: "Development of a CRF prediction model for healthy Korean adults using health screening and exercise stress test data from Samsung Medical Center.",
@@ -138,6 +136,11 @@ ninja.data = [{
           description: "Analysis of the impact of HVA and cardiorespiratory fitness on subclinical atherosclerosis using Samsung Medical Center health screening data.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/hva_atherosclerosis/";
+            },},{id: "projects-longitudinal-pulmonary-function",
+          title: 'Longitudinal Pulmonary Function',
+          description: "Doctoral research — reading repeated screening spirometry as a trajectory to anticipate incident airflow obstruction.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/longitudinal_lung_function/";
             },},{id: "projects-intelligent-sw-for-medical-data-analysis",
           title: 'Intelligent SW for Medical Data Analysis',
           description: "[NIPA] AI-based intelligent medical solution for breast cancer risk prediction and recurrence risk prediction by survival period.",
@@ -148,6 +151,16 @@ ninja.data = [{
           description: "[MSIT] Building a standards-based Public Health Information System through SNOMED CT code mapping and Common Data Model (CDM) construction.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/phis/";
+            },},{id: "projects-physiological-signal-learning",
+          title: 'Physiological Signal Learning',
+          description: "Neural networks on EMG and ECG-derived RR intervals — gesture classification, age prediction, and stress detection — compared with handcrafted features and conventional classifiers.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/physiological_signals/";
+            },},{id: "projects-real-world-evaluation",
+          title: 'Real-World Evaluation',
+          description: "Multi-center external validation and continuous-monitoring simulation of AKI prediction models — where single-point performance and performance under repeated use can diverge.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/real_world_evaluation/";
             },},{id: "projects-multi-center-surgical-mortality-amp-icu-admission-prediction",
           title: 'Multi-center Surgical Mortality &amp;amp; ICU Admission Prediction',
           description: "Development of 30-day mortality and ICU admission prediction models using perioperative data from four major hospitals in South Korea.",
