@@ -3,9 +3,9 @@ layout: about
 title: about
 permalink: /
 subtitle: >
-  AI Researcher at <a href='https://www.aitrics.com'>AITRICS</a>
-  &middot; PhD Student in Digital Health at
+  PhD Student in Digital Health at
   <a href='https://www.saihst.kr/'>SAIHST</a>, Sungkyunkwan University
+  &middot; AI Researcher at <a href='https://www.aitrics.com'>AITRICS</a>
   &middot; Co-founder &amp; CEO of <a href='https://breathyou.care'>BreathYou Co., Ltd.</a>
 
 profile:
@@ -17,7 +17,25 @@ profile:
     <p>Republic of Korea</p>
     <p>lkh256 [at] gmail [dot] com</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+featured_papers: true # representative journal articles from _data/featured_papers.yml, grouped by theme
+current_research: >
+  <ul class="research-themes">
+    <li>
+      <a href="/projects/longitudinal_lung_function/">Longitudinal pulmonary function</a>
+      <span>Doctoral research on reading repeated screening spirometry as a trajectory to anticipate airflow obstruction. Presented at the ERS International Congress 2026; not yet published.</span>
+    </li>
+    <li>
+      <a href="/projects/continuous_monitoring_evaluation/">Evaluating continuously read clinical models</a>
+      <span>Minute-level intraoperative hypotension monitoring and multicenter cardiac arrest prediction. Manuscripts under review; one preprint.</span>
+    </li>
+  </ul>
+beyond_research: >
+  I contributed to a cardiac arrest early-warning system at AITRICS that was approved by Korea's MFDS
+  as an AI medical device, and I now lead product development of the AKI model toward the same approval.
+  In 2025 I co-founded <a href="https://breathyou.care">BreathYou</a>, a respiratory and allergy AI startup
+  incorporated as BreathYou Co., Ltd. in August 2026. I also teach
+  <a href="/teaching/"><em>Exercise and Digital Healthcare</em></a> at the University of Seoul.
+selected_papers: false # fallback bibliography list of papers marked "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
@@ -31,14 +49,25 @@ latest_posts:
   limit: 3
 ---
 
-I'm a PhD student in Digital Health at [SAIHST, Sungkyunkwan University](https://www.saihst.kr/), advised by Professor Byung-Jae Lee, and an AI researcher at [AITRICS](https://www.aitrics.com).
+<p class="research-headline">AI researcher in physiological and clinical time-series learning</p>
 
-My work sits between machine learning research and clinical deployment. I like thinking about how a model becomes a medical device — how it's trained, how it's validated, and how it earns regulatory trust.
+I develop and evaluate machine learning models for physiological signals and longitudinal clinical data, with particular attention to external validation and to how models behave under continuous clinical monitoring. I'm a PhD student in Digital Health at [SAIHST, Sungkyunkwan University](https://www.saihst.kr/), advised by Professor Byung-Jae Lee, and an AI researcher at [AITRICS](https://www.aitrics.com).
 
-At AITRICS, I contributed to a cardiac arrest early-warning system that was approved by Korea's MFDS as an AI medical device. I'm now leading the product development of an AKI prediction model I developed, with the same goal of MFDS approval.
+My work began with biosignals — EMG and ECG-derived RR intervals — and moved to electronic health records and repeated clinical measurements. The question that connects them: when data arrive as a sequence, how should a model learn from it, and how should the model be evaluated in the conditions where it will be used — at other hospitals, and read repeatedly as new measurements arrive rather than once per patient?
 
-For my doctoral research, I work with longitudinal pulmonary function data from Samsung Medical Center, building time-series models to better capture how respiratory health changes over time.
+<h2 class="section-heading">research themes</h2>
 
-In 2025, I co-founded [**BreathYou**](https://breathyou.care), a digital health startup focused on allergy and respiratory AI that turns parts of this research into products clinicians can use. It was incorporated as **BreathYou Co., Ltd.** in August 2026.
-
-I'm always happy to talk with people working on clinical AI, medical device development, or respiratory health — feel free to reach out.
+<ul class="research-themes">
+  <li>
+    <a href="/projects/#physiological_signals">Physiological signal learning</a>
+    <span>Neural networks for EMG gesture classification, and deep learning on raw RR intervals for age prediction and stress detection, compared with handcrafted features.</span>
+  </li>
+  <li>
+    <a href="/projects/#clinical_prediction">Clinical prediction</a>
+    <span>Asthma diagnosis from methacholine challenge tests and sepsis risk in hospitalised patients, validated on later referrals and a prospective cohort.</span>
+  </li>
+  <li>
+    <a href="/projects/#real_world_evaluation">Real-world evaluation</a>
+    <span>Multi-center external validation and continuous-monitoring simulation of AKI prediction models, where single-point performance and performance under repeated use can diverge.</span>
+  </li>
+</ul>

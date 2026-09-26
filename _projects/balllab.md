@@ -3,7 +3,7 @@ layout: page
 title: BallLab — Unmanned Indoor Tennis Court System
 description: Full-stack development of IoT door lock, reservation/payment system, and management dashboard for an unmanned indoor tennis court.
 importance: 2
-category: work
+category: engineering
 ---
 
 **Period:** 2022.08 -- 2022.09

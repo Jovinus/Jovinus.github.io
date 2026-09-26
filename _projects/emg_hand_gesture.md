@@ -3,7 +3,7 @@ layout: page
 title: EMG-based Real-time Hand Gesture Prediction
 description: Development of a data-driven model for real-time complex hand gesture recognition using EMG signals collected from subjects.
 importance: 9
-category: research
+category: earlier
 ---
 
 **Period:** 2018.03 -- 2021.12

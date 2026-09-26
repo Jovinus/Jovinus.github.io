@@ -3,7 +3,7 @@ layout: page
 title: TALLI — Healthcare Career Platform
 description: Backend development for a career growth platform for healthcare professionals, built with FastAPI and PostgreSQL.
 importance: 1
-category: work
+category: engineering
 ---
 
 **Period:** 2022.01 -- 2022.12

@@ -3,7 +3,7 @@ layout: page
 title: Public Health Information System (PHIS)
 description: "[MSIT] Building a standards-based Public Health Information System through SNOMED CT code mapping and Common Data Model (CDM) construction."
 importance: 7
-category: research
+category: earlier
 ---
 
 **Period:** 2020.01 -- 2021.08

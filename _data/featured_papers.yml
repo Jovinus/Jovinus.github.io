@@ -1,0 +1,89 @@
+# Representative peer-reviewed journal articles on the landing page (_includes/featured_papers.liquid),
+# grouped by research theme. Keep in sync with `selected={true}` in _bibliography/papers.bib.
+#
+# - Year = the publisher's citation (volume) year, checked against Crossref.
+# - `question` / `method` / `validation` paraphrase the published abstract.
+# - `contribution` follows the paper's author-contribution (CRediT) statement where one exists;
+#   `contribution_source` records where each line came from.
+
+- theme: Real-World Evaluation
+  papers:
+    - key: lee2026aki
+      highlight: true
+      title: "Deep learning models for acute kidney injury prediction: multi-center external validation and evaluation under simulated continuous monitoring conditions"
+      journal: npj Digital Medicine
+      year: 2026
+      role: Co-first author
+      doi: 10.1038/s41746-026-02722-2
+      question: A deployed AKI model re-predicts as new data arrive, yet models are usually compared on one prediction per patient. Does that single-point performance describe how a model behaves under continuous monitoring, and does it hold at other hospitals?
+      method: Three deep learning architectures (LSTM-Attention, Masked CNN, ITE-Transformer) and two baselines (XGBoost, logistic regression) at 0-, 48-, and 72-hour horizons, evaluated with an online simulation that issues predictions every 12 hours before onset.
+      validation: 157,323 admissions; developed at NHIS Ilsan Hospital and externally validated at Chuncheon Sacred Heart Hospital and on MIMIC-IV. The model with the highest single-point AUROC had the heaviest alert burden under simulation.
+      contribution: Conceptualization, methodology, software, data curation, formal analysis, validation, and the original draft.
+      contribution_source: Author contributions statement (CRediT)
+
+- theme: Clinical Prediction
+  papers:
+    - key: kim2025validation
+      title: "Validation of an artificial intelligence-based algorithm for predictive performance and risk stratification of sepsis using real-world data from hospitalised patients: a prospective observational study"
+      journal: BMJ Health & Care Informatics
+      year: 2025
+      role: Co-first author
+      doi: 10.1136/bmjhci-2024-101353
+      question: Does a deep learning sepsis score derived from electronic medical records hold up prospectively against conventional scoring systems?
+      method: Prospective comparison of a deep learning sepsis algorithm (VC-SEPS) with traditional scores, including risk stratification at admission and lead time before an operational sepsis definition was met.
+      validation: Prospective observational cohort of 6,455 hospitalised patients (325 with sepsis) at Keimyung University Dongsan Hospital.
+      contribution_source: Not verified — no contributors statement retrieved from the publisher page
+
+    - key: kang2023novel
+      title: "Novel artificial intelligence-based technology to diagnose asthma using methacholine challenge tests"
+      journal: Allergy, Asthma & Immunology Research
+      year: 2024
+      role: Co-first author
+      doi: 10.4168/aair.2024.16.1.42
+      code: https://github.com/Jovinus/Asthma_study
+      question: Can the full spirometric response recorded during a methacholine challenge test diagnose asthma more accurately than the conventional PC20 ≤ 16 mg/mL criterion?
+      method: Five machine learning models (logistic regression, SVM, random forest, XGBoost, neural network) using FEV1, FVC, and FEF25–75 measured across the test, compared against the PC20 criterion.
+      validation: 1,501 patients at Samsung Medical Center (2015–2020), split by referral date into a training set and a later test set; compared on AUROC and AUPRC.
+      contribution: Cohort definition with clinicians, data extraction from the clinical data warehouse, model development, and Shapley-value review with clinicians.
+      contribution_source: Project record (_projects/asthma_ai.md); the article states equal contribution of the two first authors but has no CRediT statement
+
+- theme: Physiological Signal Learning
+  papers:
+    - key: lee2025deep
+      title: "Deep learning-based stress detection from RR intervals in major depressive disorder, panic disorder, and healthy individuals"
+      journal: Frontiers in Psychiatry
+      year: 2025
+      role: Co-first author
+      doi: 10.3389/fpsyt.2025.1672260
+      code: https://github.com/Jovinus/HRV
+      question: Can acute cognitive stress be detected directly from ultra-short raw RR-interval sequences, without handcrafted heart rate variability features?
+      method: A one-dimensional ResNet-34 trained on raw RR intervals in 5-minute and 1-minute windows, comparing group-specific with pooled training.
+      validation: 147 adults (major depressive disorder, panic disorder, healthy controls) with up to five visits over 12 weeks, each with a resting baseline and a mental-arithmetic stressor.
+      contribution: Data curation, methodology, software, formal analysis, validation, visualization, and writing.
+      contribution_source: Author contributions statement (CRediT)
+
+    - key: lee2023age
+      title: "Age prediction in healthy subjects using RR intervals and heart rate variability: A pilot study based on deep learning"
+      journal: Applied Sciences
+      year: 2023
+      role: First author
+      doi: 10.3390/app13052932
+      code: https://github.com/Jovinus/Autonomic_Aging
+      question: Can age group be predicted from raw RR intervals with deep learning, compared with conventional heart rate variability features?
+      method: A modified ResNet classifying four age groups from RR intervals, benchmarked against an HRV-feature model and a combined RR + HRV model, with adaptive synthetic sampling and a hybrid classification/regression loss.
+      validation: RR-interval recordings from 1,093 healthy subjects. The RR model performed comparably to the HRV and combined models, but no model predicted every age group reliably.
+      contribution: RR-interval data preparation, model development, and analysis.
+      contribution_source: Not verified against the article — publisher page blocked automated access; based on the project record (_projects/ecg_ans_monitoring.md)
+
+    - key: lee2021electromyogram
+      title: "Electromyogram-based classification of hand and finger gestures using artificial neural networks"
+      journal: Sensors
+      year: 2022
+      role: Co-first author
+      doi: 10.3390/s22010225
+      code: https://github.com/Bioelectronics-Laboratory/EMG_hand_finger_gestures_classification
+      question: Can ten hand and finger gestures, including seven individual-finger gestures, be classified from a small fixed set of EMG electrodes?
+      method: Six time-domain features from each of three EMG channels, used to train personalized classifiers — artificial neural network, SVM, random forest, and logistic regression.
+      validation: Ten healthy subjects performing ten gestures; accuracy and inter-subject variance compared across classifiers with ANOVA and F-tests.
+      contribution: Conceptualization, methodology, formal analysis, visualization, and writing, shared with the co-authors.
+      contribution_source: Author contributions statement

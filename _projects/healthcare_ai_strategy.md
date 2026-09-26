@@ -3,7 +3,7 @@ layout: page
 title: Healthcare AI Strategy Research
 description: "[MOHW] Research on domestic and international trends in healthcare AI for strategic planning and roadmap development."
 importance: 6
-category: research
+category: earlier
 ---
 
 **Period:** 2020.07 -- 2021.12

@@ -3,7 +3,7 @@ layout: page
 title: Cardiorespiratory Fitness Prediction in Korean Population
 description: Development of a CRF prediction model for healthy Korean adults using health screening and exercise stress test data from Samsung Medical Center.
 importance: 5
-category: research
+category: earlier
 ---
 
 **Period:** 2020.05 -- 2021.09

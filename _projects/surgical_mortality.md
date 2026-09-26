@@ -3,7 +3,7 @@ layout: page
 title: Multi-center Surgical Mortality & ICU Admission Prediction
 description: Development of 30-day mortality and ICU admission prediction models using perioperative data from four major hospitals in South Korea.
 importance: 4
-category: research
+category: earlier
 ---
 
 **Period:** 2020.09 -- 2022.06

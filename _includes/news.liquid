@@ -18,6 +18,9 @@
           <tr>
             <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
             <td>
+              {% if item.category %}
+                <span class="news-category news-category-{{ item.category }}">{{ item.category }}</span>
+              {% endif %}
               {% if item.inline %}
                 {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
               {% else %}

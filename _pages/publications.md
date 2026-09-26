@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: Journal articles, conference proceedings, and manuscripts under review in clinical AI, digital health, and respiratory medicine.
+description: Journal articles, conference papers and abstracts, preprints, and manuscripts under review in clinical AI, digital health, and respiratory medicine.
 nav: true
 nav_order: 1
 ---
@@ -24,9 +24,29 @@ nav_order: 1
   </div>
 {% endif %}
 
-<p class="text-muted" style="font-size: 0.9rem;"><sup>†</sup> First (or co-first) author &nbsp;·&nbsp; <sup>*</sup> Corresponding author</p>
+<div class="pub-legend">
+  <dl>
+    <dt><sup>†</sup></dt>
+    <dd>First author. When two or more authors carry <sup>†</sup>, they share first authorship (co-first authors).</dd>
+    <dt><sup>*</sup></dt>
+    <dd>Corresponding author. More than one <sup>*</sup> marks co-corresponding authors.</dd>
+    <dt><sup>†*</sup></dt>
+    <dd>Both first and corresponding author.</dd>
+    <dt><strong>Bold</strong></dt>
+    <dd>Kyung Hyun Lee. The <i class="fa-solid fa-circle-info"></i> icon next to an author list states the markers used in that entry.</dd>
+  </dl>
+</div>
 
-<h2 id="journal-articles">Journal Articles</h2>
+<p class="pub-note">
+  Jump to:
+  <a href="#journal-articles">Journal Articles</a> &middot;
+  <a href="#conference-papers">Conference Papers and Abstracts</a> &middot;
+  <a href="#preprints">Preprints</a> &middot;
+  <a href="#under-review">Under Review</a>
+</p>
+
+<h2 id="journal-articles" class="pub-section">Journal Articles</h2>
+<p class="pub-note">Peer-reviewed articles published in journals.</p>
 
 <div class="publications">
 
@@ -34,7 +54,10 @@ nav_order: 1
 
 </div>
 
-<h2 id="conference-proceedings" style="margin-top: 3rem;">Conference Proceedings</h2>
+<h2 id="conference-papers" class="pub-section">Conference Papers and Abstracts</h2>
+
+<h3 id="conference-proceedings" class="pub-subsection">Proceedings papers</h3>
+<p class="pub-note">Short papers published in peer-reviewed conference proceedings.</p>
 
 <div class="publications">
 
@@ -42,7 +65,8 @@ nav_order: 1
 
 </div>
 
-<h2 id="conference-abstracts" style="margin-top: 3rem;">Conference Abstracts &amp; Presentations</h2>
+<h3 id="conference-abstracts" class="pub-subsection">Abstracts and presentations</h3>
+<p class="pub-note">Accepted abstracts presented as posters or talks; not full papers.</p>
 
 <div class="publications">
 
@@ -50,8 +74,17 @@ nav_order: 1
 
 </div>
 
-<h2 id="under-review" style="margin-top: 3rem;">Under Review</h2>
-<p class="text-muted" style="font-size: 0.9rem;">Manuscripts currently undergoing peer review.</p>
+<h2 id="preprints" class="pub-section">Preprints</h2>
+<p class="pub-note">Manuscripts posted to preprint servers. Preprints have not been peer reviewed and are not journal publications.</p>
+
+<div class="publications">
+
+{% bibliography --query @unpublished %}
+
+</div>
+
+<h2 id="under-review" class="pub-section">Under Review</h2>
+<p class="pub-note">Submitted manuscripts currently in peer review. They are not accepted or published and are listed only to show ongoing work.</p>
 
 <div class="publications publications-inreview">
 

@@ -1,0 +1,249 @@
+/*******************************************************************************
+ * Landing page, research page, and publication-section styles (site-specific)
+ ******************************************************************************/
+
+// Section headings inside page content, matching the layout's lowercase h2s
+.section-heading {
+  margin-top: 2.5rem;
+}
+
+// Research themes on the landing page
+.research-themes {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+
+  li {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid var(--global-divider-color);
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  a {
+    font-weight: 600;
+  }
+
+  span {
+    display: block;
+    color: var(--global-text-color-light);
+    font-size: 0.95rem;
+  }
+}
+
+.about-aside {
+  color: var(--global-text-color-light);
+  font-size: 0.95rem;
+  margin-top: 1.5rem;
+}
+
+// Selected journal articles on the landing page
+.featured-papers {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+.featured-paper {
+  padding: 1.25rem 0;
+  border-top: 1px solid var(--global-divider-color);
+
+  &:first-child {
+    border-top: none;
+    padding-top: 0.25rem;
+  }
+
+  .fp-title {
+    font-weight: 600;
+    font-size: 1.05rem;
+    line-height: 1.4;
+
+    a {
+      color: var(--global-text-color);
+
+      &:hover {
+        color: var(--global-theme-color);
+      }
+    }
+  }
+
+  .fp-meta {
+    margin-top: 0.25rem;
+    font-size: 0.95rem;
+  }
+
+  .fp-role {
+    display: inline-block;
+    margin-left: 0.5rem;
+    padding: 0 0.45rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 0.25rem;
+    font-size: 0.8rem;
+    color: var(--global-text-color-light);
+    white-space: nowrap;
+  }
+
+  .fp-summary {
+    display: grid;
+    grid-template-columns: 6.5rem 1fr;
+    gap: 0.2rem 0.75rem;
+    margin: 0.6rem 0 0.4rem;
+    font-size: 0.92rem;
+
+    dt {
+      font-weight: 400;
+      color: var(--global-text-color-light);
+    }
+
+    dd {
+      margin: 0;
+    }
+  }
+
+  .fp-links {
+    font-size: 0.85rem;
+    word-break: break-all;
+  }
+}
+
+.fp-all {
+  margin: 0.5rem 0 1rem;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 576px) {
+  .featured-paper .fp-summary {
+    grid-template-columns: 1fr;
+
+    dt {
+      margin-top: 0.35rem;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+  }
+}
+
+// News table: Bootstrap's .table text color is fixed dark and unreadable in dark mode
+.news .table {
+  color: var(--global-text-color);
+}
+
+// News category labels
+.news-category {
+  display: inline-block;
+  min-width: 4.6rem;
+  margin-right: 0.4rem;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--global-text-color-light);
+}
+
+@media (max-width: 576px) {
+  .news table,
+  .news tbody,
+  .news tr,
+  .news th,
+  .news td {
+    display: block;
+    width: 100% !important;
+  }
+
+  .news th {
+    padding-bottom: 0;
+  }
+
+  .news tr {
+    margin-bottom: 0.5rem;
+  }
+}
+
+// Publications page
+.pub-section {
+  margin-top: 3rem;
+}
+
+.pub-subsection {
+  margin-top: 2rem;
+  font-size: 1.15rem;
+}
+
+.pub-note {
+  color: var(--global-text-color-light);
+  font-size: 0.9rem;
+}
+
+.pub-legend {
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+  border-left: 3px solid var(--global-divider-color);
+  padding: 0.25rem 0 0.25rem 0.75rem;
+  margin: 1rem 0 1.5rem;
+
+  dl {
+    display: grid;
+    grid-template-columns: 2.5rem 1fr;
+    gap: 0.15rem 0.5rem;
+    margin: 0;
+  }
+
+  dd {
+    margin: 0;
+  }
+}
+
+// Research page
+.research-project {
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--global-divider-color);
+
+  &:first-of-type {
+    border-top: none;
+  }
+
+  h3 {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.earlier-projects {
+  list-style: none;
+  padding: 0;
+
+  li {
+    padding: 0.4rem 0;
+  }
+
+  .period {
+    color: var(--global-text-color-light);
+    font-size: 0.85rem;
+    margin-left: 0.4rem;
+    white-space: nowrap;
+  }
+}
+
+.research-headline {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.fp-theme {
+  margin-top: 1.75rem;
+  font-size: 1.05rem;
+  color: var(--global-text-color-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.featured-paper-highlight {
+  border-left: 3px solid var(--global-theme-color);
+  padding-left: 1rem;
+}
+
+.beyond-heading {
+  font-size: 1.25rem;
+}

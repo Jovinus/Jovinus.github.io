@@ -3,7 +3,7 @@ layout: page
 title: Intelligent SW for Medical Data Analysis
 description: "[NIPA] AI-based intelligent medical solution for breast cancer risk prediction and recurrence risk prediction by survival period."
 importance: 8
-category: research
+category: earlier
 ---
 
 **Period:** 2019.01 -- 2021.03

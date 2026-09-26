@@ -3,7 +3,7 @@ layout: page
 title: Asthma Diagnosis AI Model Development
 description: AI model for asthma diagnosis using methacholine challenge test data from Samsung Medical Center, achieving comparable performance with a single test.
 importance: 2
-category: research
+category: earlier
 ---
 
 **Period:** 2021.03 -- 2023.10

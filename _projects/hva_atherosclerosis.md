@@ -3,7 +3,7 @@ layout: page
 title: Healthy Vascular Aging & Fitness with Subclinical Atherosclerosis
 description: Analysis of the impact of HVA and cardiorespiratory fitness on subclinical atherosclerosis using Samsung Medical Center health screening data.
 importance: 3
-category: research
+category: earlier
 ---
 
 **Period:** 2021.05 -- 2022.01

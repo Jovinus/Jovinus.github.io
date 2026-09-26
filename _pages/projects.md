@@ -1,65 +1,81 @@
 ---
 layout: page
-title: projects
+title: research
 permalink: /projects/
-description: Selected research and engineering projects.
+description: Three research themes — physiological signal learning, clinical prediction, and real-world evaluation — followed by current work and earlier projects.
 nav: true
 nav_order: 2
-display_categories: [research, work]
-horizontal: false
 ---
 
-<!-- pages/projects.md -->
-<div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
+<!-- pages/projects.md — themes and current work render in full; older projects as a compact list -->
+
+<p class="pub-note">
+  Jump to:
+  <a href="#themes">Research themes</a> &middot;
+  <a href="#current">Current research</a> &middot;
+  <a href="#additional">Additional AI research</a> &middot;
+  <a href="#earlier">Earlier projects</a>
+</p>
+
+<h2 id="themes" class="pub-section">Research themes</h2>
+
+{% assign themes = site.projects | where: "category", "theme" | sort: "importance" %}
+{% for project in themes %}
+
+<section class="research-project" id="{{ project.slug }}">
+  <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+  {{ project.content }}
+</section>
+{% endfor %}
+
+<h2 id="current" class="pub-section">Current research</h2>
+<p class="pub-note">Work in progress. Status is stated for each item; nothing here is a published journal article yet.</p>
+
+{% assign current = site.projects | where: "category", "current" | sort: "importance" %}
+{% for project in current %}
+
+<section class="research-project" id="{{ project.slug }}">
+  <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+  {{ project.content }}
+</section>
+{% endfor %}
+
+<h2 id="additional" class="pub-section">Additional AI research</h2>
+
+<section class="research-project">
+  <h3>Multimodal emotion recognition from speech and text</h3>
+  <p>
+    Emotion recognition models that combine audio and text sequences, including a self-supervised contrastive loss. Published as short papers in the Korea Computer Congress proceedings (not journal articles):
+  </p>
+  <ul>
+    <li>Nam† &amp; Lee*. Development and validation of emotion recognition model using audio and text sequences: two heads are better than one. <em>Korea Computer Congress</em>, 2022. Corresponding author.</li>
+    <li>Nam†, Lee†, Choi &amp; Ha*. Self-supervised contrastive loss for multimodal emotion recognition. <em>Korea Computer Congress</em>, 2023. Co-first author.</li>
+  </ul>
+</section>
+
+<h2 id="earlier" class="pub-section">Earlier projects</h2>
+<p class="pub-note">Research projects from 2018–2023 at Samsung Medical Center, Incheon National University, and funded national programs.</p>
+
+{% assign earlier = site.projects | where: "category", "earlier" | sort: "importance" %}
+
+<ul class="earlier-projects">
+  {% for project in earlier %}
+    <li>
+      <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+      <div class="pub-note">{{ project.description }}</div>
+    </li>
   {% endfor %}
+</ul>
 
-{% else %}
+<h3 class="pub-subsection">Engineering projects</h3>
 
-<!-- Display projects without categories -->
+{% assign engineering = site.projects | where: "category", "engineering" | sort: "importance" %}
 
-{% assign sorted_projects = site.projects | sort: "importance" %}
-
-  <!-- Generate cards for each project -->
-
-{% if page.horizontal %}
-
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-{% endif %}
-</div>
+<ul class="earlier-projects">
+  {% for project in engineering %}
+    <li>
+      <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+      <div class="pub-note">{{ project.description }}</div>
+    </li>
+  {% endfor %}
+</ul>

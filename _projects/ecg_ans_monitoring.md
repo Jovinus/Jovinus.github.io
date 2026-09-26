@@ -3,7 +3,7 @@ layout: page
 title: Deep Learning-based ECG Modeling for ANS Monitoring
 description: "[NRF] Autonomic nervous system pathological change monitoring via deep learning-based ECG modeling for stress detection and depression prediction."
 importance: 1
-category: research
+category: earlier
 ---
 
 **Period:** 2021.09 -- 2022.05
