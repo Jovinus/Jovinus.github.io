@@ -173,6 +173,13 @@ ninja.data = [{
           window.open("https://scholar.google.com/citations?user=T0DHr9QAAAAJ", "_blank");
         },
       },{
+        id: 'social-openreview',
+        title: 'Openreview',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://openreview.net/profile?id=~Kyung_Hyun_Lee1", "_blank");
+        },
+      },{
         id: 'social-github',
         title: 'GitHub',
         section: 'Socials',
