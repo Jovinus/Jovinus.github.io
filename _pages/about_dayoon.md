@@ -3,3 +3,5 @@ Co-founder and Chief Quality Officer at [BreathYou Co., Ltd.](https://breathyou.
 Nurse by training, with a degree in Nursing from Catholic University of Busan, followed by three years as a research nurse at Severance Hospital (Sinchon) before co-founding the company.
 
 Preparing to enter the Department of Medical Device Industry at SAIHST, Sungkyunkwan University, under Prof. Jin-Young Lee's sponsorship — working alongside Kyung Hyun day to day to learn how digital-health research takes shape, from study design through clinical data work.
+
+Co-author on the spirometry-trajectory study of incident airflow obstruction in health-screening adults, which she and Kyung Hyun presented together as a poster in Barcelona (_ERS International Congress_, 2026).
