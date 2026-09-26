@@ -187,7 +187,8 @@ layout: default
                     </ul>
                   {% elsif entry.label %}
                     <div class="card-text font-weight-light cv-one-line-entry">
-                      <strong>{{ entry.label }}:</strong> {{ entry.details }}
+                      <strong>{{ entry.label | markdownify | remove: '<p>' | remove: '</p>' | strip }}:</strong>
+                      {{ entry.details | markdownify | remove: '<p>' | remove: '</p>' | strip }}
                     </div>
                   {% endif %}
                 {% endfor %}
