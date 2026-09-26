@@ -1,6 +1,6 @@
 cv:
   name: Kyung Hyun Lee
-  headline: Clinical AI Researcher
+  headline: AI Researcher in Physiological and Clinical Time-Series Learning
   email: lkh256@gmail.com
   location: Suwon, Gyeonggi-do, Republic of Korea
 
@@ -14,9 +14,10 @@ cv:
 
   sections:
     Summary:
-      - PhD student in Digital Health at SAIHST, Sungkyunkwan University. AI researcher working on
-        clinical time-series deep learning, medical AI regulatory pathways, and respiratory digital
-        health. Co-founder & CEO of BreathYou Co., Ltd.
+      - AI researcher developing and evaluating machine learning models for physiological signals and
+        longitudinal clinical data, with particular attention to external validation and continuous
+        clinical monitoring. PhD student in Digital Health at SAIHST, Sungkyunkwan University, and AI
+        researcher at AITRICS. Co-founder & CEO of BreathYou Co., Ltd.
 
     Education:
       - institution: Sungkyunkwan University (SAIHST)
