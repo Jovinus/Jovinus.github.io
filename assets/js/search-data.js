@@ -51,7 +51,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-notes-from-aki-amp-crrt-2026",
+        },{id: "post-notes-from-ers-congress-2026",
+        
+          title: "Notes from ERS Congress 2026",
+        
+        description: "Presenting a poster at ERS Congress 2026 in Barcelona on reading repeated screening spirometry as a trajectory to anticipate airflow obstruction.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/ers-2026/";
+          
+        },
+      },{id: "post-notes-from-aki-amp-crrt-2026",
         
           title: "Notes from AKI &amp; CRRT 2026",
         
@@ -85,6 +96,9 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-presented-breathyou-co-ltd-s-investor-relations-pitch-medipipe-the-data-infrastructure-that-lets-hospitals-use-ai-at-the-2026-consortium-lab-based-startup-camp-hosted-by-sungkyunkwan-university-s-startup-centered-university-program-where-laboratory-startup-teams-from-universities-across-the-seoul-metropolitan-area-competed-and-received-the-excellence-award",
           title: 'Presented BreathYou Co., Ltd.’s investor-relations pitch, “MediPipe: The Data Infrastructure That Lets Hospitals...',
+          description: "",
+          section: "News",},{id: "news-presented-our-poster-reading-screening-spirometry-as-a-trajectory-predicts-incident-airflow-obstruction-earlier-a-landmark-deep-learning-analysis-of-221-903-adults-with-dayoon-lee-at-the-european-respiratory-society-ers-international-congress-2026-in-barcelona-notes-from-the-congress",
+          title: 'Presented our poster, “Reading screening spirometry as a trajectory predicts incident airflow obstruction...',
           description: "",
           section: "News",},{id: "news-presented-breathyou-co-ltd-s-investor-relations-pitch-medipipe-on-premise-medical-data-infrastructure-software-that-turns-in-hospital-test-results-and-clinical-records-into-ai-ready-data-at-the-2026-lab-startup-competition-sungkyunkwan-university-s-university-wide-competition-for-graduate-student-laboratory-startup-clubs-run-by-its-start-up-support-foundation-and-received-the-excellence-award",
           title: 'Presented BreathYou Co., Ltd.’s investor-relations pitch, “MediPipe: On-Premise Medical Data Infrastructure Software That...',
