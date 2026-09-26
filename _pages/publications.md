@@ -45,7 +45,7 @@ nav_order: 1
   <a href="#under-review">Under Review</a>
 </p>
 
-<h2 id="journal-articles" class="pub-section">Journal Articles</h2>
+<h2 id="journal-articles">Journal Articles</h2>
 <p class="pub-note">Peer-reviewed articles published in journals.</p>
 
 <div class="publications">
@@ -54,9 +54,9 @@ nav_order: 1
 
 </div>
 
-<h2 id="conference-papers" class="pub-section">Conference Papers and Abstracts</h2>
+<h2 id="conference-papers">Conference Papers and Abstracts</h2>
 
-<h3 id="conference-proceedings" class="pub-subsection">Proceedings papers</h3>
+<h3 id="conference-proceedings" class="pub-subsection">Proceedings Papers</h3>
 <p class="pub-note">Short papers published in peer-reviewed conference proceedings.</p>
 
 <div class="publications">
@@ -65,7 +65,7 @@ nav_order: 1
 
 </div>
 
-<h3 id="conference-abstracts" class="pub-subsection">Abstracts and presentations</h3>
+<h3 id="conference-abstracts" class="pub-subsection">Abstracts and Presentations</h3>
 <p class="pub-note">Accepted abstracts presented as posters or talks; not full papers.</p>
 
 <div class="publications">
@@ -74,7 +74,7 @@ nav_order: 1
 
 </div>
 
-<h2 id="preprints" class="pub-section">Preprints</h2>
+<h2 id="preprints">Preprints</h2>
 <p class="pub-note">Manuscripts posted to preprint servers. Preprints have not been peer reviewed and are not journal publications.</p>
 
 <div class="publications">
@@ -83,7 +83,7 @@ nav_order: 1
 
 </div>
 
-<h2 id="under-review" class="pub-section">Under Review</h2>
+<h2 id="under-review">Under Review</h2>
 <p class="pub-note">Submitted manuscripts currently in peer review. They are not accepted or published and are listed only to show ongoing work.</p>
 
 <div class="publications publications-inreview">

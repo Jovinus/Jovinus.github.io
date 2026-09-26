@@ -25,7 +25,7 @@ and build a prediction formula from it.
 
 [Full syllabus](/teaching/exercise-and-digital-healthcare/) · [Syllabus PDF](/assets/pdf/exercise_and_digital_healthcare_syllabus_fall2026.pdf)
 
-## Invited lectures and guest talks
+## Invited Lectures and Guest Talks
 
 ### Invited seminar on the healthcare industry
 

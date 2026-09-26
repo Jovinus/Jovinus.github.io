@@ -43,13 +43,13 @@ layout: default
     <!-- Selected journal articles -->
     {% if page.featured_papers %}
       <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected journal articles</a>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Journal Articles</a>
       </h2>
       {% include featured_papers.liquid %}
       <p class="fp-all"><a href="{{ '/publications/' | relative_url }}">All publications &rarr;</a></p>
     {% elsif page.selected_papers %}
       <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Publications</a>
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}
@@ -57,7 +57,7 @@ layout: default
     <!-- Current research -->
     {% if page.current_research %}
       <h2>
-        <a href="{{ '/projects/#current' | relative_url }}" style="color: inherit">current research</a>
+        <a href="{{ '/projects/#current' | relative_url }}" style="color: inherit">Current Research</a>
       </h2>
       {{ page.current_research }}
     {% endif %}
@@ -65,21 +65,21 @@ layout: default
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}
 
     <!-- Beyond research: productization, startup, teaching -->
     {% if page.beyond_research %}
-      <h2 class="beyond-heading">beyond research</h2>
+      <h2>Beyond Research</h2>
       <p class="about-aside">{{ page.beyond_research }}</p>
     {% endif %}
 
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
       <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">Latest Posts</a>
       </h2>
       {% include latest_posts.liquid %}
     {% endif %}

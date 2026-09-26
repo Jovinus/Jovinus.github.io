@@ -2,9 +2,45 @@
  * Landing page, research page, and publication-section styles (site-specific)
  ******************************************************************************/
 
-// Section headings inside page content, matching the layout's lowercase h2s
-.section-heading {
-  margin-top: 2.5rem;
+// Shared heading scale for every page, post, and the landing page.
+// Element-level specificity only: enough to override Bootstrap's bare h2/h3 sizes
+// (this sheet loads later), while component classes (.fp-theme, .pub-subsection,
+// ...) still refine it. CV card titles and bibliography year labels are excluded.
+:where(.post article) h2:where(:not(.bibliography)) {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 3rem 0 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+:where(.post article) h3:where(:not(.card-title)) {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 1.75rem 0 0.5rem;
+}
+
+:where(.post article) :where(h2, h3) a {
+  color: inherit;
+
+  &:hover {
+    color: var(--global-theme-color);
+  }
+}
+
+// Year labels inside bibliography lists: quiet dividers that stay below h2/h3.
+.publications h2.bibliography {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--global-text-color-light);
+  padding-top: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+// The section h2 above already draws a rule; skip the first year's rule
+.publications > h2.bibliography:first-child {
+  border-top: none;
+  margin-top: 0;
 }
 
 // Research themes on the landing page
@@ -162,18 +198,13 @@
 }
 
 // Publications page
-.pub-section {
-  margin-top: 3rem;
-}
 
 // Sub-sections must outrank the grey year labels (h2.bibliography) that follow them,
 // so they get a heavier rule in the text color rather than the thin divider color.
 .pub-subsection {
-  margin-top: 3.5rem;
-  padding-top: 0.9rem;
+  margin-top: 3rem;
+  padding-top: 0.75rem;
   border-top: 2px solid var(--global-text-color);
-  font-size: 1.5rem;
-  font-weight: 500;
 
   h2 + & {
     margin-top: 1.5rem;
@@ -214,7 +245,7 @@
   }
 
   h3 {
-    margin-bottom: 0.5rem;
+    margin-top: 0;
   }
 }
 
@@ -242,7 +273,8 @@
 
 .fp-theme {
   margin-top: 1.75rem;
-  font-size: 1.05rem;
+  font-size: 0.95rem;
+  font-weight: 400;
   color: var(--global-text-color-light);
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -253,6 +285,19 @@
   padding-left: 1rem;
 }
 
-.beyond-heading {
+// Blog index post titles follow the shared h3 scale
+.post-list h3 {
   font-size: 1.25rem;
+  font-weight: 500;
+}
+
+// CV card titles act as section titles, so they take the shared h2 size
+:where(.post article) h3.card-title {
+  font-size: 1.6rem;
+}
+
+// People page: the layout draws an <hr> under each section title, so drop the h2 rule there
+.people-section {
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
 }

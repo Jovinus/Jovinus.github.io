@@ -55,7 +55,7 @@ I develop and evaluate machine learning models for physiological signals and lon
 
 My work began with biosignals — EMG and ECG-derived RR intervals — and moved to electronic health records and repeated clinical measurements. The question that connects them: when data arrive as a sequence, how should a model learn from it, and how should the model be evaluated in the conditions where it will be used — at other hospitals, and read repeatedly as new measurements arrive rather than once per patient?
 
-<h2 class="section-heading">research themes</h2>
+<h2>Research Themes</h2>
 
 <ul class="research-themes">
   <li>

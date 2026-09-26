@@ -11,13 +11,13 @@ nav_order: 2
 
 <p class="pub-note">
   Jump to:
-  <a href="#themes">Research themes</a> &middot;
-  <a href="#current">Current research</a> &middot;
-  <a href="#additional">Additional AI research</a> &middot;
-  <a href="#earlier">Earlier projects</a>
+  <a href="#themes">Research Themes</a> &middot;
+  <a href="#current">Current Research</a> &middot;
+  <a href="#additional">Additional AI Research</a> &middot;
+  <a href="#earlier">Earlier Projects</a>
 </p>
 
-<h2 id="themes" class="pub-section">Research themes</h2>
+<h2 id="themes">Research Themes</h2>
 
 {% assign themes = site.projects | where: "category", "theme" | sort: "importance" %}
 {% for project in themes %}
@@ -28,7 +28,7 @@ nav_order: 2
 </section>
 {% endfor %}
 
-<h2 id="current" class="pub-section">Current research</h2>
+<h2 id="current">Current Research</h2>
 <p class="pub-note">Work in progress. Status is stated for each item; nothing here is a published journal article yet.</p>
 
 {% assign current = site.projects | where: "category", "current" | sort: "importance" %}
@@ -40,10 +40,10 @@ nav_order: 2
 </section>
 {% endfor %}
 
-<h2 id="additional" class="pub-section">Additional AI research</h2>
+<h2 id="additional">Additional AI Research</h2>
 
 <section class="research-project">
-  <h3>Multimodal emotion recognition from speech and text</h3>
+  <h3>Multimodal Emotion Recognition from Speech and Text</h3>
   <p>
     Emotion recognition models that combine audio and text sequences, including a self-supervised contrastive loss. Published as short papers in the Korea Computer Congress proceedings (not journal articles):
   </p>
@@ -53,7 +53,7 @@ nav_order: 2
   </ul>
 </section>
 
-<h2 id="earlier" class="pub-section">Earlier projects</h2>
+<h2 id="earlier">Earlier Projects</h2>
 <p class="pub-note">Research projects from 2018–2023 at Samsung Medical Center, Incheon National University, and funded national programs.</p>
 
 {% assign earlier = site.projects | where: "category", "earlier" | sort: "importance" %}
@@ -67,7 +67,7 @@ nav_order: 2
   {% endfor %}
 </ul>
 
-<h3 class="pub-subsection">Engineering projects</h3>
+<h3 class="pub-subsection">Engineering Projects</h3>
 
 {% assign engineering = site.projects | where: "category", "engineering" | sort: "importance" %}
 
