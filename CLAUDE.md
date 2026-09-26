@@ -90,13 +90,13 @@ Current mapping, if you add or edit an entry:
 | Education        | EducationEntry      | `institution`, `area`, `degree`; `url` is web-only              |
 | Experience       | ExperienceEntry     | `company`, `position`; `url` is web-only                        |
 | Awards           | NormalEntry         | `summary` = awarding body, `highlights` = description           |
-| Academic Service | OneLineEntry        | `label` = journal, `details` = role + count + year              |
+| Academic Service | OneLineEntry        | `label` = role, `details` = venues (+ count if > 1) · years     |
 | Certificates     | NormalEntry         | `summary` = issuing body                                        |
 | Skills           | OneLineEntry        | `label` = category, `details` = keyword string                  |
 | Languages        | NormalEntry         | `name` + `summary`                                              |
 | References       | NormalEntry         | `summary` = affiliation text (markdown links render in the PDF) |
 
-Peer review goes under **Academic Service** — journal name and review count only, never manuscript details. ORCID (in `cv.social_networks`, public) is the verification path.
+Peer review goes under **Academic Service**, one line per role (Journal Reviewer, Workshop Reviewer, …) — journal name and review count only, never manuscript details. ORCID (in `cv.social_networks`, public) is the verification path.
 
 Validate locally before pushing — `render-cv.yml` is the only other check, and it takes minutes:
 

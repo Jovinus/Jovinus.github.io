@@ -189,26 +189,13 @@ cv:
           - "EMG-based real-time hand gesture prediction model development"
 
     Academic Service:
-      - label: "Computers in Biology and Medicine"
-        details: "Reviewer · 4 manuscripts (2026)"
+      # One OneLineEntry per role, venues listed inside `details`: sort by review
+      # count (descending), then alphabetically; show the count only when > 1.
+      - label: Journal Reviewer
+        details: "Computers in Biology and Medicine (4), Frontiers in Medicine (2), Frontiers in Digital Health, Frontiers in Network Physiology, Frontiers in Psychiatry, Information Processing & Management · 2026–present"
 
-      - label: "Information Processing & Management"
-        details: "Reviewer · 1 manuscript (2026)"
-
-      - label: "Frontiers in Medicine"
-        details: "Reviewer · 2 manuscripts (2026)"
-
-      - label: "Frontiers in Digital Health"
-        details: "Reviewer · 1 manuscript (2026)"
-
-      - label: "Frontiers in Network Physiology"
-        details: "Reviewer · 1 manuscript (2026)"
-
-      - label: "Frontiers in Psychiatry"
-        details: "Reviewer · 1 manuscript (2026)"
-
-      - label: "NeurIPS 2026 Workshop on Responsible Communication of Machine Learning Research in Biomedicine (RCMLR)"
-        details: "Reviewer · 1 manuscript (2026)"
+      - label: Workshop Reviewer
+        details: "NeurIPS 2026 Workshop on Responsible Communication of Machine Learning Research in Biomedicine (RCMLR)"
 
     Certificates:
       - name: "Medical Information Analysis Expert Advanced Course"
