@@ -166,9 +166,18 @@
   margin-top: 3rem;
 }
 
+// Sub-sections must outrank the grey year labels (h2.bibliography) that follow them,
+// so they get a heavier rule in the text color rather than the thin divider color.
 .pub-subsection {
-  margin-top: 2rem;
-  font-size: 1.15rem;
+  margin-top: 3.5rem;
+  padding-top: 0.9rem;
+  border-top: 2px solid var(--global-text-color);
+  font-size: 1.5rem;
+  font-weight: 500;
+
+  h2 + & {
+    margin-top: 1.5rem;
+  }
 }
 
 .pub-note {
