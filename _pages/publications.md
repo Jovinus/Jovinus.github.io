@@ -42,6 +42,14 @@ nav_order: 1
 
 </div>
 
+<h2 id="conference-abstracts" style="margin-top: 3rem;">Conference Abstracts &amp; Presentations</h2>
+
+<div class="publications">
+
+{% bibliography --query @misc %}
+
+</div>
+
 <h2 id="under-review" style="margin-top: 3rem;">Under Review</h2>
 <p class="text-muted" style="font-size: 0.9rem;">Manuscripts currently undergoing peer review.</p>
 
