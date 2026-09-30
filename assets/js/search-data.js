@@ -91,7 +91,7 @@ ninja.data = [{
           section: "News",},{id: "news-breathyou-co-ltd-received-the-excellence-award-at-the-2026-lab-startup-competition-sungkyunkwan-university",
           title: 'BreathYou Co., Ltd. received the Excellence Award at the 2026 Lab Startup Competition,...',
           description: "",
-          section: "News",},{id: "news-paper-accepted-at-the-neurips-2026-workshop-on-responsible-communication-of-machine-learning-research-in-biomedicine-rcmlr-twenty-four-minutes-of-warning-what-a-reported-lead-time-licenses-and-what-reporting-standards-do-not-ask-poster-presentation-on-12-december-2026-sydney",
+          section: "News",},{id: "news-paper-accepted-at-the-neurips-2026-workshop-on-responsible-communication-of-machine-learning-research-in-biomedicine-rcmlr-twenty-four-minutes-of-warning-what-a-reported-lead-time-licenses-and-what-reporting-standards-do-not-ask-poster-presentation-on-12-december-2026-sydney-also-served-as-a-reviewer-for-the-workshop",
           title: 'Paper accepted at the NeurIPS 2026 Workshop on Responsible Communication of Machine Learning...',
           description: "",
           section: "News",},{id: "projects-asthma-diagnosis-ai-model-development",
