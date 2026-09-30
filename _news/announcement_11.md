@@ -6,4 +6,4 @@ related_posts: false
 category: research
 ---
 
-Paper accepted at the [**NeurIPS 2026 Workshop on Responsible Communication of Machine Learning Research in Biomedicine (RCMLR)**](https://translatingmlresearch.github.io/RCMLR/): _Twenty-four minutes of warning: what a reported lead time licenses, and what reporting standards do not ask_. Poster presentation on 12 December 2026, Sydney.
+Paper accepted at the [**NeurIPS 2026 Workshop on Responsible Communication of Machine Learning Research in Biomedicine (RCMLR)**](https://translatingmlresearch.github.io/RCMLR/): _Twenty-four minutes of warning: what a reported lead time licenses, and what reporting standards do not ask_. Poster presentation on 12 December 2026, Sydney; also served as a reviewer for the workshop.
