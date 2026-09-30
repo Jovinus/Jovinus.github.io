@@ -61,7 +61,16 @@ nav_order: 1
 
 <div class="publications">
 
-{% bibliography --query @inproceedings %}
+{% bibliography --query @inproceedings[workshop!=true] %}
+
+</div>
+
+<h3 id="workshop-papers" class="pub-subsection">Workshop Papers</h3>
+<p class="pub-note">Full papers accepted at peer-reviewed workshops; non-archival.</p>
+
+<div class="publications">
+
+{% bibliography --query @inproceedings[workshop=true] %}
 
 </div>
 
