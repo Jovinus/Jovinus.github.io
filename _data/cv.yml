@@ -190,13 +190,15 @@ cv:
           - "EMG-based real-time hand gesture prediction model development"
 
     Academic Service:
-      # One OneLineEntry per role, venues listed inside `details`: sort by review
-      # count (descending), then alphabetically; show the count only when > 1.
+      # One OneLineEntry per venue type (Journal / Conference), venues listed inside
+      # `details`: sort by review count (descending), then alphabetically; show the
+      # count only when > 1. Conference venues name their track — "Main Track" or
+      # "Workshop: <full workshop name>" — right after the conference.
       - label: Journal Reviewer
         details: "Computers in Biology and Medicine (4), Frontiers in Medicine (2), Frontiers in Digital Health, Frontiers in Network Physiology, Frontiers in Psychiatry, Information Processing & Management · 2026–present"
 
-      - label: Workshop Reviewer
-        details: "NeurIPS 2026 Workshop on Responsible Communication of Machine Learning Research in Biomedicine (RCMLR) · 2026"
+      - label: Conference Reviewer
+        details: "NeurIPS Workshop: Responsible Communication of Machine Learning Research in Biomedicine (RCMLR) · 2026"
 
     Certificates:
       - name: "Medical Information Analysis Expert Advanced Course"
