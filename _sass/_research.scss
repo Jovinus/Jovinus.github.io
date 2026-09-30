@@ -235,6 +235,71 @@
   }
 }
 
+// Publication badges (_layouts/bib.liquid): a solid domain badge names the field;
+// topic badges are tinted and combine
+// (e.g., Machine Learning + Clinical Research), so the eye separates what a paper
+// is about from how it was published (outlined, grey).
+:root {
+  --pub-topic-ml: #1f6fb2;
+  --pub-topic-clinical: #2e7d5b;
+  --pub-topic-evaluation: #6a3fb5;
+}
+
+html[data-theme="dark"] {
+  --pub-topic-ml: #7fb8ea;
+  --pub-topic-clinical: #7dcfa6;
+  --pub-topic-evaluation: #b79cf0;
+}
+
+.pub-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-bottom: 0.2rem;
+}
+
+.pub-tag {
+  display: inline-block;
+  padding: 0.05rem 0.45rem;
+  border: 1px solid;
+  border-radius: 0.25rem;
+  font-size: 0.72rem;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+// The field a paper belongs to: solid, so it reads first.
+.pub-domain {
+  color: var(--global-bg-color);
+  background-color: var(--global-text-color);
+  border-color: var(--global-text-color);
+  font-weight: 500;
+}
+
+.pub-topic {
+  color: var(--pub-topic-color);
+  border-color: color-mix(in srgb, var(--pub-topic-color) 35%, transparent);
+  background-color: color-mix(in srgb, var(--pub-topic-color) 10%, transparent);
+  font-weight: 500;
+}
+
+.pub-topic-machine-learning {
+  --pub-topic-color: var(--pub-topic-ml);
+}
+
+.pub-topic-clinical-research {
+  --pub-topic-color: var(--pub-topic-clinical);
+}
+
+.pub-topic-evaluation-framework {
+  --pub-topic-color: var(--pub-topic-evaluation);
+}
+
+.pub-format {
+  color: var(--global-text-color-light);
+  border-color: var(--global-divider-color);
+}
+
 // Research page
 .research-project {
   padding: 1.5rem 0;

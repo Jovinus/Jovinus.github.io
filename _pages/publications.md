@@ -32,6 +32,8 @@ nav_order: 1
     <dd>Corresponding author. More than one <sup>*</sup> marks co-corresponding authors.</dd>
     <dt><sup>†*</sup></dt>
     <dd>Both first and corresponding author.</dd>
+    <dt>Tags</dt>
+    <dd>The solid tag is the field a paper belongs to (e.g., <strong>Acute &amp; Critical Care</strong>, <strong>Biosignals</strong>). Tinted tags are topics, combined when a paper spans more than one: <strong>Machine Learning</strong> (a model is built or used), <strong>Clinical Research</strong> (a clinical question or cohort), and <strong>Evaluation Framework</strong> (how clinical models are evaluated and reported). Grey outlined tags give the format and how a conference paper was presented.</dd>
     <dt><strong>Bold</strong></dt>
     <dd>Kyung Hyun Lee. The <i class="fa-solid fa-circle-info"></i> icon next to an author list states the markers used in that entry.</dd>
   </dl>
@@ -40,9 +42,8 @@ nav_order: 1
 <p class="pub-note">
   Jump to:
   <a href="#journal-articles">Journal Articles</a> &middot;
-  <a href="#conference-papers">Conference Papers and Abstracts</a> &middot;
-  <a href="#preprints">Preprints</a> &middot;
-  <a href="#under-review">Under Review</a>
+  <a href="#conference-papers">Conference Papers</a> &middot;
+  <a href="#in-progress">In Progress</a>
 </p>
 
 <h2 id="journal-articles">Journal Articles</h2>
@@ -54,49 +55,22 @@ nav_order: 1
 
 </div>
 
-<h2 id="conference-papers">Conference Papers and Abstracts</h2>
-
-<h3 id="conference-proceedings" class="pub-subsection">Proceedings Papers</h3>
-<p class="pub-note">Short papers published in peer-reviewed conference proceedings.</p>
+<h2 id="conference-papers">Conference Papers</h2>
+<p class="pub-note">Proceedings papers, workshop papers (non-archival), and accepted abstracts, each marked with how it was presented.</p>
 
 <div class="publications">
 
-{% bibliography --query @inproceedings[workshop!=true] %}
+{% bibliography --query @inproceedings @misc %}
 
 </div>
 
-<h3 id="workshop-papers" class="pub-subsection">Workshop Papers</h3>
-<p class="pub-note">Full papers accepted at peer-reviewed workshops; non-archival.</p>
-
-<div class="publications">
-
-{% bibliography --query @inproceedings[workshop=true] %}
-
-</div>
-
-<h3 id="conference-abstracts" class="pub-subsection">Abstracts and Presentations</h3>
-<p class="pub-note">Accepted abstracts presented as posters or talks; not full papers.</p>
-
-<div class="publications">
-
-{% bibliography --query @misc %}
-
-</div>
-
-<h2 id="preprints">Preprints</h2>
-<p class="pub-note">Manuscripts posted to preprint servers. Preprints have not been peer reviewed and are not journal publications.</p>
-
-<div class="publications">
-
-{% bibliography --query @unpublished %}
-
-</div>
-
-<h2 id="under-review">Under Review</h2>
-<p class="pub-note">Submitted manuscripts currently in peer review. They are not accepted or published and are listed only to show ongoing work.</p>
+<h2 id="in-progress">In Progress</h2>
+<p class="pub-note">Preprints and manuscripts under review. Neither has completed peer review; they are listed only to show ongoing work.</p>
 
 <div class="publications publications-inreview">
 
-{% bibliography --file papers_inreview %}
+{% bibliography --query @unpublished --group_by none %}
+
+{% bibliography --file papers_inreview --group_by none %}
 
 </div>

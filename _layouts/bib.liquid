@@ -47,6 +47,39 @@
 
   <!-- Entry bib key -->
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
+    <!-- Domain (solid), topic (tinted, one per topic), and format / presentation (outlined) badges -->
+    {% assign entry_format = null %}
+    {% if entry.type == 'article' and entry.journal contains 'Under review' %}
+      {% assign entry_format = 'Under Review' %}
+    {% elsif entry.type == 'unpublished' %}
+      {% assign entry_format = 'Preprint' %}
+    {% elsif entry.type == 'inproceedings' and entry.workshop == 'true' %}
+      {% assign entry_format = 'Workshop Paper' %}
+    {% elsif entry.type == 'inproceedings' %}
+      {% assign entry_format = 'Paper' %}
+    {% elsif entry.type == 'misc' %}
+      {% assign entry_format = 'Abstract' %}
+    {% endif %}
+    {% if entry.domain or entry.topics or entry_format or entry.presentation %}
+      <div class="pub-tags">
+        {% if entry.domain %}
+          <span class="pub-tag pub-domain">{{ entry.domain }}</span>
+        {% endif %}
+        {% comment %} Fixed order, so combinations read the same on every entry. {% endcomment %}
+        {% assign topic_order = 'Machine Learning,Clinical Research,Evaluation Framework' | split: ',' %}
+        {% for topic in topic_order %}
+          {% if entry.topics contains topic %}
+            <span class="pub-tag pub-topic pub-topic-{{ topic | slugify }}">{{ topic }}</span>
+          {% endif %}
+        {% endfor %}
+        {% if entry_format %}
+          <span class="pub-tag pub-format">{{ entry_format }}</span>
+        {% endif %}
+        {% if entry.presentation %}
+          <span class="pub-tag pub-format">{{ entry.presentation }}</span>
+        {% endif %}
+      </div>
+    {% endif %}
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
     <!-- Author -->
