@@ -145,6 +145,13 @@ cv:
       # RenderCV NormalEntry: `summary` carries the awarding body, `highlights` the
       # description. There is no `awarder` field in the schema — see the note in
       # `_includes/cv/awards.liquid`.
+      - name: "Pre-TeX-Corps Business Plan Presentation — Excellence Award"
+        date: 2026
+        summary: Sungkyunkwan University, Laboratory Startup Innovation Center
+        highlights:
+          - "Business plan presentation for the Ministry of Science and ICT TeX-Corps laboratory startup exploration program"
+          - "MediPipe: on-premise medical data infrastructure software that turns in-hospital test results and clinical records into AI-ready data"
+
       - name: "Lab Startup Competition — Excellence Award"
         date: 2026
         summary: Sungkyunkwan University, Start-up Support Foundation
