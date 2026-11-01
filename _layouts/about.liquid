@@ -48,18 +48,13 @@ layout: default
       {% include news.liquid limit=true %}
     {% endif %}
 
-    <!-- Selected journal articles -->
-    {% if page.featured_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Journal Articles</a>
-      </h2>
-      {% include featured_papers.liquid %}
-      <p class="fp-all"><a href="{{ '/publications/' | relative_url }}">All publications &rarr;</a></p>
-    {% elsif page.selected_papers %}
+    <!-- Selected publications: entries marked selected={true} in _bibliography/papers.bib -->
+    {% if page.selected_papers %}
       <h2>
         <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Publications</a>
       </h2>
       {% include selected_papers.liquid %}
+      <p class="selected-all"><a href="{{ '/publications/' | relative_url }}">All publications &rarr;</a></p>
     {% endif %}
 
     <!-- Current research -->

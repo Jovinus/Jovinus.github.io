@@ -4,7 +4,7 @@
 
 // Shared heading scale for every page, post, and the landing page.
 // Element-level specificity only: enough to override Bootstrap's bare h2/h3 sizes
-// (this sheet loads later), while component classes (.fp-theme, .pub-subsection,
+// (this sheet loads later), while component classes (.pub-subsection,
 // ...) still refine it. CV card titles and bibliography year labels are excluded.
 :where(.post article) h2:where(:not(.bibliography)) {
   font-size: 1.6rem;
@@ -75,66 +75,8 @@
   margin-top: 1.5rem;
 }
 
-// Selected journal articles on the landing page
-.featured-papers {
-  list-style: none;
-  padding: 0;
-  margin: 1rem 0 0;
-}
-
-.featured-paper {
-  padding: 0.9rem 0;
-  border-top: 1px solid var(--global-divider-color);
-
-  &:first-child {
-    border-top: none;
-    padding-top: 0.25rem;
-  }
-
-  .fp-title {
-    font-weight: 600;
-    font-size: 1.05rem;
-    line-height: 1.4;
-
-    a {
-      color: var(--global-text-color);
-
-      &:hover {
-        color: var(--global-theme-color);
-      }
-    }
-  }
-
-  .fp-meta {
-    margin-top: 0.25rem;
-    font-size: 0.95rem;
-  }
-
-  .fp-role {
-    display: inline-block;
-    margin-left: 0.5rem;
-    padding: 0 0.45rem;
-    border: 1px solid var(--global-divider-color);
-    border-radius: 0.25rem;
-    font-size: 0.8rem;
-    color: var(--global-text-color-light);
-    white-space: nowrap;
-  }
-
-  .fp-summary {
-    margin: 0.35rem 0 0;
-    font-size: 0.92rem;
-    color: var(--global-text-color-light);
-  }
-
-  .fp-links {
-    margin-left: 0.5rem;
-    font-size: 0.85rem;
-    white-space: nowrap;
-  }
-}
-
-.fp-all {
+// Link under the landing-page selected publications
+.selected-all {
   margin: 0.5rem 0 1rem;
   font-size: 0.95rem;
 }
@@ -311,27 +253,6 @@ html[data-theme="dark"] {
   font-size: 1.15rem;
   font-weight: 600;
   margin-bottom: 0.75rem;
-}
-
-.fp-theme {
-  margin-top: 1.75rem;
-  font-size: 0.95rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-
-  a {
-    color: var(--global-text-color-light);
-
-    &:hover {
-      color: var(--global-theme-color);
-    }
-  }
-}
-
-.featured-paper-highlight {
-  border-left: 3px solid var(--global-theme-color);
-  padding-left: 1rem;
 }
 
 // Blog index post titles follow the shared h3 scale

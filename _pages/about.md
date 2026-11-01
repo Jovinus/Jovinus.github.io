@@ -17,7 +17,6 @@ profile:
     <p>Republic of Korea</p>
     <p>lkh256 [at] gmail [dot] com</p>
 
-featured_papers: true # representative journal articles from _data/featured_papers.yml, grouped by theme
 current_research: >
   <ul class="research-themes">
     <li>
@@ -35,7 +34,7 @@ beyond_research: >
   In 2025 I co-founded <a href="https://breathyou.care">BreathYou</a>, a respiratory and allergy AI startup
   incorporated as BreathYou Co., Ltd. in August 2026. I also teach
   <a href="/teaching/"><em>Exercise and Digital Healthcare</em></a> at the University of Seoul.
-selected_papers: false # fallback bibliography list of papers marked "selected={true}"
+selected_papers: true # papers marked selected={true} in _bibliography/papers.bib, in the publications-page format
 social: true # includes social icons at the bottom of the page
 
 announcements:
