@@ -51,23 +51,4 @@ latest_posts:
 
 <p class="research-headline">AI researcher in physiological and clinical time-series learning</p>
 
-I develop and evaluate machine learning models for physiological signals and longitudinal clinical data, with particular attention to external validation and to how models behave under continuous clinical monitoring. I'm a PhD student in Digital Health at [SAIHST, Sungkyunkwan University](https://www.saihst.kr/), advised by Professor Byung-Jae Lee, and an AI researcher at [AITRICS](https://www.aitrics.com).
-
-My work began with biosignals — EMG and ECG-derived RR intervals — and moved to electronic health records and repeated clinical measurements. The question that connects them: when data arrive as a sequence, how should a model learn from it, and how should the model be evaluated in the conditions where it will be used — at other hospitals, and read repeatedly as new measurements arrive rather than once per patient?
-
-<h2>Research Themes</h2>
-
-<ul class="research-themes">
-  <li>
-    <a href="/projects/#physiological_signals">Physiological signal learning</a>
-    <span>Neural networks for EMG gesture classification, and deep learning on raw RR intervals for age prediction and stress detection, compared with handcrafted features.</span>
-  </li>
-  <li>
-    <a href="/projects/#clinical_prediction">Clinical prediction</a>
-    <span>Asthma diagnosis from methacholine challenge tests and sepsis risk in hospitalised patients, validated on later referrals and a prospective cohort.</span>
-  </li>
-  <li>
-    <a href="/projects/#real_world_evaluation">Real-world evaluation</a>
-    <span>Multi-center external validation and continuous-monitoring simulation of AKI prediction models, where single-point performance and performance under repeated use can diverge.</span>
-  </li>
-</ul>
+I develop and evaluate machine learning models for physiological signals and longitudinal clinical data. The work began with biosignals — EMG and ECG-derived RR intervals — and moved to electronic health records and repeated clinical measurements. The question that connects them: when data arrive as a sequence, how should a model learn from it, and how should it be evaluated where it will be used — at other hospitals, and read repeatedly as new measurements arrive rather than once per patient? My doctoral work at SAIHST is advised by Professor Byung-Jae Lee.

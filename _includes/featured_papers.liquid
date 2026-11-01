@@ -1,5 +1,7 @@
 {% for group in site.data.featured_papers %}
-  <h3 class="fp-theme">{{ group.theme }}</h3>
+  <h3 class="fp-theme">
+    <a href="{{ group.url | relative_url }}">{{ group.theme }}</a>
+  </h3>
   <ol class="featured-papers">
     {% for paper in group.papers %}
       <li class="featured-paper{% if paper.highlight %} featured-paper-highlight{% endif %}">
@@ -9,25 +11,16 @@
         <div class="fp-meta">
           <em>{{ paper.journal }}</em>, {{ paper.year }}
           <span class="fp-role">{{ paper.role }}</span>
+          <span class="fp-links">
+            <a href="https://doi.org/{{ paper.doi }}">DOI</a>
+            {%- if paper.code %}
+              &middot; <a href="{{ paper.code }}">Code</a>
+            {%- endif %}
+          </span>
         </div>
-        <dl class="fp-summary">
-          <dt>Question</dt>
-          <dd>{{ paper.question }}</dd>
-          <dt>Method</dt>
-          <dd>{{ paper.method }}</dd>
-          <dt>Validation</dt>
-          <dd>{{ paper.validation }}</dd>
-          {% if paper.contribution %}
-            <dt>My role</dt>
-            <dd>{{ paper.contribution }}</dd>
-          {% endif %}
-        </dl>
-        <div class="fp-links">
-          <a href="https://doi.org/{{ paper.doi }}">doi:{{ paper.doi }}</a>
-          {% if paper.code %}
-            &middot; <a href="{{ paper.code }}">Code</a>
-          {% endif %}
-        </div>
+        {% if paper.summary %}
+          <p class="fp-summary">{{ paper.summary }}</p>
+        {% endif %}
       </li>
     {% endfor %}
   </ol>

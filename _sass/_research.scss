@@ -83,7 +83,7 @@
 }
 
 .featured-paper {
-  padding: 1.25rem 0;
+  padding: 0.9rem 0;
   border-top: 1px solid var(--global-divider-color);
 
   &:first-child {
@@ -122,44 +122,21 @@
   }
 
   .fp-summary {
-    display: grid;
-    grid-template-columns: 6.5rem 1fr;
-    gap: 0.2rem 0.75rem;
-    margin: 0.6rem 0 0.4rem;
+    margin: 0.35rem 0 0;
     font-size: 0.92rem;
-
-    dt {
-      font-weight: 400;
-      color: var(--global-text-color-light);
-    }
-
-    dd {
-      margin: 0;
-    }
+    color: var(--global-text-color-light);
   }
 
   .fp-links {
+    margin-left: 0.5rem;
     font-size: 0.85rem;
-    word-break: break-all;
+    white-space: nowrap;
   }
 }
 
 .fp-all {
   margin: 0.5rem 0 1rem;
   font-size: 0.95rem;
-}
-
-@media (max-width: 576px) {
-  .featured-paper .fp-summary {
-    grid-template-columns: 1fr;
-
-    dt {
-      margin-top: 0.35rem;
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.03em;
-    }
-  }
 }
 
 // News table: Bootstrap's .table text color is fixed dark and unreadable in dark mode
@@ -340,9 +317,16 @@ html[data-theme="dark"] {
   margin-top: 1.75rem;
   font-size: 0.95rem;
   font-weight: 400;
-  color: var(--global-text-color-light);
   text-transform: uppercase;
   letter-spacing: 0.05em;
+
+  a {
+    color: var(--global-text-color-light);
+
+    &:hover {
+      color: var(--global-theme-color);
+    }
+  }
 }
 
 .featured-paper-highlight {
