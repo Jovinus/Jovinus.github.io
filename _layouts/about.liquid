@@ -40,6 +40,14 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
+    <!-- News -->
+    {% if page.announcements and page.announcements.enabled %}
+      <h2>
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
+      </h2>
+      {% include news.liquid limit=true %}
+    {% endif %}
+
     <!-- Selected journal articles -->
     {% if page.featured_papers %}
       <h2>
@@ -60,14 +68,6 @@ layout: default
         <a href="{{ '/projects/#current' | relative_url }}" style="color: inherit">Current Research</a>
       </h2>
       {{ page.current_research }}
-    {% endif %}
-
-    <!-- News -->
-    {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
-      </h2>
-      {% include news.liquid limit=true %}
     {% endif %}
 
     <!-- Beyond research: productization, startup, teaching -->

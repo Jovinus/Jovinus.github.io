@@ -14,7 +14,15 @@
         {% else %}
           {% assign news_limit = news_size %}
         {% endif %}
-        {% for item in news limit: news_limit %}
+        {% assign excluded = '' | split: '' %}
+        {% if include.limit and page.announcements.exclude_categories %}
+          {% assign excluded = page.announcements.exclude_categories %}
+        {% endif %}
+        {% assign shown = 0 %}
+        {% for item in news %}
+          {% if shown >= news_limit %}{% break %}{% endif %}
+          {% if excluded contains item.category %}{% continue %}{% endif %}
+          {% assign shown = shown | plus: 1 %}
           <tr>
             <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
             <td>
