@@ -85,7 +85,7 @@ ninja.data = [{
           section: "News",},{id: "news-presented-a-poster-on-spirometry-trajectories-and-incident-airflow-obstruction-at-the-ers-international-congress-2026-barcelona-conference-notes",
           title: 'Presented a poster on spirometry trajectories and incident airflow obstruction at the ERS...',
           description: "",
-          section: "News",},{id: "news-paper-accepted-at-the-neurips-2026-workshop-on-responsible-communication-of-machine-learning-research-in-biomedicine-rcmlr-twenty-four-minutes-of-warning-what-a-reported-lead-time-licenses-and-what-reporting-standards-do-not-ask-poster-presentation-on-12-december-2026-sydney-also-served-as-a-reviewer-for-the-workshop",
+          section: "News",},{id: "news-paper-accepted-at-the-neurips-2026-workshop-on-responsible-communication-of-machine-learning-research-in-biomedicine-rcmlr-median-alert-lead-time-tracks-how-long-patients-were-observed-and-runs-opposite-to-specificity-poster-presentation-on-12-december-2026-sydney-also-served-as-a-reviewer-for-the-workshop",
           title: 'Paper accepted at the NeurIPS 2026 Workshop on Responsible Communication of Machine Learning...',
           description: "",
           section: "News",},{id: "news-breathyou-co-ltd-received-excellence-awards-at-three-sungkyunkwan-university-startup-programs-in-2026-the-consortium-lab-based-startup-camp-august-the-lab-startup-competition-september-and-the-pre-tex-corps-business-plan-presentation-october",
