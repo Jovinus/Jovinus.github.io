@@ -1,11 +1,11 @@
 metadata:
   h_index: 9
   i10_index: 9
-  last_updated: '2026-11-02'
-  total_citations: 485
+  last_updated: '2026-11-16'
+  total_citations: 493
 papers:
   T0DHr9QAAAAJ:2osOgNQ5qMEC:
-    citations: 180
+    citations: 181
     title: Electromyogram-based classification of hand and finger gestures using artificial neural networks
     year: '2021'
   T0DHr9QAAAAJ:4TOpqqG69KYC:
@@ -28,12 +28,16 @@ papers:
     citations: 73
     title: 'Nonalcoholic fatty liver disease and accelerated loss of skeletal muscle mass: a longitudinal cohort study'
     year: '2022'
+  T0DHr9QAAAAJ:L8Ckcad2t8MC:
+    citations: 0
+    title: Median alert lead time tracks how long patients were observed, and runs opposite to specificity
+    year: '2026'
   T0DHr9QAAAAJ:M3ejUd6NZC8C:
     citations: 0
     title: 'Enhancing Clinical Decision-Making in Rapid Response Systems: Integrating AI-Based Predictions and Early Pattern Clustering'
     year: '2025'
   T0DHr9QAAAAJ:MXK_kJrjxJIC:
-    citations: 12
+    citations: 13
     title: "Validation of an artificial intelligence-based algorithm for predictive performance and risk stratification of sepsis using real-world data from hospitalised patients: a \u2026"
     year: '2025'
   T0DHr9QAAAAJ:QIV2ME_5wuYC:
@@ -41,7 +45,7 @@ papers:
     title: 'Reading screening spirometry as a trajectory predicts incident airflow obstruction earlier: a landmark deep-learning analysis of 221,903 adults'
     year: '2026'
   T0DHr9QAAAAJ:Tyk-4Ss8FVUC:
-    citations: 63
+    citations: 64
     title: Multi-center validation of machine learning model for preoperative prediction of postoperative mortality
     year: '2022'
   T0DHr9QAAAAJ:ULOm3_A8WrAC:
@@ -77,7 +81,7 @@ papers:
     title: 'Self-Supervised Contrastive Loss for Multimodal Emotion Recognition: Self-Supervision is All You Need'
     year: '2023'
   T0DHr9QAAAAJ:Zph67rFs4hoC:
-    citations: 2
+    citations: 3
     title: Deep learning-based stress detection from RR intervals in major depressive disorder, panic disorder, and healthy individuals
     year: '2025'
   T0DHr9QAAAAJ:aqlVkmm33-oC:
@@ -97,15 +101,15 @@ papers:
     title: Novel artificial intelligence-based technology to diagnose asthma using methacholine challenge tests
     year: '2023'
   T0DHr9QAAAAJ:hqOjcs7Dif8C:
-    citations: 59
+    citations: 61
     title: A novel deep learning algorithm for real-time prediction of clinical deterioration in the emergency department for a multimodal clinical decision support system
     year: '2024'
   T0DHr9QAAAAJ:qjMakFHDy7sC:
-    citations: 6
+    citations: 7
     title: "Stakeholders\u2019 Requirements for Artificial Intelligence for Healthcare in Korea"
     year: '2022'
   T0DHr9QAAAAJ:qxL8FJ1GzNcC:
-    citations: 2
+    citations: 3
     title: 'Deep learning models for acute kidney injury prediction: multi-center external validation and evaluation under simulated continuous monitoring conditions'
     year: '2026'
   T0DHr9QAAAAJ:roLk4NBRz8UC:
