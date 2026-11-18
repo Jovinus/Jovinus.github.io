@@ -88,7 +88,7 @@ ninja.data = [{
           section: "News",},{id: "news-paper-accepted-at-the-neurips-2026-workshop-on-responsible-communication-of-machine-learning-research-in-biomedicine-rcmlr-median-alert-lead-time-tracks-how-long-patients-were-observed-and-runs-opposite-to-specificity-poster-presentation-on-12-december-2026-sydney-also-served-as-a-reviewer-for-the-workshop",
           title: 'Paper accepted at the NeurIPS 2026 Workshop on Responsible Communication of Machine Learning...',
           description: "",
-          section: "News",},{id: "news-breathyou-co-ltd-received-the-korea-entrepreneurship-foundation-chairperson-s-award-encouragement-award-at-sprint-next-unicorn-s-day-november-following-excellence-awards-at-three-sungkyunkwan-university-startup-programs-in-2026-the-consortium-lab-based-startup-camp-august-the-lab-startup-competition-september-and-the-pre-tex-corps-business-plan-presentation-october",
+          section: "News",},{id: "news-breathyou-co-ltd-received-the-korea-entrepreneurship-foundation-chairperson-s-award-encouragement-award-at-sprint-next-unicorn-s-day-november-following-excellence-awards-at-three-sungkyunkwan-university-startup-programs-in-2026-the-consortium-lab-based-startup-camp-august-the-lab-startup-competition-september-and-the-pre-tex-corps-business-plan-presentation-october-the-team-also-completed-the-ministry-of-education-s-2026-student-startup-promising-team-300-program-leap-track-in-october-receiving-a-certificate-from-the-minister-of-education",
           title: 'BreathYou Co., Ltd. received the Korea Entrepreneurship Foundation Chairperson’s Award (Encouragement Award) at...',
           description: "",
           section: "News",},{id: "projects-asthma-diagnosis-ai-model-development",
