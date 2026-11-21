@@ -12,7 +12,7 @@ importance: 2
 
 **Ongoing work.**
 
-- **Minute-level intraoperative hypotension monitoring** — whether commonly used metrics agree when ranking a model that is read continuously. First author; manuscript under review.
+- **Minute-level intraoperative hypotension monitoring** — what summary discrimination misses, shown by a pre-deployment simulation of models read every minute. First author; manuscript under review.
 - **Transformer-based cardiac arrest prediction for general-ward patients** — development and multicenter external validation. Co-first author; a development preprint is on [medRxiv](https://doi.org/10.64898/2026.01.12.26343973) and the multicenter manuscript is under review.
 - **Nursing notes for AKI prediction** — adding large-language-model embeddings of nursing notes to time-series AKI models, led by Donghwee Yoon. Co-author; presented at AKI & CRRT 2026.
 
